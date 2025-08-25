@@ -74,7 +74,7 @@ TÄssä vaiheessa asensin Virtuaalikoneelleni Debian käyttöjärjestelmän. Val
 
 <img width="1442" height="1694" alt="image" src="https://github.com/user-attachments/assets/f3753003-26d8-4e2b-91bd-33824206897a" />
 
-Käynnistämisen jälkeen virtuaalikoneen bootloader -valikosta valitsin "Live system (amd64). Tämä mahdollisti käyttöjärjestelmän tarkastelun ja kokeilun ennen asentamista. Tässä kohtaa tajusin teheeni virheen käyttöjärjestelmän ISO-tiedoston valinnassa. Kyseessä oli "Standard -versio, joka ei tuo graafista näkymää ollenkaan". 
+Käynnistämisen jälkeen virtuaalikoneen bootloader -valikosta valitsin "Live system (amd64). Tämä mahdollisti käyttöjärjestelmän tarkastelun ja kokeilun ennen asentamista. Tässä kohtaa tajusin teheeni virheen käyttöjärjestelmän ISO-tiedoston valinnassa. Kyseessä oli "Standard -versio, joka ei tue graafista näkymää ollenkaan". StackExchange Uniz & Linux "https://unix.stackexchange.com/questions/87182/whats-the-difference-between-debian-standard-and-gnome".
 
 <img width="1270" height="1010" alt="image" src="https://github.com/user-attachments/assets/8e91d77f-df71-4644-92b4-cbcf522cbd43" />
 
@@ -120,7 +120,7 @@ Määritin seuraavat asetukset verkolle:
 
 <img width="1538" height="1154" alt="image" src="https://github.com/user-attachments/assets/42d8a15b-3ad4-4022-adf8-d8ba86785816" />
 
-# Käyttäjätunnukset
+## Käyttäjätunnukset
 
 Seuraavaksi määritin käyttäjätunnukset virtuaalikoneeleni. Root -käyttäjälle jätin salasanakentän tyhjäksi ja jatkoin määrittämään peruskäyttäjän nimen ja salasanan. 
 
@@ -157,7 +157,7 @@ Lopuksi täppä valintaan "Yes" kohdassa "Write changes to the disk".
 
 <img width="1528" height="1168" alt="image" src="https://github.com/user-attachments/assets/f68158df-fb96-41ab-bae4-16beb6955cb1" />
 
-# GRUB boot loader asennus
+## GRUB boot loader asennus
 
 Ennen asennuksen valmistumista piti vielä valita asennetaanko GRUB boot loader, valitsin "Yes" ja asennuskohteeksi valitsin luomani virtuaalilevyn. Jatkoin tämän jälkeen asennuksen loppuun.
 
@@ -174,15 +174,15 @@ Asennuksen lopputuloksena käytössä on toimiva virtuaalinen Debian Linux alla 
 
 <img width="1532" height="1162" alt="image" src="https://github.com/user-attachments/assets/1b0c591f-aa1d-42fe-b239-3215cc39d3ac" />
 
-# Virtuaalikoneen asetuksien muuttaminen jälkikäteen
+## Virtuaalikoneen asetuksien muuttaminen jälkikäteen
 
-Tein virtuaalityöaseman alustamisvaiheessa toisen virheen ja unohdin määrittää asetukset oikein. Sammutin juuri asentamani virtuaalikoneen ja avasin VirtualBoxin. Valitsin virtuaalikoneen "Details" ja valitsin hiiren oikealla painikkeela "System". System valikosta asetin muistin määräksi 4096MB. Seuraavaksi valitsin "Processor" -välilehden ja asetin suoritinytimien määräksi 2.
+Tein virtuaalityöaseman alustamisvaiheessa toisen virheen ja unohdin määrittää asetukset oikein. Sammutin juuri asentamani virtuaalikoneen ja avasin VirtualBoxin. Hetken tutkimisen jälkeen löysin VirtualBoksista oikeat asetukset muutoksien tekemiseen. Valitsin virtuaalikoneen "Details" ja valitsin hiiren oikealla painikkeela "System". System valikosta asetin muistin määräksi 4096MB. Seuraavaksi valitsin "Processor" -välilehden ja asetin suoritinytimien määräksi 2.
 
 <img width="1542" height="936" alt="image" src="https://github.com/user-attachments/assets/b44ecc8c-c5e1-40a1-9353-1984af20676f" />
 
 <img width="1548" height="944" alt="image" src="https://github.com/user-attachments/assets/1f96d21e-e1de-4465-a231-c284ec738246" />
 
-# Virtuaalikoneen kovalevyn kapasiteetin kasvattaminen jälikäteen 
+## Virtuaalikoneen kovalevyn kapasiteetin kasvattaminen jälikäteen 
 
 Ohjeistus tähän ongelaan löytyi pienen Googletuksen jälkeen "https://www.reddit.com/r/virtualbox/comments/nxonby/virtual_disk_expandadd_space". 
 
@@ -190,13 +190,13 @@ Kuten raportin aikaisemmassa vaiheessa huomasin, virtuaalikoneeni kovalevy oli j
 
 Valitsin File --> Tools --> Media. Seuraavaksi valitsin luomani virtuaalilevyn "Linux_palvelin.vdi" hiiren oikealla painikkeella ja klikkasin "Properties" ikkunan yläkulamasta. Tämän jälkeen pääsin määrittämään virtuaalikovalevyn kokoa vapaasti ikkunan alareunassa. Valitsin levyn kooksi 40,00GB ja painoin "Apply". 
 
-# Yhteenveto
-
-Nyt käytössäni on valmis virtuaalikone Linux -käyttöjärjestelelmällä. Asennus ei sujunut aivan suoraviivaisesti, mutta ainakin opin VirtualBoxsista uusia ominaisuuksia. Ensi kerralla enemmän tarkkuutta, kun määritellään asetuksia. 
- 
 <img width="1489" height="1529" alt="image" src="https://github.com/user-attachments/assets/87646b2d-3c49-41f4-9083-5479a8ede74f" />
 
 <img width="1488" height="1694" alt="image" src="https://github.com/user-attachments/assets/d31f983e-ab5f-4d9f-b395-3ed09498a5be" />
+
+# Yhteenveto
+
+Nyt käytössäni on valmis virtuaalikone Linux -käyttöjärjestelelmällä. Asennus ei sujunut aivan suoraviivaisesti, mutta ainakin opin VirtualBoxsista uusia ominaisuuksia. Ensi kerralla enemmän tarkkuutta, kun määritellään asetuksia. 
 
 # Lähteet
 
@@ -207,4 +207,6 @@ https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md
 https://cdimage.debian.org/debian-cd/13.0.0-live/amd64/iso-hybrid - Linux Distrojen ISO -tiedostot
 
 https://terokarvinen.com/linux-palvelimet/#h0-hei-weppi - Liux palvelimet kurssin materiaali
+
+https://unix.stackexchange.com/questions/87182/whats-the-difference-between-debian-standard-and-gnome 
 
