@@ -158,12 +158,17 @@ Asennuksen lopputuloksena käytössä on toimiva virtuaalinen Debian Linux.
 
 # Virtuaalikoneen asetuksien muuttaminen jälkikäteen
 
-Tein virtuaalityöaseman alustamisvaiheessa toisen virheen ja unohdin määrittää asetukset oikein. Sammutin juuri asentamani virtuaalikoneen ja avasin VirtualBoxin. Valitsin virtuaalikoneen "Details" ja valitsin hiiren oikealla painikkeela "System". System valikosta asetin muistin määräksi 4096MB. Seuraavaksi valitsin "Processor" -välilehden ja asetin suoritinytimien määräksi 2. Lopuksi valitsin välilehden "Storage" ja 
+Tein virtuaalityöaseman alustamisvaiheessa toisen virheen ja unohdin määrittää asetukset oikein. Sammutin juuri asentamani virtuaalikoneen ja avasin VirtualBoxin. Valitsin virtuaalikoneen "Details" ja valitsin hiiren oikealla painikkeela "System". System valikosta asetin muistin määräksi 4096MB. Seuraavaksi valitsin "Processor" -välilehden ja asetin suoritinytimien määräksi 2.
 
 <img width="1542" height="936" alt="image" src="https://github.com/user-attachments/assets/b44ecc8c-c5e1-40a1-9353-1984af20676f" />
 
 <img width="1548" height="944" alt="image" src="https://github.com/user-attachments/assets/1f96d21e-e1de-4465-a231-c284ec738246" />
 
+# Virtuaalikoneen kovalevyn kapasiteetin kasvattaminen jälikäteen 
+
+<img width="1489" height="1529" alt="image" src="https://github.com/user-attachments/assets/87646b2d-3c49-41f4-9083-5479a8ede74f" />
+
+<img width="1488" height="1694" alt="image" src="https://github.com/user-attachments/assets/d31f983e-ab5f-4d9f-b395-3ed09498a5be" />
 
 
 
