@@ -20,7 +20,12 @@
 
 ## Raportin pahoja mokia 
 -Ympäripyöreät selittelyt ja valheellinen tieto yms. 
+
 -Plagiointi kaikissa muodoissa kuvat 
 
-
+## Lähteenä:
 https://terokarvinen.com/2006/raportin-kirjoittaminen-4 - luettu 25.8.2025
+ 
+# Linux asentaminen VirtualBox
+
+
