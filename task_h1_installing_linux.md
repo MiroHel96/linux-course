@@ -157,7 +157,9 @@ Lopuksi täppä valintaan "Yes" kohdassa "Write changes to the disk".
 
 <img width="1528" height="1168" alt="image" src="https://github.com/user-attachments/assets/f68158df-fb96-41ab-bae4-16beb6955cb1" />
 
-# Gru
+# GRUB boot loader asennus
+
+Ennen asennuksen valmistumista piti vielä valita asennetaanko GRUB boot loader, valitsin "Yes" ja asennuskohteeksi valitsin luomani virtuaalilevyn. Jatkoin tämän jälkeen asennuksen loppuun.
 
 <img width="1518" height="1166" alt="image" src="https://github.com/user-attachments/assets/320b7726-ce31-4685-8908-b627e4dbc557" />
 
@@ -182,6 +184,16 @@ Tein virtuaalityöaseman alustamisvaiheessa toisen virheen ja unohdin määritt�
 
 # Virtuaalikoneen kovalevyn kapasiteetin kasvattaminen jälikäteen 
 
+Ohjeistus tähän ongelaan löytyi pienen Googletuksen jälkeen "https://www.reddit.com/r/virtualbox/comments/nxonby/virtual_disk_expandadd_space". 
+
+Kuten raportin aikaisemmassa vaiheessa huomasin, virtuaalikoneeni kovalevy oli jäänyt liian pieneksi 20GB. Kasvatin sen kokoa jälkikäteen VirtualBoxissa seuraavalla tavalla. 
+
+Valitsin File --> Tools --> Media. Seuraavaksi valitsin luomani virtuaalilevyn "Linux_palvelin.vdi" hiiren oikealla painikkeella ja klikkasin "Properties" ikkunan yläkulamasta. Tämän jälkeen pääsin määrittämään virtuaalikovalevyn kokoa vapaasti ikkunan alareunassa. Valitsin levyn kooksi 40,00GB ja painoin "Apply". 
+
+# Yhteenveto
+
+Nyt käytössäni on valmis virtuaalikone Linux -käyttöjärjestelelmällä. Asennus ei sujunut aivan suoraviivaisesti, mutta ainakin opin VirtualBoxsista uusia ominaisuuksia. Ensi kerralla enemmän tarkkuutta, kun määritellään asetuksia. 
+ 
 <img width="1489" height="1529" alt="image" src="https://github.com/user-attachments/assets/87646b2d-3c49-41f4-9083-5479a8ede74f" />
 
 <img width="1488" height="1694" alt="image" src="https://github.com/user-attachments/assets/d31f983e-ab5f-4d9f-b395-3ed09498a5be" />
