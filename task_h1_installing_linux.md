@@ -18,25 +18,26 @@ Tämä raportti on kirjoitettu "https://terokarvinen.com/linux-palvelimet/#h0-he
 -Laadukkaassa raportissa on viitatu oikeaoppisesti lähteeseen, kuuluu hyviin tapohin ja osoittaa perehtymisen aiheeseen.
 
 ## Raportin Vakiotekstejä
-- Esimerkiksi, rarortin pohja, lisenssit, liitteet/lähteet. Tekevät raportista johdonmukaisen ja asiakohtaisen.
+- Esimerkiksi, raportin pohja, lisenssit, liitteet/lähteet. Tekevät raportista johdonmukaisen ja asiakohtaisen.
 
 ## Raportin pahoja mokia 
 -Ympäripyöreät selittelyt ja valheellinen tieto yms. 
-
 -Plagiointi kaikissa muodoissa kuvat 
  
-# Linux asentaminen VirtualBox
+# Linux käyttöjärjestelmän asentaminen VirtualBox
 
-Tässä raportissa asensin työasemalleni VirtualBoxin ja Virtuaalikäyttöjärjestelmäksi Linuxin. 
+Tässä raportissa käyn vaihettain läpi virtuaalikoneen luomisen Linux-käyttöjärjestelmällä VirtualBoxiin. 
 
 # VirtualBox Asennus
 
-VirtualBox oli jo asennettu työasemalla aikaisemmin ja se ei ollut vaatimuksena tehtävänannossa. "h1 Oma Linux".
+VirtualBox oli jo asennettu työasemalla aikaisemmin ja se ei ollut vaatimuksena tehtävänannossa "h1 Oma Linux". Tästä syystä VirtualBox asennusta ei käydä tässä raportissa läpi.
 
 # Virtuaalityöaseman luominen VirtualBoxissa ja alkumäärityksien tekeminen
 
 Virtuaalityöasema on asennettu lähtökohtaisesti seuraavaa ohjetta noudattaen, muutamia asetuksia lukuunottamatta. 
-https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md
+"https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md"
+
+Esitietona raporttia lukevalle, tein virheen versiovalinnassa ja huomasin tämän vasta virtuaalikoneen luomisen yhteydessä. Käyn kuitekin läpi asennuksen vaihettain, koska asennusprosessi on muuten sama.
 
 Aloitin käyttöjärjestelmän asentamisen hakemalla käyttöjärjestelmän ISO-tiedoston verkkosivulta "https://cdimage.debian.org/debian-cd/13.0.0-live/amd64/iso-hybrid". Jakelupaketiksi (Distro) valitsin "debian-live-13.0.0-amd64-standard.iso". 
 <img width="1262" height="76" alt="image" src="https://github.com/user-attachments/assets/11d37e95-51bb-46fe-819b-4e4c136622a4" />
@@ -52,7 +53,7 @@ OS: Linux
 OS Distribution: Debian
 OS Debian (64-bit) 
 
-Proceed with Unattended Installation kohdasta jätin täpän pois, koska määritin asetukset myöhemmin manuaaliseti. 
+"Proceed with Unattended Installation" kohdasta jätin täpän pois.
 
 <img width="1612" height="796" alt="image" src="https://github.com/user-attachments/assets/60dfdad0-3eee-431b-9e63-5a9e2329c841" />
 
