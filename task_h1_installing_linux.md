@@ -24,11 +24,7 @@ Tämä raportti on kirjoitettu "https://terokarvinen.com/linux-palvelimet/#h0-he
 -Ympäripyöreät selittelyt ja valheellinen tieto yms. 
 
 -Plagiointi kaikissa muodoissa kuvat 
-
-## Lähteenä:
-https://terokarvinen.com/2006/raportin-kirjoittaminen-4 - luettu 25.8.2025
  
-
 # Linux asentaminen VirtualBox
 
 Tässä raportissa asensin työasemalleni VirtualBoxin ja Virtuaalikäyttöjärjestelmäksi Linuxin. 
