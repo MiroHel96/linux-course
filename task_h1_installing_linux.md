@@ -57,29 +57,31 @@ OS Debian (64-bit)
 
 <img width="1612" height="796" alt="image" src="https://github.com/user-attachments/assets/60dfdad0-3eee-431b-9e63-5a9e2329c841" />
 
-Seuraavaksi määritin virtuaalikoneen käyttämät resurssit. RAM-muistia virtuaalikoneelle asetin 4GB (4096MB). Prosessoreiden määräksi asetin 2 ja levy kooksi asetin 40GB. 
+Seuraavaksi määritin virtuaalikoneen käyttämät resurssit. RAM-muistia virtuaalikoneelle asetin 4GB (4096MB). Suorittimien määräksi asetin 2 ja virtuaalilevyn kooksi 40GB. Laitoin täpän kohtaan "EFI" ja jatkoin asennusta.
 
 <img width="1628" height="800" alt="image" src="https://github.com/user-attachments/assets/2692b544-2385-49ed-9cbc-4817db7a1f5a" />
 
-Lopuksi yhteenveto asetetuista asetuksista. 
+Lopuksi yhteenveto asetuksista. 
 <img width="1614" height="794" alt="image" src="https://github.com/user-attachments/assets/48d85ae3-5402-4ec4-8ea4-43f5b88d3a99" />
 
 
-# Linux -käyttöjärjestelmän asentaminen Virtuaalikoneeseen
+# Linux -käyttöjärjestelmän asentaminen virtuaalikoneeseen
 
-TÄssä vaiheessa asensin Virtuaalikoneelleni Debian käyttöjärjestelmän. Valitsin virtuaalikoneeni ja klikkasin oikealla hiiten painikkeella virtuaalikoneella ja valitsin käynnistä.  
+TÄssä vaiheessa asensin virtuaalikoneelleni Debian käyttöjärjestelmän. Valitsin virtuaalikoneeni ja klikkasin oikealla hiiren painikkeella virtuaalikonetta ja valitsin "Start".  
 
 <img width="1442" height="1694" alt="image" src="https://github.com/user-attachments/assets/f3753003-26d8-4e2b-91bd-33824206897a" />
 
-Käynnistämisen jälkeen virtuaalikoneen bootloader -valikosta valitsin "Live system (amd64). Tämä mahdollisti käyttöjärjestelmän tarkastelun ja kokeilun ennen asentamista. Tässä kohtaa tajusin teheeni virheen käyttöjärjestelmän ISO-tiedoston valinnassa. Kyseessä oli "Standard -versio, joka ei tue graafista näkymää ollenkaan". StackExchange Uniz & Linux "https://unix.stackexchange.com/questions/87182/whats-the-difference-between-debian-standard-and-gnome".
+Käynnistämisen jälkeen virtuaalikoneen asennusvalikosta valitsin "Live system (amd64)". Tämä mahdollisti käyttöjärjestelmän tarkastelun ja kokeilun ennen asentamista. Tässä kohtaa tajusin teheeni virheen käyttöjärjestelmän ISO -tiedoston valinnassa. 
+
+Kyseessä oli "Standard" -versio, joka ei tue graafista näkymää ollenkaan. Tajusin virheeni, kun näkymään tuli pelkkä terminaali, mutta tarkastin vielä varmuuden vuoksi asian Googlettamalla. StackExchange Uniz & Linux "https://unix.stackexchange.com/questions/87182/whats-the-difference-between-debian-standard-and-gnome".
 
 <img width="1270" height="1010" alt="image" src="https://github.com/user-attachments/assets/8e91d77f-df71-4644-92b4-cbcf522cbd43" />
 
-# Linux Asennus virtuaalikoneelle osa 2
+# Linux asennus virtuaalikoneelle toinen yritys 
 
-Tein toisen virheen virtuaalikoneen uudelleenasennuksen yhteydessä ja unohdin määritellä, RAM-muistin, suorittimet ja virtuaalilevyn koon. Tein kyseiset määritykset raportin lopussa omana kappaleena.
+Huomiona lukijalle. Tein toisen virheen virtuaalikoneen uudelleenasennuksen yhteydessä ja unohdin määritellä, RAM-muistin, suorittimet ja virtuaalilevyn koon. Tein kyseiset määritykset jälkikäteen raportin lopussa omana kappaleena.
 
-Aloitin virtuaalikoneen uudelleenasentamisen poistamalla edellisen virtuaalikoneen ja vaihdoin uuden koneen käyttöjärjestelmän distron versioon "debian-live-13.0.0-amd64-xfce.iso". 
+Aloitin virtuaalikoneen uudelleenasentamisen poistamalla edellisen virtuaalikoneen ja vaihdoin uuden virtuaalikoneen käyttöjärjestelmän distron versioon "debian-live-13.0.0-amd64-xfce.iso". Valitsin saman version kuin asennusohjeessa oli mainittu. "Johanna Heinonen - How to Install Linux to Virutalbox?".
 
 <img width="1268" height="74" alt="image" src="https://github.com/user-attachments/assets/72fcda89-1816-44d1-a516-e5b93f093b90" />
 
