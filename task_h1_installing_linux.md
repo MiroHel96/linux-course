@@ -114,8 +114,26 @@ Seuraavaksi määritin käyttäjätunnukset virtuaalikoneeleni. Root -käyttäj�
 
 <img width="1530" height="1172" alt="image" src="https://github.com/user-attachments/assets/03657462-b4bf-480c-9271-2b27ddfda7df" />
 
+Peruskäyttäjän etunimeksi ja sukunimeksi asetin oman nimeni eli "miro helenius". Jatkoin salasanan määritykseen, määritin salasanan ja painoin "continue". 
+
+<img width="1516" height="1174" alt="image" src="https://github.com/user-attachments/assets/8f8c7c60-dd1e-41e8-9f6c-32cec0adee28" />
+
+<img width="1524" height="1166" alt="image" src="https://github.com/user-attachments/assets/ef43896b-6193-467b-abe6-965c8ffccd64" />
+
+<img width="1524" height="1156" alt="image" src="https://github.com/user-attachments/assets/0224c148-5ff1-49dc-8189-fbfb5f5ddd0a" />
+
+Käyttäjtunnuksien ja salasanojen määrityksen jälkeen siirryin asennuksessa seuraavaan vaiheeseen. Tässä kohtaa aloitin levyosioiden määrityksen. Määritin levyosoille seuraavat asetukset: 
+
+Partition disks Guided - use entire disk ! väärän kokoinen levy
+Partition disk virtual disk which I created
+Partitioning scheme - All files in one partition
 
 
+<img width="1530" height="1164" alt="image" src="https://github.com/user-attachments/assets/e170978a-9841-4353-af7d-42f570ac11f4" />
+
+<img width="1528" height="1158" alt="image" src="https://github.com/user-attachments/assets/64d7caad-a469-4eb8-82df-802be5b5056a" />
+
+<img width="1534" height="1174" alt="image" src="https://github.com/user-attachments/assets/74fe7c79-4579-46f6-bf1d-206cecc21426" />
 
 
 
