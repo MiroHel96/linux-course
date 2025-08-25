@@ -144,5 +144,18 @@ Lopuksi täppä valintaa write changes to the disk - Yes.
 
 Lopuksi odotin, että virtuaalikone asenti Linuxin valmiiksi ja painoin "Continue" Finish the installation -valikossa. 
 
+<img width="1518" height="1166" alt="image" src="https://github.com/user-attachments/assets/320b7726-ce31-4685-8908-b627e4dbc557" />
+
+<img width="1534" height="1168" alt="image" src="https://github.com/user-attachments/assets/8a355536-7e7f-4196-9d0b-4d05ee22f709" />
 
 
+<img width="1530" height="1168" alt="image" src="https://github.com/user-attachments/assets/91afa251-ed68-4006-9462-6d41a57c1d71" />
+
+
+Asennuksen lopputuloksena käytössä on toimiva virtuaalinen Debian Linux. 
+
+<img width="1532" height="1162" alt="image" src="https://github.com/user-attachments/assets/1b0c591f-aa1d-42fe-b239-3215cc39d3ac" />
+
+# Virtuaalikoneen kovalevyn koon kasvattaminen jälkikäteen
+
+Tein virtuaalityöaseman alustamisvaiheessa toisen virheen ja unohdin asettaa virtuaalikoneen kovalevyn kooksi 40GB. 
