@@ -1,5 +1,7 @@
 # Raportin kirjoittaminen 
 
+Tämä raportti on kirjoitettu "https://terokarvinen.com/linux-palvelimet/#h0-hei-weppi", h1 Oma Linux tehtävän pohjalle. 
+
 ## Raportin toistettavuus
 -Raportin on oltava toistettavissa, jos toinen henkilö tekee vastaavat toimenpiteet.
 -Raportissa on huomioitava spesifit tekniset tiedot ja muuttuja, koska eri verkot/laitteet toimivat eri tavalla.
@@ -26,14 +28,19 @@
 ## Lähteenä:
 https://terokarvinen.com/2006/raportin-kirjoittaminen-4 - luettu 25.8.2025
  
+
 # Linux asentaminen VirtualBox
 
 Tässä raportissa asensin työasemalleni VirtualBoxin ja Virtuaalikäyttöjärjestelmäksi Linuxin. 
 
 # VirtualBox Asennus
 
+VirtualBox oli jo asennettu työasemalla aikaisemmin ja se ei ollut vaatimuksena tehtävänannossa. "h1 Oma Linux".
 
 # Virtuaalityöaseman luominen VirtualBoxissa ja alkumäärityksien tekeminen
+
+Virtuaalityöasema on asennettu lähtökohtaisesti seuraavaa ohjetta noudattaen, muutamia asetuksia lukuunottamatta. 
+https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md
 
 Aloitin käyttöjärjestelmän asentamisen hakemalla käyttöjärjestelmän ISO-tiedoston verkkosivulta "https://cdimage.debian.org/debian-cd/13.0.0-live/amd64/iso-hybrid". Jakelupaketiksi (Distro) valitsin "debian-live-13.0.0-amd64-standard.iso". 
 <img width="1262" height="76" alt="image" src="https://github.com/user-attachments/assets/11d37e95-51bb-46fe-819b-4e4c136622a4" />
@@ -68,27 +75,29 @@ TÄssä vaiheessa asensin Virtuaalikoneelleni Debian käyttöjärjestelmän. Val
 <img width="1442" height="1694" alt="image" src="https://github.com/user-attachments/assets/f3753003-26d8-4e2b-91bd-33824206897a" />
 
 Käynnistämisen jälkeen virtuaalikoneen bootloader -valikosta valitsin "Live system (amd64). Tämä mahdollisti käyttöjärjestelmän tarkastelun ja kokeilun ennen asentamista. Tässä kohtaa tajusin teheeni virheen käyttöjärjestelmän ISO-tiedoston valinnassa. Kyseessä oli "Standard -versio, joka ei tuo graafista näkymää ollenkaan". 
+
 <img width="1270" height="1010" alt="image" src="https://github.com/user-attachments/assets/8e91d77f-df71-4644-92b4-cbcf522cbd43" />
 
-# Linux Asennus virtuaalikoneelle Yritys II 
+# Linux Asennus virtuaalikoneelle osa 2
 
-Uudelle virtuaalikoneelle tein vastaavasti samat alkumääritykset ja asetukset kuin ensimmäisen koneen kohdalla. Poistin edellisen virtuaalikoneen ja vaihdoin uuden koneen käyttöjärjestelmän distron versioon "debian-live-13.0.0-amd64-xfce.iso". 
+Tein toisen virheen virtuaalikoneen uudelleenasennuksen yhteydessä ja unohdin määritellä, RAM-muistin, suorittimet ja virtuaalilevyn koon. Tein kyseiset määritykset raportin lopussa omana kappaleena.
+
+Aloitin virtuaalikoneen uudelleenasentamisen poistamalla edellisen virtuaalikoneen ja vaihdoin uuden koneen käyttöjärjestelmän distron versioon "debian-live-13.0.0-amd64-xfce.iso". 
 
 <img width="1268" height="74" alt="image" src="https://github.com/user-attachments/assets/72fcda89-1816-44d1-a516-e5b93f093b90" />
 
 <img width="1586" height="1082" alt="image" src="https://github.com/user-attachments/assets/b0235b94-a39c-4c31-a304-b81c894f68ac" />
 
+Alkumäärityksien (tässä kohtaa väärät) ja virtuaalikoneen luomisen jälkeen testasin GUI:n toimivuuden Live systemin avulla. Tällä kertaa käyttöjärjestelmän image oli valittu oikein ja ruudulle ilmestyi graafinen näkymä.
 
-Alkumäärityksen ja virtuaalikoneen luomisen jälkeen testasin GUI:n toimivuuden Live systemin avulla. Tällä kertaa käyttöjärjestelmän image oli valittu oikein ja lähti toimivaan halutusti. 
 <img width="1530" height="1160" alt="image" src="https://github.com/user-attachments/assets/c821bd00-d481-4891-8a0a-08382ccc911f" />
 
-Live testin jälkeen sammutin virtuaalikoneen ja käynnistin sen uudestaan. Aloitin käyttöjärjestelmän asentamisen virtuaalikoneelleni ja määritin seuraavat asetukset: 
+Live testin jälkeen sammutin virtuaalikoneen ja käynnistin sen uudestaan. Aloitin käyttöjärjestelmän asentamisen virtuaalikoneelleni ja määritin seuraavat lokaatio-, kieli- ja näppäimistön asetukset:
 
-Kieli English
-Sijainti Finland
-Locales en-US.UTF-8
-Näppäimistön kieli finnish
-
+-Kieli English.
+-Sijainti Finland.
+-Locales en-US.UTF-8.
+-Näppäimistön kieli finnish.
 
 <img width="1526" height="1164" alt="image" src="https://github.com/user-attachments/assets/4bbbed83-970f-467c-a066-34caa2bf1d02" />
 
@@ -100,15 +109,18 @@ Näppäimistön kieli finnish
 
 Sijainti- ja kieliasetuksien jälkeen jatkoin määrittämään virtuaalikoneen verkkoasetuksia. 
 
+## Verkkoasetukset 
+
 Määritin seuraavat asetukset verkolle:
 
-Hostname linux-palvelimet-test
-Domain miroServer.com
-
+-Hostname linux-palvelimet-test.
+-Domain miroServer.com.
 
 <img width="1526" height="1178" alt="image" src="https://github.com/user-attachments/assets/6d8b2420-43fd-42f3-aa6f-92ec3b186803" />
 
 <img width="1538" height="1154" alt="image" src="https://github.com/user-attachments/assets/42d8a15b-3ad4-4022-adf8-d8ba86785816" />
+
+# Käyttäjätunnukset
 
 Seuraavaksi määritin käyttäjätunnukset virtuaalikoneeleni. Root -käyttäjälle jätin salasanakentän tyhjäksi ja jatkoin määrittämään peruskäyttäjän nimen ja salasanan. 
 
@@ -122,15 +134,18 @@ Peruskäyttäjän etunimeksi ja sukunimeksi asetin oman nimeni eli "miro heleniu
 
 <img width="1524" height="1156" alt="image" src="https://github.com/user-attachments/assets/0224c148-5ff1-49dc-8189-fbfb5f5ddd0a" />
 
-Käyttäjtunnuksien ja salasanojen määrityksen jälkeen siirryin asennuksessa seuraavaan vaiheeseen. Tässä kohtaa aloitin levyosioiden määrityksen. Määritin levyosoille seuraavat asetukset: 
+Käyttäjtunnuksien ja salasanojen määrityksen jälkeen siirryin asennuksessa seuraavaan vaiheeseen.
 
-Partition disks Guided - use entire disk ! väärän kokoinen levy
-Partition disks virtual disk which I created
-Partitioning scheme - All files in one partition
-Partition disks - Finish partiotining and write changes to diks
+## Levyosioiden määritykset
 
-Lopuksi täppä valintaa write changes to the disk - Yes.
+Määritin levyosoille seuraavat asetukset: 
 
+Partition disks Guided - use entire disk ! väärän kokoinen levy.
+Partition disks virtual disk which I created.
+Partitioning scheme - All files in one partition.
+Partition disks - Finish partiotining and write changes to diks.
+
+Lopuksi täppä valintaan "Yes" kohdassa "Write changes to the disk".
 
 <img width="1530" height="1164" alt="image" src="https://github.com/user-attachments/assets/e170978a-9841-4353-af7d-42f570ac11f4" />
 
@@ -142,7 +157,7 @@ Lopuksi täppä valintaa write changes to the disk - Yes.
 
 <img width="1528" height="1168" alt="image" src="https://github.com/user-attachments/assets/f68158df-fb96-41ab-bae4-16beb6955cb1" />
 
-Lopuksi odotin, että virtuaalikone asenti Linuxin valmiiksi ja painoin "Continue" Finish the installation -valikossa. 
+# Gru
 
 <img width="1518" height="1166" alt="image" src="https://github.com/user-attachments/assets/320b7726-ce31-4685-8908-b627e4dbc557" />
 
@@ -151,8 +166,9 @@ Lopuksi odotin, että virtuaalikone asenti Linuxin valmiiksi ja painoin "Continu
 
 <img width="1530" height="1168" alt="image" src="https://github.com/user-attachments/assets/91afa251-ed68-4006-9462-6d41a57c1d71" />
 
+Lopuksi odotin, että virtuaalikone asenti Linuxin valmiiksi ja painoin "Continue" Finish the installation -valikossa. 
 
-Asennuksen lopputuloksena käytössä on toimiva virtuaalinen Debian Linux. 
+Asennuksen lopputuloksena käytössä on toimiva virtuaalinen Debian Linux alla olevan kuvan mukaisesti.
 
 <img width="1532" height="1162" alt="image" src="https://github.com/user-attachments/assets/1b0c591f-aa1d-42fe-b239-3215cc39d3ac" />
 
@@ -170,5 +186,13 @@ Tein virtuaalityöaseman alustamisvaiheessa toisen virheen ja unohdin määritt�
 
 <img width="1488" height="1694" alt="image" src="https://github.com/user-attachments/assets/d31f983e-ab5f-4d9f-b395-3ed09498a5be" />
 
+# Lähteet
 
+https://www.reddit.com/r/virtualbox/comments/nxonby/virtual_disk_expandadd_space - Levyosion kasvattaminen jäkikäteen VirtualBox
+
+https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md - Virtuaalikone asennettu seuraavaa ohjetta seuraten. 
+
+https://cdimage.debian.org/debian-cd/13.0.0-live/amd64/iso-hybrid - Linux Distrojen ISO -tiedostot
+
+https://terokarvinen.com/linux-palvelimet/#h0-hei-weppi - Liux palvelimet kurssin materiaali
 
