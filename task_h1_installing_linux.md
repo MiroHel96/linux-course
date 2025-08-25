@@ -15,8 +15,8 @@
 #Lähteisiin viittaaminen
 -Laadukkaassa raportissa on viitatu oikeaoppisesti lähteeseen, kuuluu hyviin tapohin ja osoittaa perehtymisen aiheeseen.
 
-#Vakiotekstejä
--
+#Raportin Vakiotekstejä
+- Esimerkiksi, rarortin pohja, lisenssit, liitteet/lähteet. Tekevät raportista johdonmukaisen ja asiakohtaisen.
 
 #Raportin pahoja mokia 
 -Ympäripyöreät selittelyt ja valheellinen tieto yms. 
