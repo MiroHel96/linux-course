@@ -125,8 +125,11 @@ Peruskäyttäjän etunimeksi ja sukunimeksi asetin oman nimeni eli "miro heleniu
 Käyttäjtunnuksien ja salasanojen määrityksen jälkeen siirryin asennuksessa seuraavaan vaiheeseen. Tässä kohtaa aloitin levyosioiden määrityksen. Määritin levyosoille seuraavat asetukset: 
 
 Partition disks Guided - use entire disk ! väärän kokoinen levy
-Partition disk virtual disk which I created
+Partition disks virtual disk which I created
 Partitioning scheme - All files in one partition
+Partition disks - Finish partiotining and write changes to diks
+
+Lopuksi täppä valintaa write changes to the disk - Yes.
 
 
 <img width="1530" height="1164" alt="image" src="https://github.com/user-attachments/assets/e170978a-9841-4353-af7d-42f570ac11f4" />
@@ -135,6 +138,11 @@ Partitioning scheme - All files in one partition
 
 <img width="1534" height="1174" alt="image" src="https://github.com/user-attachments/assets/74fe7c79-4579-46f6-bf1d-206cecc21426" />
 
+<img width="1528" height="1160" alt="image" src="https://github.com/user-attachments/assets/1c3dad23-2fb3-4d0f-b150-2c91478ba9d5" />
+
+<img width="1528" height="1168" alt="image" src="https://github.com/user-attachments/assets/f68158df-fb96-41ab-bae4-16beb6955cb1" />
+
+Lopuksi odotin, että virtuaalikone asenti Linuxin valmiiksi ja painoin "Continue" Finish the installation -valikossa. 
 
 
 
