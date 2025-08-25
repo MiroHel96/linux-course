@@ -72,10 +72,14 @@ Käynnistämisen jälkeen virtuaalikoneen bootloader -valikosta valitsin "Live s
 
 # Linux Asennus virtuaalikoneelle Yritys II 
 
-Tein vastaavat alkumääritykset kuin aikaisemmmassa raportin vaiheessa, mutta poistin edellisen virtuaalikoneen ja vaihdoin käyttöjärjestelmän distron versioon "debian-live-13.0.0-amd64-xfce.iso". 
+Uudelle virtuaalikoneelle tein vastaavasti samat alkumääritykset ja asetukset kuin ensimmäisen koneen kohdalla. Poistin edellisen virtuaalikoneen ja vaihdoin uuden koneen käyttöjärjestelmän distron versioon "debian-live-13.0.0-amd64-xfce.iso". 
 
 <img width="1268" height="74" alt="image" src="https://github.com/user-attachments/assets/72fcda89-1816-44d1-a516-e5b93f093b90" />
 
+<img width="1586" height="1082" alt="image" src="https://github.com/user-attachments/assets/b0235b94-a39c-4c31-a304-b81c894f68ac" />
+
+
+Alkumäärityksen ja virtuaalikoneen luomisen jälkeen testasin Live 
 
 
 
