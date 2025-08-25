@@ -91,7 +91,7 @@ Alkumäärityksien (tässä kohtaa väärät) ja virtuaalikoneen luomisen jälke
 
 <img width="1530" height="1160" alt="image" src="https://github.com/user-attachments/assets/c821bd00-d481-4891-8a0a-08382ccc911f" />
 
-Live testin jälkeen sammutin virtuaalikoneen ja käynnistin sen uudestaan. Aloitin käyttöjärjestelmän asentamisen virtuaalikoneelleni ja määritin seuraavat lokaatio-, kieli- ja näppäimistön asetukset:
+Live testin jälkeen sammutin virtuaalikoneen ja käynnistin sen uudestaan. Aloitin käyttöjärjestelmän asentamisen virtuaalikoneelleni valitsemalla boot loader valikosta "Start installer" ja määritin seuraavat lokaatio-, kieli- ja näppäimistön asetukset:
 
 -Kieli English.
 -Sijainti Finland.
@@ -137,10 +137,10 @@ Käyttäjtunnuksien ja salasanojen määrityksen jälkeen siirryin asennuksessa 
 
 ## Levyosioiden määritykset
 
-Määritin levyosoille seuraavat asetukset: 
+Määritin levyosioille seuraavat asetukset: 
 
-Partition disks Guided - use entire disk ! väärän kokoinen levy.
-Partition disks virtual disk which I created.
+Partition disks Guided - use entire disk.
+Partition disks - valitsin virtuaalilevyn, jnoka olin luonut.
 Partitioning scheme - All files in one partition.
 Partition disks - Finish partiotining and write changes to diks.
 
@@ -164,28 +164,27 @@ Ennen asennuksen valmistumista piti vielä valita asennetaanko GRUB boot loader,
 
 <img width="1534" height="1168" alt="image" src="https://github.com/user-attachments/assets/8a355536-7e7f-4196-9d0b-4d05ee22f709" />
 
-
 <img width="1530" height="1168" alt="image" src="https://github.com/user-attachments/assets/91afa251-ed68-4006-9462-6d41a57c1d71" />
 
-Lopuksi odotin, että virtuaalikone asenti Linuxin valmiiksi ja painoin "Continue" Finish the installation -valikossa. 
+Lopuksi odotin, että virtuaalikone asenti käyttöjärjestelmän valmiiksi ja painoin "Continue" Finish the installation -valikossa. 
 
-Asennuksen lopputuloksena käytössä on toimiva virtuaalinen Debian Linux alla olevan kuvan mukaisesti.
+Asennuksen lopputuloksena on toimiva Linux virutaalikone.
 
 <img width="1532" height="1162" alt="image" src="https://github.com/user-attachments/assets/1b0c591f-aa1d-42fe-b239-3215cc39d3ac" />
 
 ## Virtuaalikoneen asetuksien muuttaminen jälkikäteen
 
-Tein virtuaalityöaseman alustamisvaiheessa toisen virheen ja unohdin määrittää asetukset oikein. Sammutin juuri asentamani virtuaalikoneen ja avasin VirtualBoxin. Hetken tutkimisen jälkeen löysin VirtualBoksista oikeat asetukset muutoksien tekemiseen. Valitsin virtuaalikoneen "Details" ja valitsin hiiren oikealla painikkeela "System". System valikosta asetin muistin määräksi 4096MB. Seuraavaksi valitsin "Processor" -välilehden ja asetin suoritinytimien määräksi 2.
+Tein virtuaalityöaseman alustamisvaiheessa toisen virheen ja unohdin määrittää asetukset oikein. Tässä vaiheessa korjasin kyseiset asetukset oikeiksi. Sammutinv virtuaalikoneen ja avasin VirtualBoxin asetuvalikon. Hetken tutkimisen jälkeen löysin oikeat asetukset muutoksien tekemiseen. Valitsin virtuaalikoneen "Details" ja valitsin hiiren oikealla painikkeela "System". System -valikosta asetin muistin määräksi 4096MB. Seuraavaksi valitsin "Processor" -välilehden ja asetin suoritinytimien määräksi 2.
 
 <img width="1542" height="936" alt="image" src="https://github.com/user-attachments/assets/b44ecc8c-c5e1-40a1-9353-1984af20676f" />
 
 <img width="1548" height="944" alt="image" src="https://github.com/user-attachments/assets/1f96d21e-e1de-4465-a231-c284ec738246" />
 
-## Virtuaalikoneen kovalevyn kapasiteetin kasvattaminen jälikäteen 
+## Virtuaalikoneen kovalevyn kapasiteetin kasvattaminen jälkikäteen 
 
-Ohjeistus tähän ongelaan löytyi pienen Googletuksen jälkeen "https://www.reddit.com/r/virtualbox/comments/nxonby/virtual_disk_expandadd_space". 
+Ohjeistus tähän ongelmaan löytyi pienen Googletuksen jälkeen "https://www.reddit.com/r/virtualbox/comments/nxonby/virtual_disk_expandadd_space". 
 
-Kuten raportin aikaisemmassa vaiheessa huomasin, virtuaalikoneeni kovalevy oli jäänyt liian pieneksi 20GB. Kasvatin sen kokoa jälkikäteen VirtualBoxissa seuraavalla tavalla. 
+Kuten raportin aikaisemmassa vaiheessa huomasin, virtuaalikoneeni kovalevy oli jäänyt liian pieneksi eli 20GB kokoiseksi. Kasvatin sen kokoa jälkikäteen VirtualBoxissa seuraavalla tavalla. 
 
 Valitsin File --> Tools --> Media. Seuraavaksi valitsin luomani virtuaalilevyn "Linux_palvelin.vdi" hiiren oikealla painikkeella ja klikkasin "Properties" ikkunan yläkulamasta. Tämän jälkeen pääsin määrittämään virtuaalikovalevyn kokoa vapaasti ikkunan alareunassa. Valitsin levyn kooksi 40,00GB ja painoin "Apply". 
 
