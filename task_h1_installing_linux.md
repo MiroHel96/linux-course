@@ -79,7 +79,42 @@ Uudelle virtuaalikoneelle tein vastaavasti samat alkumääritykset ja asetukset 
 <img width="1586" height="1082" alt="image" src="https://github.com/user-attachments/assets/b0235b94-a39c-4c31-a304-b81c894f68ac" />
 
 
-Alkumäärityksen ja virtuaalikoneen luomisen jälkeen testasin Live 
+Alkumäärityksen ja virtuaalikoneen luomisen jälkeen testasin GUI:n toimivuuden Live systemin avulla. Tällä kertaa käyttöjärjestelmän image oli valittu oikein ja lähti toimivaan halutusti. 
+<img width="1530" height="1160" alt="image" src="https://github.com/user-attachments/assets/c821bd00-d481-4891-8a0a-08382ccc911f" />
+
+Live testin jälkeen sammutin virtuaalikoneen ja käynnistin sen uudestaan. Aloitin käyttöjärjestelmän asentamisen virtuaalikoneelleni ja määritin seuraavat asetukset: 
+
+Kieli English
+Sijainti Finland
+Locales en-US.UTF-8
+Näppäimistön kieli finnish
+
+
+<img width="1526" height="1164" alt="image" src="https://github.com/user-attachments/assets/4bbbed83-970f-467c-a066-34caa2bf1d02" />
+
+<img width="1526" height="1162" alt="image" src="https://github.com/user-attachments/assets/2eceaa24-4825-4704-b76e-1f7cadea1091" />
+
+<img width="1530" height="1160" alt="image" src="https://github.com/user-attachments/assets/ab88941a-31aa-4afc-8c6e-4bb7b0e98d5d" />
+
+<img width="1536" height="1166" alt="image" src="https://github.com/user-attachments/assets/60a60584-1644-48f7-be72-73c5794501a4" />
+
+Sijainti- ja kieliasetuksien jälkeen jatkoin määrittämään virtuaalikoneen verkkoasetuksia. 
+
+Määritin seuraavat asetukset verkolle:
+
+Hostname linux-palvelimet-test
+Domain miroServer.com
+
+
+<img width="1526" height="1178" alt="image" src="https://github.com/user-attachments/assets/6d8b2420-43fd-42f3-aa6f-92ec3b186803" />
+
+<img width="1538" height="1154" alt="image" src="https://github.com/user-attachments/assets/42d8a15b-3ad4-4022-adf8-d8ba86785816" />
+
+Seuraavaksi määritin käyttäjätunnukset virtuaalikoneeleni. Root -käyttäjälle jätin salasanakentän tyhjäksi ja jatkoin määrittämään peruskäyttäjän nimen ja salasanan. 
+
+<img width="1530" height="1172" alt="image" src="https://github.com/user-attachments/assets/03657462-b4bf-480c-9271-2b27ddfda7df" />
+
+
 
 
 
