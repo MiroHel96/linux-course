@@ -25,6 +25,29 @@ Hyväksyin asennuksen syöttämällä "Y", asennus onnistui ja tarkastin vielä 
 <img width="1028" height="958" alt="image" src="https://github.com/user-attachments/assets/01c99e7f-bf19-4742-9956-4e50ba2b906b" />
 
 
+## Kolmen komentoriviohjelman asentaminen samanaikaisesti
+
+Seuraavaksi asensin kolme erilaista komentoriviohjelmaa työasemalle samanaikaisesti. 
+Asensin seuraavat ohjelmat:
+ - Cool-Retro-Term, kyseinen sovellus tekee terminaalista retron näköisen. Asensin kyseisen ohjelman, koska olen nuorempana pelannut paljon Fallout sarjan pelejä ja halusin jotain personaalista työasemalle, vaikka se ei olisi kovin käytännölinen pitkällä aikavälillä.
+ - Terminator Terminal Emulator, mahdollistaa terminaali-ikkunan jakamisen ja säätämisen omien preferenssien mukaan.
+ - Quake 3, Dropdown terminaali, joka mahdollistaa komentorivin nopean käytön.
+
+Asensin kaikki sovellukset syöttämällä terminaaliin seuraavan komennon "sudo apt install 
+
+<img width="1866" height="196" alt="image" src="https://github.com/user-attachments/assets/96e6fd05-2a63-46dd-aeed-1424bad99d0a" />
+
+
+<img width="1856" height="1082" alt="image" src="https://github.com/user-attachments/assets/7acef721-8b3e-40ab-af4e-7f1eb3139ad8" />
+
+
+
+<img width="1939" height="1072" alt="image" src="https://github.com/user-attachments/assets/149de2ea-b4a5-4d76-980f-35187c72ddb0" />
+
+
+
+
+
 
 
 
@@ -33,5 +56,13 @@ Hyväksyin asennuksen syöttämällä "Y", asennus onnistui ja tarkastin vielä 
 https://micro-editor.github.io - Mircro-editori Linuxille. 
 
 https://github.com/zyedidia/micro#installation - Micro-editorin asentaminen.
+
+https://itsfoss.com/cool-retro-term - Retro terminaali Linux
+
+https://gnome-terminator.org 
+
+https://github.com/Guake/guake - Guake 3 
+
+
 
 
