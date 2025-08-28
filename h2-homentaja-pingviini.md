@@ -106,8 +106,9 @@ Seuraavaksi siirryin lokihakemistoon syöttämällä komennot "cd.." ja "cd /var
 
 <img width="1676" height="434" alt="image" src="https://github.com/user-attachments/assets/e4723dce-7e59-4f13-9952-56ec772c5755" />
 
-Siirryin "Journal" -hakemistoon ja syötin cat -komennon ja putkitin samalla "less" perään. Tein kuitekin virheen koska yritin lukea hakemistoa. Terminaali meni tästä looppiin ja minun piti pystäyttää toiminto painamalla ctrl + z yhdistelmällä. Tämän jälkeen siiryin hakemistoon ja cat- komennolla tarkistin lokeja.
+Siirryin "Journal" -hakemistoon ja syötin cat -komennon ja putkitin samalla "less" perään. Tein kuitekin virheen koska yritin lukea hakemistoa. Terminaali meni tästä looppiin ja minun piti pystäyttää toiminto painamalla ctrl + z yhdistelmällä. Tämän jälkeen siiryin hakemistoon ja cat- komennolla tarkistin lokeja. 
 
+Esimerkkikuvassa avasin "user-1000.journal". 
 <img width="2002" height="1194" alt="image" src="https://github.com/user-attachments/assets/6f15fd77-b11d-4105-85ff-ae531f563a8d" />
 
 
