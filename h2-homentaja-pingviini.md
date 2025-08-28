@@ -40,6 +40,10 @@ Asensin kaikki sovellukset syöttämällä terminaaliin seuraavan komennon "sudo
 
 <img width="1939" height="1072" alt="image" src="https://github.com/user-attachments/assets/149de2ea-b4a5-4d76-980f-35187c72ddb0" />
 
+<img width="1392" height="1056" alt="image" src="https://github.com/user-attachments/assets/31bc9fd6-045f-4521-95a1-8e60edfe3efe" />
+
+<img width="1028" height="958" alt="image" src="https://github.com/user-attachments/assets/01c99e7f-bf19-4742-9956-4e50ba2b906b" />
+
 
 # Terminator 
 
@@ -85,10 +89,6 @@ Käytin komentoa "cat networks", tämän avulla luin mitä "networks" tiedosto s
 
 <img width="1670" height="244" alt="image" src="https://github.com/user-attachments/assets/e550f359-30d8-4c74-931a-27755ae85f21" />
 
-
-<img width="1392" height="1056" alt="image" src="https://github.com/user-attachments/assets/31bc9fd6-045f-4521-95a1-8e60edfe3efe" />
-
-<img width="1028" height="958" alt="image" src="https://github.com/user-attachments/assets/01c99e7f-bf19-4742-9956-4e50ba2b906b" />
 
 Seuraavaksi palasin takaisin juurihakemistoon syöttämällä komennon "cd ..". 
 
