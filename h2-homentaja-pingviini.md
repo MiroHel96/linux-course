@@ -24,6 +24,28 @@ Hyväksyin asennuksen syöttämällä "Y", asennus onnistui ja tarkastin vielä 
 
 <img width="1028" height="958" alt="image" src="https://github.com/user-attachments/assets/01c99e7f-bf19-4742-9956-4e50ba2b906b" />
 
+Seuraavaksi palasin takaisin juurihakemistoon syöttämällä komennon "cd ..". 
+
+
+<img width="1678" height="236" alt="image" src="https://github.com/user-attachments/assets/6fd45c6d-0c57-4aca-879a-bf1248fbfd25" />
+
+Seuraavaksi siirryin hakemistoon "Media" syöttämällä komennon "cd /media". Kyseisestä hakemistosta löytyi cdrom ja cdrom0. Jälkimmäinen on linkki ensimmäiseen kansioon. 
+
+
+<img width="1684" height="506" alt="image" src="https://github.com/user-attachments/assets/81907043-f902-4018-8ca1-29c30b41f061" />
+
+Seuraavaksi siirryin lokihakemistoon syöttämällä komennot "cd.." ja "cd /var/log/". 
+
+
+<img width="1676" height="434" alt="image" src="https://github.com/user-attachments/assets/e4723dce-7e59-4f13-9952-56ec772c5755" />
+
+Siirryin "Journal" -hakemistoon ja syötin cat -komennon ja putkitin samalla "less" perään. Tein kuitekin virheen koska yritin lukea hakemistoa. Terminaali meni tästä looppiin ja minun piti pystäyttää toiminto painamalla ctrl + z yhdistelmällä. Tämän jälkeen siiryin hakemistoon ja cat- komennolla tarkistin lokeja.
+
+<img width="2002" height="1194" alt="image" src="https://github.com/user-attachments/assets/6f15fd77-b11d-4105-85ff-ae531f563a8d" />
+
+
+
+
 
 ## Kolmen komentoriviohjelman asentaminen samanaikaisesti
 
