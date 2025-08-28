@@ -20,6 +20,10 @@ Aloitin asentamisen Avaamalla VirtualBoxin ja käynnistämällä virtuaalikoneen
 
 Hyväksyin asennuksen syöttämällä "Y", asennus onnistui ja tarkastin vielä sovelluksen olemassa olon Application finderin avulla työpöydältä. 
 
+<img width="1392" height="1056" alt="image" src="https://github.com/user-attachments/assets/31bc9fd6-045f-4521-95a1-8e60edfe3efe" />
+
+<img width="1028" height="958" alt="image" src="https://github.com/user-attachments/assets/01c99e7f-bf19-4742-9956-4e50ba2b906b" />
+
 
 ## Kolmen komentoriviohjelman asentaminen samanaikaisesti
 
@@ -40,9 +44,6 @@ Asensin kaikki sovellukset syöttämällä terminaaliin seuraavan komennon "sudo
 
 <img width="1939" height="1072" alt="image" src="https://github.com/user-attachments/assets/149de2ea-b4a5-4d76-980f-35187c72ddb0" />
 
-<img width="1392" height="1056" alt="image" src="https://github.com/user-attachments/assets/31bc9fd6-045f-4521-95a1-8e60edfe3efe" />
-
-<img width="1028" height="958" alt="image" src="https://github.com/user-attachments/assets/01c99e7f-bf19-4742-9956-4e50ba2b906b" />
 
 
 # Terminator 
