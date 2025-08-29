@@ -18,7 +18,9 @@ Aloitin asentamisen Avaamalla VirtualBoxin ja käynnistämällä virtuaalikoneen
 
 <img width="1390" height="1054" alt="image" src="https://github.com/user-attachments/assets/777e7d4a-ab3c-4f95-bc3d-1c931b4e3d5a" />
 
+
 Hyväksyin asennuksen syöttämällä "Y", asennus onnistui ja tarkastin vielä sovelluksen olemassa olon Application finderin avulla työpöydältä. 
+
 
 <img width="1392" height="1056" alt="image" src="https://github.com/user-attachments/assets/31bc9fd6-045f-4521-95a1-8e60edfe3efe" />
 
@@ -35,18 +37,18 @@ Asensin seuraavat ohjelmat:
 
 Asensin kaikki sovellukset syöttämällä terminaaliin seuraavan komennon "sudo apt install cool-retro-term terminator guake". Painoin jatka eli "Y" prompttiin ja odotin sovelluksien asentumisen loppuun. Tämän jälkeen tarkistin asennuksen onnistumisen 
 
+
 <img width="1866" height="196" alt="image" src="https://github.com/user-attachments/assets/96e6fd05-2a63-46dd-aeed-1424bad99d0a" />
 
 
 <img width="1856" height="1082" alt="image" src="https://github.com/user-attachments/assets/7acef721-8b3e-40ab-af4e-7f1eb3139ad8" />
 
 
-
 <img width="1939" height="1072" alt="image" src="https://github.com/user-attachments/assets/149de2ea-b4a5-4d76-980f-35187c72ddb0" />
 
 
-
 # Terminator 
+
 
 <img width="2248" height="1260" alt="image" src="https://github.com/user-attachments/assets/abb71bd0-7996-495a-872e-075016af11ce" />
 
@@ -60,30 +62,39 @@ Asensin kaikki sovellukset syöttämällä terminaaliin seuraavan komennon "sudo
 
 <img width="2874" height="856" alt="image" src="https://github.com/user-attachments/assets/b66636a7-a296-4abf-ba01-aa6f679a8008" />
 
+
 # FIlesystemissä liikkuminen
 
 Tässä vaiheessa liikuin tärkeiden kansioden sisällä ja näytän kuvien avulla. 
 
 Root -hakemisto
+
+
 <img width="1672" height="532" alt="image" src="https://github.com/user-attachments/assets/55fd8ecf-432a-4dec-9085-4ccd30240d12" />
 
 Home -hakemisto
 
+
 <img width="1670" height="176" alt="image" src="https://github.com/user-attachments/assets/aaecb3d5-7356-46a2-8273-fb4cfdbf5794" />
+
 
 Tässä näkyy kuinka luomani testitiedosto löytyy kotihakemiston työpöytä kansiosta
 
 
 <img width="1672" height="304" alt="image" src="https://github.com/user-attachments/assets/429d0bb2-6c46-4867-84e8-f14728d529e4" />
 
+
 /Etc 
 
 
 <img width="1676" height="700" alt="image" src="https://github.com/user-attachments/assets/49ad7fd4-e8b2-4c11-9889-cf99998ddc49" />
 
+
 Syöttämällä komennon "ls -l" hakemiston sisältö saadaan tulostettua laajempana. Kuvassa vasemmassa reunassa näkyvä merkintä "drwxr.." merkintä kertoo tiedoston tyypin ja millaiset oikeudet sen muokkaamiseen/käyttöön on. En käy niitä läpi tässä, koska aihealue on suht laaja. Ensimmäinen kirjain kuitekin kertoo mikä tiedostotyyppi on kyseessä. "d" tarkoittaa että kyseessä hakemisto/kansio sen sijaan pelkkä "-" tarkoittaa, että kyseessä on perustiedosto. Esim tekstitiedosto. 
 
+
 <img width="1678" height="558" alt="image" src="https://github.com/user-attachments/assets/84f5f07e-a50d-4767-affc-72eed24a9d35" />
+
 
 Käytin komentoa "cat networks", tämän avulla luin mitä "networks" tiedosto sisälti.
 
@@ -96,10 +107,12 @@ Seuraavaksi palasin takaisin juurihakemistoon syöttämällä komennon "cd ..".
 
 <img width="1678" height="236" alt="image" src="https://github.com/user-attachments/assets/6fd45c6d-0c57-4aca-879a-bf1248fbfd25" />
 
+
 Seuraavaksi siirryin hakemistoon "Media" syöttämällä komennon "cd /media". Kyseisestä hakemistosta löytyi cdrom ja cdrom0. Jälkimmäinen on linkki ensimmäiseen kansioon. 
 
 
 <img width="1684" height="506" alt="image" src="https://github.com/user-attachments/assets/81907043-f902-4018-8ca1-29c30b41f061" />
+
 
 Seuraavaksi siirryin lokihakemistoon syöttämällä komennot "cd.." ja "cd /var/log/". 
 
@@ -109,6 +122,8 @@ Seuraavaksi siirryin lokihakemistoon syöttämällä komennot "cd.." ja "cd /var
 Siirryin "Journal" -hakemistoon ja syötin cat -komennon ja putkitin samalla "less" perään. Tein kuitekin virheen koska yritin lukea hakemistoa. Terminaali meni tästä looppiin ja minun piti pystäyttää toiminto painamalla ctrl + z yhdistelmällä. Tämän jälkeen siiryin hakemistoon ja cat- komennolla tarkistin lokeja. 
 
 Esimerkkikuvassa avasin "user-1000.journal". 
+
+
 <img width="2002" height="1194" alt="image" src="https://github.com/user-attachments/assets/6f15fd77-b11d-4105-85ff-ae531f563a8d" />
 
 
@@ -122,11 +137,15 @@ Tässä vaiheessa demostroin grep-komennon eri käyttötarkoituksia. Grep on tar
 
 Loint työpöydälle "TestFile" -nimisen tekstitiedoston ja lisäsin sinne satunnaisesti eri autojen merkkejä. Seuraavaksi avasin terminaalin ja syötin komennon "grep -e "Audi" -e "BMW" -e "Toyota" TestFile". Kyseinen komento etsii vastinetta antamilleni automerkeille testitiedoston sisältä ja tulostaa tulokset.
 
+
 <img width="750" height="240" alt="image" src="https://github.com/user-attachments/assets/a3fc44ab-7b12-4d50-841f-f28bdf5f6d1e" />
+
 
 Seuraavaksi syötin komennon "grep -w "DHCP" dhcp.conf", kyseinen komento hakee vastineita hakusanalle tekstiriveiltä. 
 
+
 <img width="808" height="158" alt="image" src="https://github.com/user-attachments/assets/93975cde-601f-44d3-819a-f7cdfa417b61" />
+
 
 Grep -komennolle löytyy paljon hyödyllisiä yhdistelmiä, mutta en käy niitä läpi tässä sen tarkemmin. Tämän esimerkin tarkoitus oli demostroida komennon perusideaa.
 
@@ -134,8 +153,22 @@ Grep -komennolle löytyy paljon hyödyllisiä yhdistelmiä, mutta en käy niitä
 
 Putkittaminen on useiden komentojen yhdistämistä yhteen komentoon. Tämän avulla nopeutetaan työskentelyä ja kokeneet käyttäjät pystyvätkin tämän avulla ajamaan hyvin monimutkaisia toimintoja. 
 
-Lisäsin esimerkkitekstiä työpöydällä olevaan "TestFile.txt" -tiedostoon ja avasin tämän jälkeen terminaalin. Syötin terminaa
+Lisäsin esimerkkitekstiä työpöydällä olevaan "TestFile.txt" -tiedostoon ja avasin tämän jälkeen terminaalin. Syötin terminaaliin seuraavan komennon "cat TestFile.txt | grep -Ei "Car|Ferrari|Toyota". Vastauksena sain kokonaiset tekstirivit, jotka sisältivät haluamani hakusanat. 
 
+<img width="806" height="270" alt="image" src="https://github.com/user-attachments/assets/98f7268e-073e-415d-9796-2c80a389230d" />
+
+
+## Testityöaseman rauta 
+
+Tässä vaiheessa listasin virtuaalikoneeni raudan käyttämällä komentoa "sudo lshw -short -sanitize". 
+
+Kuten kuvassa näkyy, komento listasi järjestelmän laitetiedot seuraavasti:
+ - H/W path on laitteen fyysinen polku/kytkennän järjestys. Kuvastaa esim sitä, että prosessori on korkeammassa prioriteetissa kuin näppäimistö
+ - Device on kuvaus, missä laite sijaitsee tiedostojärjestelmässä. Tämä koskee oheislaitteita ja komponentteja kuten hiiret, näppäimisöt ja kovalevyt. 
+ - Class, eli luokka kuvastaa minkä tyypin laite on kyseessä esim. prosessori, muistit, verkkoadapteri, käyttöjärjestelmä yms.
+ - Description, kuvaa tarkemmin laitteen tietoja, esim muistin määrä, prosessorin malli tai mikä hiiri on koneessa kiinni.
+
+<img width="1000" height="662" alt="image" src="https://github.com/user-attachments/assets/865756bb-e570-4647-87bc-a0f3d0987307" />
 
 
 ## Lähdeluettelo 
@@ -155,6 +188,8 @@ https://www.geeksforgeeks.org/linux-unix/grep-command-in-unixlinux
 https://serveracademy.com/blog/grep-multiple-strings-in-linux/#:~:text=The%20simplest%20way%20to%20search,for%20in%20a%20single%20command.
 
 https://www.geeksforgeeks.org/linux-unix/piping-in-unix-or-linux
+
+https://linuxhandbook.com/lshw-command
 
 
 
