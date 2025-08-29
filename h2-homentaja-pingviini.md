@@ -124,7 +124,15 @@ Loint työpöydälle "TestFile" -nimisen tekstitiedoston ja lisäsin sinne satun
 
 <img width="750" height="240" alt="image" src="https://github.com/user-attachments/assets/a3fc44ab-7b12-4d50-841f-f28bdf5f6d1e" />
 
+Seuraavaksi syötin komennon "grep -w "DHCP" dhcp.conf", kyseinen komento hakee vastineita hakusanalle tekstiriveiltä. 
 
+<img width="808" height="158" alt="image" src="https://github.com/user-attachments/assets/93975cde-601f-44d3-819a-f7cdfa417b61" />
+
+Grep -komennolle löytyy paljon hyödyllisiä yhdistelmiä, mutta en käy niitä läpi tässä sen tarkemmin. Tämän esimerkin tarkoitus oli demostroida komennon perusideaa.
+
+## Piping eli putkittaminen
+
+Putkittaminen on useiden komentojen yhdistämistä yhteen komentoon 
 
 
 
@@ -143,6 +151,8 @@ https://github.com/Guake/guake - Guake 3
 https://www.geeksforgeeks.org/linux-unix/grep-command-in-unixlinux 
 
 https://serveracademy.com/blog/grep-multiple-strings-in-linux/#:~:text=The%20simplest%20way%20to%20search,for%20in%20a%20single%20command.
+
+https://www.geeksforgeeks.org/linux-unix/piping-in-unix-or-linux
 
 
 
