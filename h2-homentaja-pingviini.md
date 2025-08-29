@@ -132,7 +132,9 @@ Grep -komennolle löytyy paljon hyödyllisiä yhdistelmiä, mutta en käy niitä
 
 ## Piping eli putkittaminen
 
-Putkittaminen on useiden komentojen yhdistämistä yhteen komentoon 
+Putkittaminen on useiden komentojen yhdistämistä yhteen komentoon. Tämän avulla nopeutetaan työskentelyä ja kokeneet käyttäjät pystyvätkin tämän avulla ajamaan hyvin monimutkaisia toimintoja. 
+
+Lisäsin esimerkkitekstiä työpöydällä olevaan "TestFile.txt" -tiedostoon ja avasin tämän jälkeen terminaalin. Syötin terminaa
 
 
 
