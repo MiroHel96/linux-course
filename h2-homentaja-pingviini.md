@@ -116,6 +116,18 @@ Esimerkkikuvassa avasin "user-1000.journal".
 <img width="1980" height="1182" alt="image" src="https://github.com/user-attachments/assets/b969f9e4-32ac-4175-a359-919f7c10a34e" />
 
 
+## Grep -kommennon käyttäminen 
+
+Tässä vaiheessa demostroin grep-komennon eri käyttötarkoituksia. Grep on tarkoitettu tiedostojen etsimiseen tiedostojärjestelmästä.
+
+Loint työpöydälle "TestFile" -nimisen tekstitiedoston ja lisäsin sinne satunnaisesti eri autojen merkkejä. Seuraavaksi avasin terminaalin ja syötin komennon "grep -e "Audi" -e "BMW" -e "Toyota" TestFile". Kyseinen komento etsii vastinetta antamilleni automerkeille testitiedoston sisältä ja tulostaa tulokset.
+
+<img width="750" height="240" alt="image" src="https://github.com/user-attachments/assets/a3fc44ab-7b12-4d50-841f-f28bdf5f6d1e" />
+
+
+
+
+
 ## Lähdeluettelo 
 
 https://micro-editor.github.io - Mircro-editori Linuxille. 
@@ -127,6 +139,10 @@ https://itsfoss.com/cool-retro-term - Retro terminaali Linux
 https://gnome-terminator.org 
 
 https://github.com/Guake/guake - Guake 3 
+
+https://www.geeksforgeeks.org/linux-unix/grep-command-in-unixlinux 
+
+https://serveracademy.com/blog/grep-multiple-strings-in-linux/#:~:text=The%20simplest%20way%20to%20search,for%20in%20a%20single%20command.
 
 
 
