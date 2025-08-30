@@ -1,4 +1,45 @@
 # Tiivistelmä 
+ - Linuxissa ja Unixsissa käytettävä komentokehote on kestänyt läpi aejan. Se on ollut käytössä ennen käyttöjärjestelmiä ja internettiä. Sen etuja on nopeus ja helppo automatisointi.
+-Komentokehotteessa ollaan aina hakemistossa, hyviä peruskomentoja ovat:
+  - pwd, tulosta nykyinen hakemisto
+  - ls, listaa hakemiston sisältö
+  - cd (tiedostopolku) ja cd .. (liiku taaksepäin hakemistossa)
+
+ Tiedoston manipulointi:
+   - nano, editoi tekstitiedosta
+   - mkdir, luo kansio
+   - mv, liikuta tiedostoa
+   - cp, kopio tiedosto
+   - rm ja rmdir - tiedoston- ja kansion poistaminen
+
+Etäyhteyden ottaminen SSH:
+   - ssh domain.com
+   - exit, poistu etäyhteydestä
+   - scp -r Folder domain.com: public_html/, kopio tiedosto turvallisesti     
+     etäyhteyden päässä olevasta koneesta
+
+Help:
+    -man, komennolla saa esiin halutun komennon manuaalin
+    - ls --help
+    - wget -h
+
+History and Guessing:
+     - Tabulaattorilla voi täydentää komentoja
+     - Nuoli ylöspäin näyttää edellisen komennon
+     - Komentoa voi muokata liikkumalla nuolella oikealle tai vasemmalle
+     - histoy, näyttää komentojen historian
+
+Tärkeitä hakemistoja:
+    - / , juuri hakemisto 
+    - /home/ , kotihakemisto. /home/miro/ , kyseiseen hakemistoon käyttäjä voi        tallentaa pysyvästi omia tiedostoja ilman sudo -oikeuksia.
+    - /etc/ , järjestelmän asetukset 
+    - /media/, irroitetava media löytyy tästä hakemistosta
+    - /var/log , järjestelmän lokit löytyvät täältä
+
+Järjestelmänvalvojan oikeudet 
+    - sudo (super user), tällä komennolla voidaan ajaa toimintoja root -              käyttäjän oikeuksilla. 
+    - Sudon avulla voidaan tehdä erilaisia toimenpiteitä järjestelmässä, jotka       vaativat korotettuja oikeuksia. Näitä ovat esimerkiksi sovelluksien            asentaminen sekä poistaminen, käyttäjien luominen, hallinta ja                 muokkaaminen.
+    
 
 
 ## Host-operating system spesifikaatiot
