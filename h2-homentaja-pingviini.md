@@ -1,4 +1,8 @@
-# Tiivistelmä 
+# H2 Komentaja Pingviini 
+
+Tämä rapotti on kirjoitettu terokarvinen.com - LInux palvelimet 2025 alkusyksy -kurssin h2 tehtävän pohjalle. Alla oleva tiiviste on kirjoitettu hyödyntämällä Tero Karvisen kirjoittaman Command Line Basics Revisited artikkelin avulla.
+
+# Komentokehote tiivistettynä
  - Linuxissa ja Unixsissa käytettävä komentokehote on kestänyt läpi aejan. Se on ollut käytössä ennen käyttöjärjestelmiä ja internettiä. Sen etuja on nopeus ja helppo automatisointi.
 -Komentokehotteessa ollaan aina hakemistossa, hyviä peruskomentoja ovat:
   - pwd, tulosta nykyinen hakemisto
@@ -215,6 +219,10 @@ Kuten kuvassa näkyy, komento listasi järjestelmän laitetiedot seuraavasti:
 
 
 ## Lähdeluettelo 
+
+https://terokarvinen.com/linux-palvelimet
+
+https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited
 
 https://micro-editor.github.io
 
