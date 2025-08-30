@@ -168,10 +168,10 @@ Lisäsin esimerkkitekstiä työpöydällä olevaan "TestFile.txt" -tiedostoon ja
 Tässä vaiheessa listasin virtuaalikoneeni raudan käyttämällä komentoa "sudo lshw -short -sanitize". 
 
 Kuten kuvassa näkyy, komento listasi järjestelmän laitetiedot seuraavasti:
- - H/W path on laitteen fyysinen polku/kytkennän järjestys. Kuvastaa esim sitä, että prosessori on korkeammassa prioriteetissa kuin näppäimistö
+ - H/W path on laitteen fyysinen polku/kytkennän järjestys. 
  - Device on kuvaus, missä laite sijaitsee tiedostojärjestelmässä. Tämä koskee oheislaitteita ja komponentteja kuten hiiret, näppäimisöt ja kovalevyt. 
- - Class, eli luokka kuvastaa minkä tyypin laite on kyseessä esim. prosessori, muistit, verkkoadapteri, käyttöjärjestelmä yms.
- - Description, kuvaa tarkemmin laitteen tietoja, esim muistin määrä, prosessorin malli tai mikä hiiri on koneessa kiinni.
+ - Class eli luokka kuvastaa minkä tyypin laite on kyseessä esim. prosessori, muistit, verkkoadapteri, käyttöjärjestelmä yms.
+ - Description kuvaa tarkemmin laitteen tietoja, esim muistin määrä, prosessorin malli tai mikä hiiri on koneessa kiinni.
 
 <img width="1000" height="662" alt="image" src="https://github.com/user-attachments/assets/865756bb-e570-4647-87bc-a0f3d0987307" />
 
