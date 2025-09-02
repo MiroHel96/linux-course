@@ -61,7 +61,7 @@ Aloitin asentamisen avaamalla VirtualBoxin ja käynnistämällä virtuaalikoneen
 <img width="1390" height="1054" alt="image" src="https://github.com/user-attachments/assets/777e7d4a-ab3c-4f95-bc3d-1c931b4e3d5a" />
 
 
-Jatkoin asennusta syöttämällä "Continue" -kehotteeseen "Y". Asennus suoriutui onnistuneesti ja tarkastin vielä sovelluksen olemassa olon Application finderin avulla työpöydältä. 
+Jatkoin asennusta syöttämällä "Continue" -kehotteeseen "Y". Asennus suoriutui onnistuneesti ja tarkastin vielä sovelluksen olemass aolon Application finderin avulla työpöydältä. 
 
 
 <img width="1392" height="1056" alt="image" src="https://github.com/user-attachments/assets/31bc9fd6-045f-4521-95a1-8e60edfe3efe" />
@@ -154,7 +154,7 @@ Seuraavaksi palasin takaisin juurihakemistoon syöttämällä komennon "cd ..".
 
 Media -hakemisto
 
-Seuraavaksi siirryin hakemistoon "Media" syöttämällä komennon "cd /media". Kyseisestä hakemistosta löytyi cdrom ja cdrom0. Jälkimmäinen on linkki ensimmäiseen kansioon. Kansio sisältää irroitettavat media-laitteet kuten muistitikut ja kovalevyt - terokarvinen.com
+Seuraavaksi siirryin hakemistoon "Media" syöttämällä komennon "cd /media". Kyseisestä hakemistosta löytyi cdrom ja cdrom0. Jälkimmäinen on linkki ensimmäiseen kansioon. Kansio sisältää irroitettavat media-laitteet kuten muistitikut ja kovalevyt.
 
 
 <img width="1684" height="506" alt="image" src="https://github.com/user-attachments/assets/81907043-f902-4018-8ca1-29c30b41f061" />
@@ -180,7 +180,7 @@ Esimerkkikuvassa avasin "user-1000.journal".
 
 ## Grep -kommennon käyttäminen 
 
-Tässä vaiheessa demostroin grep-komennon eri käyttötarkoituksia. Grep on tarkoitettu tiedostojen etsimiseen tiedostojärjestelmästä. GeekForgeeks - grep command in Unix/Linux, 
+Tässä vaiheessa demostroin grep-komennon eri käyttötarkoituksia. Grep on tarkoitettu tiedostojen etsimiseen tiedostojärjestelmästä. GeekForgeeks - grep command in Unix/Linux.
 
 Loin työpöydälle "TestFile" -nimisen tekstitiedoston ja lisäsin sinne satunnaisesti eri autojen merkkejä. Seuraavaksi avasin terminaalin ja syötin komennon "grep -e "Audi" -e "BMW" -e "Toyota" TestFile". Kyseinen komento etsii vastinetta antamilleni automerkeille testitiedoston sisältä ja tulostaa tulokset. Server Academy - Grep Multiple String in Linux
 
@@ -188,7 +188,7 @@ Loin työpöydälle "TestFile" -nimisen tekstitiedoston ja lisäsin sinne satunn
 <img width="750" height="240" alt="image" src="https://github.com/user-attachments/assets/a3fc44ab-7b12-4d50-841f-f28bdf5f6d1e" />
 
 
-Seuraavassa esimerkissä syötin komennon "grep -w "DHCP" dhcp.conf".  kyseinen komento hakee vastineita hakusanalle tekstiriveiltä. Esimerkissä etsin tiedoston esimerkiksi "/etc" -kansiosta.
+Seuraavassa esimerkissä syötin komennon "grep -w "DHCP" dhcp.conf". Kyseinen komento hakee vastineita hakusanalle tekstiriveiltä. Esimerkissä etsin tiedoston esimerkiksi "/etc" -kansiosta.
 
 
 <img width="808" height="158" alt="image" src="https://github.com/user-attachments/assets/93975cde-601f-44d3-819a-f7cdfa417b61" />
