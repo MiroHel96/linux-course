@@ -1,6 +1,6 @@
 # H2 Komentaja Pingviini 
 
-Tämä rapotti on kirjoitettu terokarvinen.com - LInux palvelimet 2025 alkusyksy -kurssin h2 tehtävän pohjalle. Alla oleva tiiviste on kirjoitettu hyödyntämällä Tero Karvisen kirjoittaman Command Line Basics Revisited artikkelin avulla.
+Tämä rapotti on kirjoitettu terokarvinen.com - Lnux palvelimet 2025 alkusyksy -kurssin h2 tehtävän pohjalle. Alla oleva tiiviste on kirjoitettu hyödyntämällä Tero Karvisen kirjoittaman Command Line Basics Revisited artikkelin avulla.
 
 # Komentokehote tiivistettynä
  - Linuxissa ja Unixsissa käytettävä komentokehote on kestänyt läpi aejan. Se on ollut käytössä ennen käyttöjärjestelmiä ja internettiä. Sen etuja on nopeus ja helppo automatisointi.
