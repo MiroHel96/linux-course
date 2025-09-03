@@ -27,6 +27,15 @@ Terminaali-ikkunan kautta pystyi myös testaamaan sivun toimivuutta ja kokeilink
 <img width="958" height="252" alt="image" src="https://github.com/user-attachments/assets/b745fa5a-14a8-4834-bb0c-5599dd81e59e" />
 
 
+
+# Oman verkkosivun luominen
+
+Tässä vaiheessa loin uuden index.html tiedoston (sijainti) ja testasin sen toimivuuden apache -palvelimellani. Poistin ja loin uuden index.html tiedoston /var/www/html -polkuun. 
+
+
+<img width="632" height="502" alt="image" src="https://github.com/user-attachments/assets/dde0195b-fd1d-4dd0-b514-8992e849fae0" />
+
+
 # Lähdeluettelo 
 
 https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-debian-11
