@@ -41,6 +41,13 @@ Tiedoston luomisen jälkeen testasin sivun toimivuutta verkkoselaimessa osoittee
 
 <img width="838" height="434" alt="image" src="https://github.com/user-attachments/assets/4c65c02e-e4e7-47e6-a833-10203b8f2a29" />
 
+#Palomuurin salliminen 
+
+Asensin komentohekotteela ufw
+
+<img width="556" height="602" alt="image" src="https://github.com/user-attachments/assets/00c71a85-0cb7-42bf-b955-c7877d68cdda" />
+
+
 
 # C Etusivu uusiksi 
 
