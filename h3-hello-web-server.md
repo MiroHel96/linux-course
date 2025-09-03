@@ -2,7 +2,7 @@
 
 ## H3 Demonit 
 
-# Apache 2 asentaminen Linux
+# (a Apache 2 asentaminen Linux
 
 Tässä raportiss asensin virtuaalikoneelleni Apache 2 web -palvelimen. Aloitin asennuksen avaamalla virtuaalikoneeni, avasin terminaali-ikkunna ja syötin seuraavan komennon "sudo apt update" ja tämän jälkeen komennon "sudo apt install apache2". 
 
@@ -26,7 +26,7 @@ Terminaali-ikkunan kautta pystyi myös testaamaan sivun toimivuutta ja kokeilink
 
 <img width="958" height="252" alt="image" src="https://github.com/user-attachments/assets/b745fa5a-14a8-4834-bb0c-5599dd81e59e" />
 
-
+# (b lokit
 
 # Oman verkkosivun luominen
 
@@ -35,6 +35,22 @@ Tässä vaiheessa loin uuden index.html tiedoston (sijainti) ja testasin sen toi
 
 <img width="632" height="502" alt="image" src="https://github.com/user-attachments/assets/dde0195b-fd1d-4dd0-b514-8992e849fae0" />
 
+<img width="618" height="74" alt="image" src="https://github.com/user-attachments/assets/d46fd77f-c045-4185-b8ae-43d5b6ac1df6" />
+
+Tiedoston luomisen jälkeen testasin sivun toimivuutta verkkoselaimessa osoitteessa "localhost". 
+
+<img width="838" height="434" alt="image" src="https://github.com/user-attachments/assets/4c65c02e-e4e7-47e6-a833-10203b8f2a29" />
+
+
+# C Etusivu uusiksi 
+
+# (e Validi HTML5 sivu
+
+# (f curl -l ja curl esimerkit
+
+# (m Vapaaehtoinen 1
+
+# (0 vapaaehtoinen 2
 
 # Lähdeluettelo 
 
