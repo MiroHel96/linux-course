@@ -124,7 +124,7 @@ Tämän jälkeen testasin avata verkkosivun selaimesta, mutta lopputulos ei silt
 
 Ongelma ilmeisesti oli tiedostojen oikeuksissa, tarkasin kyseisestä ohjeesta kohdan 5. name based virtual hosts ja siellä mainitaan, että apachen pitää pystyä lukemaan tiedostot, jotta verkkosivu toimii. https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-03092025.md 
 
-Seuraavaksi tarkastin tiedostojen ja kansioiden oikeudet. 
+Seuraavaksi tarkastin tiedostojen ja kansioiden oikeudet. Ne näyttivät oikelta, mutta en ole varma! kokeillaan uudestaan myöhemmin. 
 
 
 
