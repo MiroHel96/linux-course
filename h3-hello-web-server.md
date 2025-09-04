@@ -32,7 +32,22 @@ Tässä raportin vaiheessa tarkastelin apache2 palvelimeni luomia lokeja. En oll
 
 Apache2 lokit sijaitsevat tiedostojärjestelmässä polussa /var/log/apache2, siirryin kyseiseen tiedostopolkuun terminaali-ikkunassa. Seuraavaksi avasin verkkoselaimen työpäydällä ja kirjoitin selaimen hakuun "localhost". 
 
+<img width="936" height="594" alt="image" src="https://github.com/user-attachments/assets/9cd30598-8937-4b1c-9849-f2e8f19a5475" />
+
+Kuten, kuvassa näkyy lokeihin ilmestyy HTTP GET -kättely pyyntö aina, kun verkkosivun lataa uudelleen. Lokien tarkempaa analyysia varten löysin hyvän artikkelin verkosta: https://www.sumologic.com/blog/apache-access-log
+
+
 <img width="954" height="1028" alt="image" src="https://github.com/user-attachments/assets/c41fdf26-1578-4456-866c-46a5161df0b5" />
+
+Lokit analysoituna vasemmalta oikealle kohta kohdalta:
+ - 127.0.0.1 on yhteyspyynnön tekijän IP-osoite.
+ - - - Tässä kohtaa pitäisi näky käyttäjän identiteetti, ensimmäinen viiva RFC1413 indentiteetti ja toinen viima ei autentikoitua käyttäjänimeä - Copilot
+  - [04/Sep/2025:16:56:27 +0300], tämä on pyynnön päivämäärä ja kellonaika.
+  - "GET / HTTP/1.1", pyynnön tyyppi ja tässätapauksessa kyseessä on perus HTTP pyyntö.
+  - 200 HTTP statuksen koodi
+  - 481 objektin koko joka palautettiin clientille, eli pyynnön tehneelle. 
+
+<img width="924" height="44" alt="image" src="https://github.com/user-attachments/assets/ca46e3d3-92e6-4ca3-98bf-186b522108ca" />
 
 
 
@@ -42,7 +57,6 @@ Tässä vaiheessa loin uuden index.html tiedoston (sijainti) ja testasin sen toi
 
 Avasin tiedoston "tail -f" -komennolla. Kyseinen komento näyttää tiedoston viimeiset rivit, -f valinta tulostaa lokin tiedot reaaliajassa terminaali-ikkunaan, jos muutoksia tapahtuu. 
 
-<img width="936" height="594" alt="image" src="https://github.com/user-attachments/assets/9cd30598-8937-4b1c-9849-f2e8f19a5475" />
 
 
 
