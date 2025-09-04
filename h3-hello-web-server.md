@@ -122,6 +122,12 @@ Tämän jälkeen testasin avata verkkosivun selaimesta, mutta lopputulos ei silt
 
 <img width="661" height="637" alt="image" src="https://github.com/user-attachments/assets/54c92ed5-d129-47b1-9b40-38798ed9049c" />
 
+Ongelma ilmeisesti oli tiedostojen oikeuksissa, tarkasin kyseisestä ohjeesta kohdan 5. name based virtual hosts ja siellä mainitaan, että apachen pitää pystyä lukemaan tiedostot, jotta verkkosivu toimii. https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-03092025.md 
+
+Seuraavaksi tarkastin tiedostojen ja kansioiden oikeudet. 
+
+
+
 
 # (e Validi HTML5 sivu
 
