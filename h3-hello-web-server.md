@@ -78,6 +78,13 @@ Asensin komentohekotteela ufw
 
 # C Etusivu uusiksi 
 
+Tässä vaiheessa raporttia tehtäväni oli luoda uusi name based virtual host eli uusi verkkosivu nimellä hattu.example.com. Käytin sivun tekemiseen seuraavaa sivua, josta sain ohjeistuksen avulla toteutettua uuden sivun: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address
+
+ALoitin avaamlla terminaalin ja syötin siihen seuraavan komennon "sudoedit /etc/apache2/sites-available/hattu.example.com.conf". Tämän jälkeen lisäsin teksieditorissa alla olevan kuvan mukaisesti verkkosivun määritykset alla olevan kuvan mukaisesti.
+
+<img width="556" height="606" alt="image" src="https://github.com/user-attachments/assets/08eda54e-2688-4ee0-8c4d-1c126dcfd89b" />
+
+
 # (e Validi HTML5 sivu
 
 # (f curl -l ja curl esimerkit
