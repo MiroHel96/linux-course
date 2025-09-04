@@ -84,6 +84,44 @@ ALoitin avaamlla terminaalin ja syötin siihen seuraavan komennon "sudoedit /etc
 
 <img width="556" height="606" alt="image" src="https://github.com/user-attachments/assets/08eda54e-2688-4ee0-8c4d-1c126dcfd89b" />
 
+Seuraavaksi aktivoin uuden configuraation palvelimelle käyttämällä seuraavia komentoja "sudo a2ensite hattu.example.com" ja "sudo systemctl restart apache2". 
+
+<img width="539" height="130" alt="image" src="https://github.com/user-attachments/assets/d8e8cc99-6c4d-4067-8fe1-c7044a7c4c76" />
+
+Seuraavaksi loin uuden kasion ja index.html tiedoston peruskäyttäjän kotihakemistoon "public-sites". Loin kansion nimellä "hattu.example.com" ja tiedoston, kuten mainitsin index.html. Käytin seuraavia komentoja toimenpiteen suorittamiseen: 
+ - sudo mkdir -p /home/miro/public-sites/hattu.example.com/
+ - sudo echo hattu > /home/miro/public-sites/hattu.example.com/index.html
+
+Jouduin käyttämään sudo -oikeuksia näiden tekemiseen ja en ole varma, miksi näin on. Käyttöoikeudet eivät selvästi ole oikein, joten päätin selvittää asiaa hieman.
+
+<img width="545" height="181" alt="image" src="https://github.com/user-attachments/assets/89c8c4dc-bee0-44cd-80ea-5dd111dff8fb" />
+
+En pystynyt luomaan index.html tiedostoa ollenkaan.
+<img width="543" height="90" alt="image" src="https://github.com/user-attachments/assets/408a9566-4f24-427e-94c5-c8512b451613" />
+
+Loin tiedoston root -käyttäjällä, mutta tämä ei ole optimaalista. Katsoin vielä käyttöoikeudet ja kaikilla käyttäjillä on tiedostoon luku -oikeus. Tällä tosin ei pitäisi olla väliä? 
+<img width="543" height="208" alt="image" src="https://github.com/user-attachments/assets/51fcddc6-4257-44f3-9636-fdbfad971b4c" />
+
+
+ ## Curl testi
+
+ Ensimmäinen testi tuotti puutteeliset käyttöoikeudet:
+ <img width="543" height="249" alt="image" src="https://github.com/user-attachments/assets/9cb1cdd2-d582-42c9-923e-d43a6a3548ae" />
+
+Toinen testi latasi eri tiedoston sisällöin, jonka olin tehnyt aikaisemmin. Ongelmaksi epäilin, että hosts -tiedoston sisältö ei ollut muokattu uuden sivun mukaisesti. Tein tarvittavat muutokset.
+
+<img width="544" height="180" alt="image" src="https://github.com/user-attachments/assets/af9296ff-de9b-480d-8ffa-cc266777b811" />
+
+<img width="557" height="603" alt="image" src="https://github.com/user-attachments/assets/5919f85d-0f4e-46c4-8255-e71c60207a8b" />
+
+Host tiedostoon lisäsin seuraavat osoitetiedot:
+hattu.example.com
+www.hattu.example.com
+
+Tämän jälkeen testasin avata verkkosivun selaimesta, mutta lopputulos ei siltikään ollut oikein. Aloitin tekemään lisäselvitystä juurisyylle. 
+
+<img width="661" height="637" alt="image" src="https://github.com/user-attachments/assets/54c92ed5-d129-47b1-9b40-38798ed9049c" />
+
 
 # (e Validi HTML5 sivu
 
