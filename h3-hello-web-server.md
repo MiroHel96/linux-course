@@ -28,9 +28,19 @@ Terminaali-ikkunan kautta pystyi myös testaamaan sivun toimivuutta ja kokeilink
 
 # (b lokit
 
+Tässä raportin vaiheessa tarkastelin apache2 palvelimeni luomia lokeja. En ollut varma tai muista mihin polkuun lokitiedostot tallentui, joten nopean Googlettamisen jälkeen löysin artikkelin, jossa oli hyvin ohjeistettu lokien polut ja tarkasteluun käytettävät komennot: https://phoenixnap.com/kb/apache-access-log
+
+Apache2 lokit sijaitsevat tiedostojärjestelmässä polussa /var/log/apache2, siirryin kyseiseen tiedostopolkuun terminaali-ikkunassa. 
+
+
 # Oman verkkosivun luominen
 
-Tässä vaiheessa loin uuden index.html tiedoston (sijainti) ja testasin sen toimivuuden apache -palvelimellani. Poistin ja loin uuden index.html tiedoston /var/www/html -polkuun. 
+Tässä vaiheessa loin uuden index.html tiedoston (sijainti) ja testasin sen toimivuuden apache -palvelimellani. Poistin ja loin uuden index.html tiedoston /var/www/html -polkuun. Tiedostot olivat suojattu, joten kirjauduin sisälle root -käyttäjäksi ja siirryin tidostopolkuun apache2/. Kansiosta löytyi seuraavat tiedostot, access.log, error.log ja other_vhost_access.log.
+
+Avasin tiedoston "tail -f" -komennolla. Kyseinen komento näyttää tiedoston viimeiset rivit, -f valinta tulostaa lokin tiedot reaaliajassa terminaali-ikkunaan, jos muutoksia tapahtuu. 
+
+<img width="936" height="594" alt="image" src="https://github.com/user-attachments/assets/9cd30598-8937-4b1c-9849-f2e8f19a5475" />
+
 
 
 <img width="632" height="502" alt="image" src="https://github.com/user-attachments/assets/dde0195b-fd1d-4dd0-b514-8992e849fae0" />
