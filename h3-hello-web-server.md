@@ -118,6 +118,9 @@ Host tiedostoon lisäsin seuraavat osoitetiedot:
 hattu.example.com
 www.hattu.example.com
 
+<img width="395" height="364" alt="image" src="https://github.com/user-attachments/assets/787acba6-48a5-48c2-965a-d8b13fac5e4d" />
+
+
 Tämän jälkeen testasin avata verkkosivun selaimesta, mutta lopputulos ei siltikään ollut oikein. Aloitin tekemään lisäselvitystä juurisyylle. 
 
 <img width="661" height="637" alt="image" src="https://github.com/user-attachments/assets/54c92ed5-d129-47b1-9b40-38798ed9049c" />
