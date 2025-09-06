@@ -171,8 +171,14 @@ Ongelma ratkesi näiden muutoksien avulla. Seuraavaksi selvitin vielä juurisyyn
 
 <img width="666" height="674" alt="image" src="https://github.com/user-attachments/assets/bfb16cd5-7e12-4dc1-9433-1892fee38f69" />
 
+Localhost avaa 000-default.conf tiedoston mukaan index.html -tiedoston polusta "/var/www/html/index.html". Eli tästä syystä curl -komennola tai hakemalla localhost verkkoselaimesta aukeaa eri indeksitiedosto. 
+
+<img width="552" height="382" alt="image" src="https://github.com/user-attachments/assets/f287064b-e9a8-4ad2-b694-98afddd814c2" />
+
 
 # (e Validi HTML5 sivu
+
+Tässä raportin vaiheessa loin validin HTML5 -sivun. Hyödynnän tässä kohtaa edellisessä kappaleessa ollut ongelmaa eli localhost polkua. Loin uuden HTML index.html -tiedoston /var/www/html kansioon. 
 
 # (f curl -l ja curl esimerkit
 
