@@ -135,6 +135,30 @@ Ongelma ei vieläkään korjaantunut, joten jatkoin asian selvittämistä. Vää
 
 <img width="483" height="511" alt="image" src="https://github.com/user-attachments/assets/671bfee4-5d9b-4c9a-81db-2bdc760ba384" />
 
+# Ongelman ratkaisu 
+
+Kysyin CoPilotilta, mistä ongelma voisi johtua ja se ohjeisti minua avaamaan 000-default.conf tiedoston ja tarkastamaan DocumentRoot sijainnin eli /var/www/html"
+
+<img width="489" height="765" alt="image" src="https://github.com/user-attachments/assets/14acf072-39dd-4534-8fc9-1ca30450b8cf" />
+
+Seuraavaksi tarkastin käyttöoikeudet uudestaan. miro kansiossa ei ollut suortittamiseen oikeuksia toisilla käyttjäillä lisäsin ne sudo chmod 0+x /home/miro -komennola. 
+
+<img width="388" height="42" alt="image" src="https://github.com/user-attachments/assets/508f0c65-0d5d-4678-b0dd-ed44e7fe51ac" />
+Tarkasin, että oikeudet olivat oikein ja muutos oli tapahtunut.
+
+<img width="390" height="212" alt="image" src="https://github.com/user-attachments/assets/632059c7-9df6-4b6f-b2f4-01334e56cbb9" />
+
+Seuraavaksi tarkastin public-sites kansion ja sekin oli väärin, koska olin luonut sen root -oikeuksilla. 
+<img width="393" height="54" alt="image" src="https://github.com/user-attachments/assets/4f9c32fc-329a-4f1f-a13d-4a6c00c492ef" />
+
+Poistin kyseisen kansion ja sen alikansiot ja loin uudestaan saman kansion peruskäyttäjän oikeuksilla. 
+
+<img width="540" height="246" alt="image" src="https://github.com/user-attachments/assets/55621651-e175-4dff-98e7-12690f14dd84" />
+
+Lopuksi loin kokonaan uuden example.hattu.com -kansion ja index.html tiedoston peruskäyttäjän oikeuksilla sen sisälle. Seuraavaksi testasin curl -komennolla mitä tapahtui.
+
+<img width="544" height="294" alt="image" src="https://github.com/user-attachments/assets/80a61ee6-6ceb-4ac1-96ac-52eb36ef31ae" />
+
 
 # (e Validi HTML5 sivu
 
