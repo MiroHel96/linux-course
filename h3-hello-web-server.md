@@ -124,9 +124,13 @@ Tämän jälkeen testasin avata verkkosivun selaimesta, mutta lopputulos ei silt
 
 Ongelma ilmeisesti oli tiedostojen oikeuksissa, tarkasin kyseisestä ohjeesta kohdan 5. name based virtual hosts ja siellä mainitaan, että apachen pitää pystyä lukemaan tiedostot, jotta verkkosivu toimii. https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-03092025.md 
 
-Seuraavaksi tarkastin tiedostojen ja kansioiden oikeudet. Ne näyttivät oikelta, mutta en ole varma! kokeillaan uudestaan myöhemmin. 
+Seuraavaksi tarkastin tiedostojen ja kansioiden oikeudet. Ne näyttivät oikelta. Poistin ylimääräiset esimerkkitiedostot työasemalta ja tarkasin polusta "sudoedit /etc/apache2/sites-available/hattu.example.conf" konffitiedostos. Huomasin, että dokumentin polku ja juurisijainnissa "publicsites" oli kirjoitettu yhteen väliviivan sijaan. Korjasin sen muotoon "public-sites" ja testasin uudestaan verkkosivun toimivuutta. 
 
+<img width="904" height="733" alt="image" src="https://github.com/user-attachments/assets/e0f0499f-1710-44b2-81ca-82c9c846727e" />
 
+Ongelma ei vieläkään korjaantunut, joten jatkoin asian selvittämistä. Väärä tiedosto aukeaa vieläkin.
+
+<img width="483" height="511" alt="image" src="https://github.com/user-attachments/assets/671bfee4-5d9b-4c9a-81db-2bdc760ba384" />
 
 
 # (e Validi HTML5 sivu
