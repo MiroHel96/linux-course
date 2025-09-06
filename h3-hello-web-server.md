@@ -231,6 +231,18 @@ curl -I https://www.haaga-helia.fi
 
 <img width="604" height="700" alt="image" src="https://github.com/user-attachments/assets/b0eb056c-a2fe-4c2f-a4a7-0da97adab0f0" />
 
+## Otsakkeiden merkitys
+
+Komennolla curl -I palvelimelta saa ladattua paljon monipuolista tietoa, lähteinä käytin 
+ - HTTP/1.1 200 OK , tarkoittaa statusta ja tässä esimerkissä pyyntö 200 OK viittaa sivun löytymiseen.
+ - Date , kertoo ajan jolloin vastaus lähetettiin.
+ - Server, kertoo palvelinohjelmiston version ja nimen. Yleensä tämä on piilotettu tietoturvasyistä, koska versiotiedolla voidaan etsiä tiedettyjä haavoittuvuuksia.
+ - Location, kertoo uudelleenohjauksen osoitteen.
+
+HTTP otsikoita on todella paljon ja yllä oleville löysin selitykset: https://en.wikipedia.org/wiki/List_of_HTTP_header_fields ja tarkemmat kysymyt kysyin CoPilotilta kohtiin, joita en ymmärtänyt.
+Perus tiedot eri HTML statuksille tarkastin täältä: https://umbraco.com/knowledge-base/http-status-codes
+
+ 
 
 # (m Vapaaehtoinen 1
 
