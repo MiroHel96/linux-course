@@ -203,6 +203,35 @@ Lopputulos lang -atribuutin jälkeen oli virheetön html -dokumentti.
 
 # (f curl -l ja curl esimerkit
 
+Seuraavaksi selitän curl ja curl -I -komentojen erot. 
+Curl -komento on tarkoitettu yksinkertaisuudessa datan siirtämiseen palvelimelle tai palvelimelta : https://www.hostinger.com/tutorials/curl-command#:~:text=The%20cURL%20command%20lets%20you,or%20updates%20an%20existing%20one.
+
+## curl 
+Pelkkä komento "curl" - tulostaa verkkosivun sisällön terminaaliin. 
+
+curl localhost 
+<img width="542" height="472" alt="image" src="https://github.com/user-attachments/assets/d0bfe0c1-1152-47dd-bc67-b8f1eee9f6c8" />
+
+curl hattu.example.com
+<img width="538" height="146" alt="image" src="https://github.com/user-attachments/assets/5f31d638-ab5c-46d4-a3b8-600d41bbd364" />
+
+curl https://www.haaga-helia.fi
+<img width="540" height="316" alt="image" src="https://github.com/user-attachments/assets/919a3f3b-64bd-48af-aa39-ea5db50e08a8" />
+
+## curl - l 
+Pelkkä curl -I sen sijaan näyttää pelkän HTTPS -otsakkeen. 
+
+curl -I localhost
+<img width="522" height="240" alt="image" src="https://github.com/user-attachments/assets/2d79bec3-3f8a-4a46-8837-6d0db02cc917" />
+
+curl -I hattu.example.com
+<img width="522" height="248" alt="image" src="https://github.com/user-attachments/assets/bfe79aaf-b45d-478e-a71f-42897c57170e" />
+
+curl -I https://www.haaga-helia.fi
+
+<img width="604" height="700" alt="image" src="https://github.com/user-attachments/assets/b0eb056c-a2fe-4c2f-a4a7-0da97adab0f0" />
+
+
 # (m Vapaaehtoinen 1
 
 # (0 vapaaehtoinen 2
