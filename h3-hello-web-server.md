@@ -159,6 +159,18 @@ Lopuksi loin kokonaan uuden example.hattu.com -kansion ja index.html tiedoston p
 
 <img width="544" height="294" alt="image" src="https://github.com/user-attachments/assets/80a61ee6-6ceb-4ac1-96ac-52eb36ef31ae" />
 
+Ongelma ei vieläkään ratkennut tarkastin vielä tiedostoni läpi ja huomasin jälleen virheen hattu.example.com.conf tiedostossa. Tiedostopolku oli muuten oikein, mutta käyttäjä ei ollut, muutin sen oikeaksi ja tallensin tiedoston.
+
+<img width="554" height="604" alt="image" src="https://github.com/user-attachments/assets/c2686916-e5b8-4fa2-b3a2-4825a19843fd" />
+
+<img width="556" height="606" alt="image" src="https://github.com/user-attachments/assets/91015a88-d8a6-4681-a691-8f9d41c024d0" />
+
+Ongelma ratkesi näiden muutoksien avulla. Seuraavaksi selvitin vielä juurisyyn, miksi localhost tuo vielä väärään html-sivun.
+
+<img width="544" height="158" alt="image" src="https://github.com/user-attachments/assets/304527f1-3aaf-417d-bd40-02975080e902" />
+
+<img width="666" height="674" alt="image" src="https://github.com/user-attachments/assets/bfb16cd5-7e12-4dc1-9433-1892fee38f69" />
+
 
 # (e Validi HTML5 sivu
 
