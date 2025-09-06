@@ -190,6 +190,16 @@ Tämän jälkeen loin sisältöä HTML -tiedostooni. Lisäsin raporttia varten k
 
 <img width="666" height="674" alt="image" src="https://github.com/user-attachments/assets/b1234f46-1f07-49f8-9a2d-132adbf4261f" />
 
+Seuraavaksi validoin html -tiedoston seuraavalla sivulla: https://validator.w3.org
+Validoin html -tiedoston syöttämällä koodin pätkän suoraan tekstikenttään. Lopputuloksena oli yksi varoitus, joka ilmoitti kielen atribuutin puutteesta. Lisäsin koodin "<html lang="en>" ja validoin koodin uudestaan. En muistanut lang -atribuuttia ulkoa, joten tarkastin sen täältä: https://www.w3.org/International/questions/qa-html-language-declarations
+
+<img width="666" height="670" alt="image" src="https://github.com/user-attachments/assets/fab29b3e-0fcf-4f30-81df-9ce1abe11459" />
+<img width="620" height="292" alt="image" src="https://github.com/user-attachments/assets/7553bbba-cd90-4cd4-91ed-8c7e917f014a" />
+
+Lopputulos lang -atribuutin jälkeen oli virheetön html -dokumentti. 
+
+<img width="698" height="568" alt="image" src="https://github.com/user-attachments/assets/649eae8a-1337-404f-8a91-ce40a113e226" />
+
 
 # (f curl -l ja curl esimerkit
 
