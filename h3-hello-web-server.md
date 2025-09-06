@@ -180,6 +180,17 @@ Localhost avaa 000-default.conf tiedoston mukaan index.html -tiedoston polusta "
 
 Tässä raportin vaiheessa loin validin HTML5 -sivun. Hyödynnän tässä kohtaa edellisessä kappaleessa ollut ongelmaa eli localhost polkua. Loin uuden HTML index.html -tiedoston /var/www/html kansioon. 
 
+<img width="540" height="28" alt="image" src="https://github.com/user-attachments/assets/1aa12f3a-1772-4d50-855f-44f7d73a17de" />
+
+Alotin sivun muokkaamisen micro -editorilla. Tehtävän tarkoituksena on luoda validi HTML -sivu, joten hain tiedostolle rungon seuraavalta sivulta: https://www.w3schools.com/html/default.asp
+
+<img width="558" height="608" alt="image" src="https://github.com/user-attachments/assets/8e33c61d-3761-48b7-baa3-006406e0f9c4" />
+
+Tämän jälkeen loin sisältöä HTML -tiedostooni. Lisäsin raporttia varten kuvan, mutta en käy sen tarkemmin sen luomista läpi, koska raportin tarkoitus on luoda validi HTML-sivu.
+
+<img width="666" height="674" alt="image" src="https://github.com/user-attachments/assets/b1234f46-1f07-49f8-9a2d-132adbf4261f" />
+
+
 # (f curl -l ja curl esimerkit
 
 # (m Vapaaehtoinen 1
