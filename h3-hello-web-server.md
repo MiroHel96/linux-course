@@ -43,46 +43,28 @@ Lokien tarkempaa analyysia varten löysin hyvän artikkelin verkosta: https://ww
 
 Lokit analysoituna vasemmalta oikealle kohta kohdalta:
  - 127.0.0.1 on yhteyspyynnön tekijän IP-osoite.
- -  - - Tässä kohtaa pitäisi näky käyttäjän identiteetti, ensimmäinen viiva RFC1413 indentiteetti ja toinen viima ei autentikoitua käyttäjänimeä - Copilot
+ - Kaksi viivaa, Tässä kohtaa pitäisi näky käyttäjän identiteetti, ensimmäinen viiva RFC1413 indentiteetti ja toinen viiva tarkoittaa ei autentikoitua käyttäjänimeä - Kysytty tarkennus: Microsoft Copilot
   - [04/Sep/2025:16:56:27 +0300], tämä on pyynnön päivämäärä ja kellonaika.
   - "GET / HTTP/1.1", pyynnön tyyppi ja tässätapauksessa kyseessä on perus HTTP pyyntö.
-  - 200 HTTP statuksen koodi
+  - 200 HTTP statuksen koodi.
   - 481 objektin koko joka palautettiin clientille, eli pyynnön tehneelle. 
 
 <img width="924" height="44" alt="image" src="https://github.com/user-attachments/assets/ca46e3d3-92e6-4ca3-98bf-186b522108ca" />
 
 
+# Palomuurin salliminen 
 
-# Oman verkkosivun luominen
-
-Tässä vaiheessa loin uuden index.html tiedoston (sijainti) ja testasin sen toimivuuden apache -palvelimellani. Poistin ja loin uuden index.html tiedoston /var/www/html -polkuun. Tiedostot olivat suojattu, joten kirjauduin sisälle root -käyttäjäksi ja siirryin tidostopolkuun apache2/. Kansiosta löytyi seuraavat tiedostot, access.log, error.log ja other_vhost_access.log.
-
-Avasin tiedoston "tail -f" -komennolla. Kyseinen komento näyttää tiedoston viimeiset rivit, -f valinta tulostaa lokin tiedot reaaliajassa terminaali-ikkunaan, jos muutoksia tapahtuu. 
-
-
-
-
-<img width="632" height="502" alt="image" src="https://github.com/user-attachments/assets/dde0195b-fd1d-4dd0-b514-8992e849fae0" />
-
-<img width="618" height="74" alt="image" src="https://github.com/user-attachments/assets/d46fd77f-c045-4185-b8ae-43d5b6ac1df6" />
-
-Tiedoston luomisen jälkeen testasin sivun toimivuutta verkkoselaimessa osoitteessa "localhost". 
-
-<img width="838" height="434" alt="image" src="https://github.com/user-attachments/assets/4c65c02e-e4e7-47e6-a833-10203b8f2a29" />
-
-#Palomuurin salliminen 
-
-Asensin komentohekotteela ufw
+Asensin komentohekotteela Uncomplicated Firewall (UFW) aikaisemmin, kyseistä toimenpidettä ei tehtävänannossa mainittu, joten en käy sitä tässä sen tarkemmin läpi. Käytännössä sallin HTTP (80) ja HTTPS (443) portit, jotta palvelimelta voi pyytää tiedostoja. Tarkemmin UFW asentamisesta löysin seuraavan artikkelin: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu
 
 <img width="556" height="602" alt="image" src="https://github.com/user-attachments/assets/00c71a85-0cb7-42bf-b955-c7877d68cdda" />
 
 
 
-# C Etusivu uusiksi 
+# c) Etusivu uusiksi 
 
-Tässä vaiheessa raporttia tehtäväni oli luoda uusi name based virtual host eli uusi verkkosivu nimellä hattu.example.com. Käytin sivun tekemiseen seuraavaa sivua, josta sain ohjeistuksen avulla toteutettua uuden sivun: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address
+Tässä vaiheessa raporttia tehtäväni oli luoda uusi "Name Based Virtual Host". Tämä mahdollistaa useiden verrkkosivujen luomisen yhden IP-osoitteen alle. Loin uuden testiverkkosivun "hattu.example.com". Käytin sivun tekemiseen seuraavia sivuja, näistä sain ohjeistuksen avulla toteutettua uuden sivun: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address ja https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-03092025.md
 
-ALoitin avaamlla terminaalin ja syötin siihen seuraavan komennon "sudoedit /etc/apache2/sites-available/hattu.example.com.conf". Tämän jälkeen lisäsin teksieditorissa alla olevan kuvan mukaisesti verkkosivun määritykset alla olevan kuvan mukaisesti.
+Aloitin avaamlla terminaalin ja syötin siihen seuraavan komennon "sudoedit /etc/apache2/sites-available/hattu.example.com.conf". Tämän jälkeen lisäsin teksieditorissa alla olevan kuvan mukaisesti verkkosivun määritykset alla olevan kuvan mukaisesti. Tässä kohtaa tein ensimmäiset virheet, jotka korjasin myöhemmin. 
 
 <img width="556" height="606" alt="image" src="https://github.com/user-attachments/assets/08eda54e-2688-4ee0-8c4d-1c126dcfd89b" />
 
@@ -94,20 +76,27 @@ Seuraavaksi loin uuden kasion ja index.html tiedoston peruskäyttäjän kotihake
  - sudo mkdir -p /home/miro/public-sites/hattu.example.com/
  - sudo echo hattu > /home/miro/public-sites/hattu.example.com/index.html
 
-Jouduin käyttämään sudo -oikeuksia näiden tekemiseen ja en ole varma, miksi näin on. Käyttöoikeudet eivät selvästi ole oikein, joten päätin selvittää asiaa hieman.
+Tässä kohdassa tein toisen virheeni, koska loin tiedoston ja kansion sudo -oikeuksilla. Tästä syystä palveluita ei voinut tavallinen käyttäjä/Apache2 käyttää.
+
+Jouduin käyttämään sudo -oikeuksia näiden tekemiseen ja en ollut tässä kohtaa varma, miksi näin on. Käyttöoikeudet eivät selvästi ole oikein, joten aloitin selvittämään ongelmaa.
 
 <img width="545" height="181" alt="image" src="https://github.com/user-attachments/assets/89c8c4dc-bee0-44cd-80ea-5dd111dff8fb" />
 
 En pystynyt luomaan index.html tiedostoa ollenkaan.
+
 <img width="543" height="90" alt="image" src="https://github.com/user-attachments/assets/408a9566-4f24-427e-94c5-c8512b451613" />
 
-Loin tiedoston root -käyttäjällä, mutta tämä ei ole optimaalista. Katsoin vielä käyttöoikeudet ja kaikilla käyttäjillä on tiedostoon luku -oikeus. Tällä tosin ei pitäisi olla väliä? 
+Päätin luoda tiedoston root -käyttäjällä, en ollut varma lähteekö uusi testisivu toimimaan, mutta kokeilin silti. 
+
 <img width="543" height="208" alt="image" src="https://github.com/user-attachments/assets/51fcddc6-4257-44f3-9636-fdbfad971b4c" />
 
 
  ## Curl testi
 
- Ensimmäinen testi tuotti puutteeliset käyttöoikeudet:
+ Seuraavaksi testasin saako curl -komennolla saanko mitään dataa näkyviin. Käytin ensiksi komentoa "curl -H 'Host: hattu.example.com" localhost" ja toisessa testissä "curl localhost".
+ 
+ Ensimmäinen testi tuotti puutteeliset käyttöoikeudet.
+ 
  <img width="543" height="249" alt="image" src="https://github.com/user-attachments/assets/9cb1cdd2-d582-42c9-923e-d43a6a3548ae" />
 
 Toinen testi latasi eri tiedoston sisällöin, jonka olin tehnyt aikaisemmin. Ongelmaksi epäilin, että hosts -tiedoston sisältö ei ollut muokattu uuden sivun mukaisesti. Tein tarvittavat muutokset.
