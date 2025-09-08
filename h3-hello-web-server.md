@@ -103,11 +103,13 @@ Toinen testi latasi eri tiedoston sisällöin, jonka olin tehnyt aikaisemmin. On
 
 <img width="544" height="180" alt="image" src="https://github.com/user-attachments/assets/af9296ff-de9b-480d-8ffa-cc266777b811" />
 
+Avasin "hosts" -tiedoston sijainnista "/var/temp/hosts.."
 <img width="557" height="603" alt="image" src="https://github.com/user-attachments/assets/5919f85d-0f4e-46c4-8255-e71c60207a8b" />
 
 Host tiedostoon lisäsin seuraavat osoitetiedot:
-hattu.example.com
-www.hattu.example.com
+ - hattu.example.com
+ - www.hattu.example.com
+
 
 <img width="395" height="364" alt="image" src="https://github.com/user-attachments/assets/787acba6-48a5-48c2-965a-d8b13fac5e4d" />
 
@@ -116,33 +118,35 @@ Tämän jälkeen testasin avata verkkosivun selaimesta, mutta lopputulos ei silt
 
 <img width="661" height="637" alt="image" src="https://github.com/user-attachments/assets/54c92ed5-d129-47b1-9b40-38798ed9049c" />
 
-Ongelma ilmeisesti oli tiedostojen oikeuksissa, tarkasin kyseisestä ohjeesta kohdan 5. name based virtual hosts ja siellä mainitaan, että apachen pitää pystyä lukemaan tiedostot, jotta verkkosivu toimii. https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-03092025.md 
+Ongelma ilmeisesti oli tiedostojen oikeuksissa, tarkasin Johannan Apache2 -ohjeesta kohdan 5. Name Based Virtual Hosts ja siellä mainitaan, että Apachen pitää pystyä lukemaan tiedostot, jotta verkkosivu toimii. https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-03092025.md
 
-Seuraavaksi tarkastin tiedostojen ja kansioiden oikeudet. Ne näyttivät oikelta. Poistin ylimääräiset esimerkkitiedostot työasemalta ja tarkasin polusta "sudoedit /etc/apache2/sites-available/hattu.example.conf" konffitiedostos. Huomasin, että dokumentin polku ja juurisijainnissa "publicsites" oli kirjoitettu yhteen väliviivan sijaan. Korjasin sen muotoon "public-sites" ja testasin uudestaan verkkosivun toimivuutta. 
+Seuraavaksi tarkastin tiedostojen ja kansioiden oikeudet. Ne näyttivät oikelta. Poistin ylimääräiset esimerkkitiedostot työasemalta ja tarkasin polusta "sudoedit /etc/apache2/sites-available/hattu.example.conf" konffitiedostot. Huomasin, että dokumentin polku ja juurisijainnissa "publicsites" oli kirjoitettu yhteen väliviivan sijaan. Korjasin sen muotoon "public-sites" ja testasin uudestaan verkkosivun toimivuutta. 
 
 <img width="904" height="733" alt="image" src="https://github.com/user-attachments/assets/e0f0499f-1710-44b2-81ca-82c9c846727e" />
 
-Ongelma ei vieläkään korjaantunut, joten jatkoin asian selvittämistä. Väärä tiedosto aukeaa vieläkin.
+Ongelma ei vieläkään korjaantunut, joten jatkoin asian selvittämistä. Väärä tiedosto aukesi edelleen.
 
 <img width="483" height="511" alt="image" src="https://github.com/user-attachments/assets/671bfee4-5d9b-4c9a-81db-2bdc760ba384" />
 
 # Ongelman ratkaisu 
 
-Kysyin CoPilotilta, mistä ongelma voisi johtua ja se ohjeisti minua avaamaan 000-default.conf tiedoston ja tarkastamaan DocumentRoot sijainnin eli /var/www/html"
+Kysyin Microsoft Copilotilta, mistä ongelma voisi johtua ja se ohjeisti minua avaamaan 000-default.conf tiedoston ja tarkastamaan DocumentRoot sijainnin eli /var/www/html".
 
 <img width="489" height="765" alt="image" src="https://github.com/user-attachments/assets/14acf072-39dd-4534-8fc9-1ca30450b8cf" />
 
-Seuraavaksi tarkastin käyttöoikeudet uudestaan. miro kansiossa ei ollut suortittamiseen oikeuksia toisilla käyttjäillä lisäsin ne sudo chmod 0+x /home/miro -komennola. 
+Seuraavaksi tarkastin ohjeiden mukaan käyttöoikeudet uudestaan. "miro" -kansiossa ei ollut suorittamiseen oikeuksia toisilla käyttjäillä, lisäsin ne "sudo chmod 0+x /home/miro" -komennola. 
 
 <img width="388" height="42" alt="image" src="https://github.com/user-attachments/assets/508f0c65-0d5d-4678-b0dd-ed44e7fe51ac" />
+
 Tarkasin, että oikeudet olivat oikein ja muutos oli tapahtunut.
 
 <img width="390" height="212" alt="image" src="https://github.com/user-attachments/assets/632059c7-9df6-4b6f-b2f4-01334e56cbb9" />
 
 Seuraavaksi tarkastin public-sites kansion ja sekin oli väärin, koska olin luonut sen root -oikeuksilla. 
+
 <img width="393" height="54" alt="image" src="https://github.com/user-attachments/assets/4f9c32fc-329a-4f1f-a13d-4a6c00c492ef" />
 
-Poistin kyseisen kansion ja sen alikansiot ja loin uudestaan saman kansion peruskäyttäjän oikeuksilla. 
+Poistin kyseisen kansion ja sen alikansiot kuvassa näkyvillä komennoilla ja loin uudestaan saman kansion peruskäyttäjän oikeuksilla. 
 
 <img width="540" height="246" alt="image" src="https://github.com/user-attachments/assets/55621651-e175-4dff-98e7-12690f14dd84" />
 
@@ -156,7 +160,7 @@ Ongelma ei vieläkään ratkennut tarkastin vielä tiedostoni läpi ja huomasin 
 
 <img width="556" height="606" alt="image" src="https://github.com/user-attachments/assets/91015a88-d8a6-4681-a691-8f9d41c024d0" />
 
-Ongelma ratkesi näiden muutoksien avulla. Seuraavaksi selvitin vielä juurisyyn, miksi localhost tuo vielä väärään html-sivun.
+Testasin verkksivun toimivuuden "curl" -komennolla ja verkkoselaimessa. Ongelma ratkesi näiden muutoksien avulla. Seuraavaksi selvitin, missä tiedosto, joka aukee "localhost" -verkkohaulla sijaitsee.
 
 <img width="544" height="158" alt="image" src="https://github.com/user-attachments/assets/304527f1-3aaf-417d-bd40-02975080e902" />
 
@@ -169,7 +173,7 @@ Localhost avaa 000-default.conf tiedoston mukaan index.html -tiedoston polusta "
 
 # (e Validi HTML5 sivu
 
-Tässä raportin vaiheessa loin validin HTML5 -sivun. Hyödynnän tässä kohtaa edellisessä kappaleessa ollut ongelmaa eli localhost polkua. Loin uuden HTML index.html -tiedoston /var/www/html kansioon. 
+Tässä raportin vaiheessa loin validin HTML5 -sivun. Hyödynnän tässä kohtaa edellisessä kappaleessa ollut ongelmaa eli localhost polkua. Loin uuden index.html -tiedoston /var/www/html kansioon. 
 
 <img width="540" height="28" alt="image" src="https://github.com/user-attachments/assets/1aa12f3a-1772-4d50-855f-44f7d73a17de" />
 
@@ -177,45 +181,50 @@ Alotin sivun muokkaamisen micro -editorilla. Tehtävän tarkoituksena on luoda v
 
 <img width="558" height="608" alt="image" src="https://github.com/user-attachments/assets/8e33c61d-3761-48b7-baa3-006406e0f9c4" />
 
-Tämän jälkeen loin sisältöä HTML -tiedostooni. Lisäsin raporttia varten kuvan, mutta en käy sen tarkemmin sen luomista läpi, koska raportin tarkoitus on luoda validi HTML-sivu.
+Tämän jälkeen loin sisältöä HTML -tiedostooni. Lisäsin raporttia varten kuvan, mutta en käy sen tarkemmin sen luomista läpi, koska raportin tarkoitus on luoda validia koodia omaava HTML-sivu, eikä perehtyä sivun rakentamiseen sen tarkemmin.
 
 <img width="666" height="674" alt="image" src="https://github.com/user-attachments/assets/b1234f46-1f07-49f8-9a2d-132adbf4261f" />
 
 Seuraavaksi validoin html -tiedoston seuraavalla sivulla: https://validator.w3.org
-Validoin html -tiedoston syöttämällä koodin pätkän suoraan tekstikenttään. Lopputuloksena oli yksi varoitus, joka ilmoitti kielen atribuutin puutteesta. Lisäsin koodin "<html lang="en>" ja validoin koodin uudestaan. En muistanut lang -atribuuttia ulkoa, joten tarkastin sen täältä: https://www.w3.org/International/questions/qa-html-language-declarations
+Validoin html -tiedoston syöttämällä koodin pätkän suoraan tekstikenttään. Lopputuloksena oli yksi varoitus, joka ilmoitti kielen atribuutin puutteesta. Lisäsin koodin "<html lang="en>" ja validoin koodin uudestaan. En muistanut "lang" -atribuuttia ulkoa, joten tarkastin sen täältä: https://www.w3.org/International/questions/qa-html-language-declarations
 
 <img width="666" height="670" alt="image" src="https://github.com/user-attachments/assets/fab29b3e-0fcf-4f30-81df-9ce1abe11459" />
 <img width="620" height="292" alt="image" src="https://github.com/user-attachments/assets/7553bbba-cd90-4cd4-91ed-8c7e917f014a" />
 
-Lopputulos lang -atribuutin jälkeen oli virheetön html -dokumentti. 
+Lopputuloss kieli -atribuutin jälkeen oli virheetön html -dokumentti. 
 
 <img width="698" height="568" alt="image" src="https://github.com/user-attachments/assets/649eae8a-1337-404f-8a91-ce40a113e226" />
 
 
-# (f curl -l ja curl esimerkit
+# f) curl -l ja curl komentojen esimerkit
 
-Seuraavaksi selitän curl ja curl -I -komentojen erot. 
-Curl -komento on tarkoitettu yksinkertaisuudessa datan siirtämiseen palvelimelle tai palvelimelta : https://www.hostinger.com/tutorials/curl-command#:~:text=The%20cURL%20command%20lets%20you,or%20updates%20an%20existing%20one.
+Seuraavaksi demostroin curl ja curl -I -komentojen erot. 
+Curl -komento on tarkoitettu yksinkertaisuudessa datan siirtämiseen palvelimelle tai palvelimelta : https://www.hostinger.com/tutorials/curlcommand#:~:text=The%20cURL%20command%20lets%20you,or%20updates%20an%20existing%20one.
 
 ## curl 
 Pelkkä komento "curl" - tulostaa verkkosivun sisällön terminaaliin. 
 
 curl localhost 
+
 <img width="542" height="472" alt="image" src="https://github.com/user-attachments/assets/d0bfe0c1-1152-47dd-bc67-b8f1eee9f6c8" />
 
 curl hattu.example.com
+
 <img width="538" height="146" alt="image" src="https://github.com/user-attachments/assets/5f31d638-ab5c-46d4-a3b8-600d41bbd364" />
 
 curl https://www.haaga-helia.fi
+
 <img width="540" height="316" alt="image" src="https://github.com/user-attachments/assets/919a3f3b-64bd-48af-aa39-ea5db50e08a8" />
 
 ## curl - l 
 Pelkkä curl -I sen sijaan näyttää pelkän HTTPS -otsakkeen. 
 
 curl -I localhost
+
 <img width="522" height="240" alt="image" src="https://github.com/user-attachments/assets/2d79bec3-3f8a-4a46-8837-6d0db02cc917" />
 
 curl -I hattu.example.com
+
 <img width="522" height="248" alt="image" src="https://github.com/user-attachments/assets/bfe79aaf-b45d-478e-a71f-42897c57170e" />
 
 curl -I https://www.haaga-helia.fi
@@ -230,7 +239,7 @@ Komennolla curl -I palvelimelta saa ladattua paljon monipuolista tietoa, lähtei
  - Server, kertoo palvelinohjelmiston version ja nimen. Yleensä tämä on piilotettu tietoturvasyistä, koska versiotiedolla voidaan etsiä tiedettyjä haavoittuvuuksia.
  - Location, kertoo uudelleenohjauksen osoitteen.
 
-HTTP otsikoita on todella paljon ja yllä oleville löysin selitykset: https://en.wikipedia.org/wiki/List_of_HTTP_header_fields ja tarkemmat kysymyt kysyin CoPilotilta kohtiin, joita en ymmärtänyt.
+HTTP otsikoita on todella paljon ja yllä oleville löysin selitykset: https://en.wikipedia.org/wiki/List_of_HTTP_header_fields ja tarkemmat kysymyt kysyin Microsoft Copilotilta kohtiin, joita en ymmärtänyt.
 Perus tiedot eri HTML statuksille tarkastin täältä: https://umbraco.com/knowledge-base/http-status-codes
 
  
