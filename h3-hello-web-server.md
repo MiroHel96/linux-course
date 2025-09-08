@@ -27,22 +27,23 @@ Testasin vielä terminaali-ikkunan ja testasin sivun toimivuutta. Kokeilinkin se
 
 <img width="958" height="252" alt="image" src="https://github.com/user-attachments/assets/b745fa5a-14a8-4834-bb0c-5599dd81e59e" />
 
-# (b lokit
+# b) Apache 2 palvelimen Lokien tarkastaminen 
 
-Tässä raportin vaiheessa tarkastelin apache2 palvelimeni luomia lokeja. En ollut varma tai muista mihin polkuun lokitiedostot tallentui, joten nopean Googlettamisen jälkeen löysin artikkelin, jossa oli hyvin ohjeistettu lokien polut ja tarkasteluun käytettävät komennot: https://phoenixnap.com/kb/apache-access-log
+Tässä raportin vaiheessa tarkastelin Apache2 palvelimeni luomia lokeja. En ollut varma tai muista mihin polkuun lokitiedostot tallentui, joten nopean Googlettamisen jälkeen löysin artikkelin, jossa oli hyvin ohjeistettu lokien polut ja tarkasteluun käytettävät komennot: https://phoenixnap.com/kb/apache-access-log
 
-Apache2 lokit sijaitsevat tiedostojärjestelmässä polussa /var/log/apache2, siirryin kyseiseen tiedostopolkuun terminaali-ikkunassa. Seuraavaksi avasin verkkoselaimen työpäydällä ja kirjoitin selaimen hakuun "localhost". 
+Apache2 lokit sijaitsevat tiedostojärjestelmässä polussa "/var/log/apache2", siirryin kyseiseen tiedostopolkuun terminaali-ikkunassa. Seuraavaksi avasin verkkoselaimen työpöydällä ja kirjoitin selaimen hakuun "localhost". 
 
 <img width="936" height="594" alt="image" src="https://github.com/user-attachments/assets/9cd30598-8937-4b1c-9849-f2e8f19a5475" />
 
-Kuten, kuvassa näkyy lokeihin ilmestyy HTTP GET -kättely pyyntö aina, kun verkkosivun lataa uudelleen. Lokien tarkempaa analyysia varten löysin hyvän artikkelin verkosta: https://www.sumologic.com/blog/apache-access-log
+Kuten, kuvassa näkyy lokeihin ilmestyy HTTP GET -kättely pyyntö aina, kun verkkosivun lataa uudelleen. Kyseinen pyyntö tapahtuu, kun joku host haluaa pavlelimelta resusseja: https://reqbin.com/Article/HttpGet 
+Lokien tarkempaa analyysia varten löysin hyvän artikkelin verkosta: https://www.sumologic.com/blog/apache-access-log
 
 
 <img width="954" height="1028" alt="image" src="https://github.com/user-attachments/assets/c41fdf26-1578-4456-866c-46a5161df0b5" />
 
 Lokit analysoituna vasemmalta oikealle kohta kohdalta:
  - 127.0.0.1 on yhteyspyynnön tekijän IP-osoite.
- - - - Tässä kohtaa pitäisi näky käyttäjän identiteetti, ensimmäinen viiva RFC1413 indentiteetti ja toinen viima ei autentikoitua käyttäjänimeä - Copilot
+ -  - - Tässä kohtaa pitäisi näky käyttäjän identiteetti, ensimmäinen viiva RFC1413 indentiteetti ja toinen viima ei autentikoitua käyttäjänimeä - Copilot
   - [04/Sep/2025:16:56:27 +0300], tämä on pyynnön päivämäärä ja kellonaika.
   - "GET / HTTP/1.1", pyynnön tyyppi ja tässätapauksessa kyseessä on perus HTTP pyyntö.
   - 200 HTTP statuksen koodi
