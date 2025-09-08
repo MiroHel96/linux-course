@@ -1,5 +1,12 @@
 # Tiivistelmä 
 
+- IP-based virtual host on yksittäiselle verkkosivulle. 
+- Name Based Virtual Hosts mahdollistaa useiden verkkosivujen ylläpitämisen yhdestä IP-osoitteesta.
+- Asenna Apache2, luo uusi Name Based Virtual Host polkuun "/etc/apache2/sites-available/esimerkki.tiedosto.com.conf",
+- Luo verkkosivu peruskäyttäjällä tekemällä uusi kansio kotihakemistoon "mkdir -p "home/user/publicsites/testi.esimerkki.com/" ja lisää indeksitiedosto kansioon/testi.esimerkki.com/index.html".
+- Todellisuudessa verkkosivun nimi kannattaa vuorkata, mutta voimme simuloida nimipalvelua "hosts" -tiedostolla sijainnissa /etc/hosts.
+- Palvelimen alias, mahdollistaa samalle verkkosivulle yhdistämisen eri nimellä. Nimet pitää kuitekin ensin määritellä DNS:älle, jotta se osaa yhdistää oikeat IP-osoitteet nimiin.
+
 ## H3 Demonit 
 
 # a) Apache 2 asentaminen Linuxille
