@@ -36,7 +36,7 @@ Testasin vielä terminaali-ikkunan ja testasin sivun toimivuutta. Kokeilinkin se
 
 <img width="958" height="252" alt="image" src="https://github.com/user-attachments/assets/b745fa5a-14a8-4834-bb0c-5599dd81e59e" />
 
-# b) Apache 2 palvelimen Lokien tarkastaminen 
+## b) Apache 2 palvelimen Lokien tarkastaminen 
 
 Tässä raportin vaiheessa tarkastelin Apache2 palvelimeni luomia lokeja. En ollut varma tai muista mihin polkuun lokitiedostot tallentui, joten nopean Googlettamisen jälkeen löysin artikkelin, jossa oli hyvin ohjeistettu lokien polut ja tarkasteluun käytettävät komennot: https://phoenixnap.com/kb/apache-access-log
 
@@ -61,7 +61,7 @@ Lokit analysoituna vasemmalta oikealle kohta kohdalta:
 <img width="924" height="44" alt="image" src="https://github.com/user-attachments/assets/ca46e3d3-92e6-4ca3-98bf-186b522108ca" />
 
 
-# Palomuurin salliminen 
+## Palomuurin salliminen 
 
 Asensin komentohekotteela Uncomplicated Firewall (UFW) aikaisemmin, kyseistä toimenpidettä ei tehtävänannossa mainittu, joten en käy sitä tässä sen tarkemmin läpi. Käytännössä sallin HTTP (80) ja HTTPS (443) portit, jotta palvelimelta voi pyytää tiedostoja. Tarkemmin UFW asentamisesta löysin seuraavan artikkelin: https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu
 
@@ -69,7 +69,7 @@ Asensin komentohekotteela Uncomplicated Firewall (UFW) aikaisemmin, kyseistä to
 
 
 
-# c) Etusivu uusiksi 
+## c) Etusivu uusiksi 
 
 Tässä vaiheessa raporttia tehtäväni oli luoda uusi "Name Based Virtual Host". Tämä mahdollistaa useiden verrkkosivujen luomisen yhden IP-osoitteen alle. Loin uuden testiverkkosivun "hattu.example.com". Käytin sivun tekemiseen seuraavia sivuja, näistä sain ohjeistuksen avulla toteutettua uuden sivun: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address ja https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-03092025.md
 
@@ -137,7 +137,7 @@ Ongelma ei vieläkään korjaantunut, joten jatkoin asian selvittämistä. Vää
 
 <img width="483" height="511" alt="image" src="https://github.com/user-attachments/assets/671bfee4-5d9b-4c9a-81db-2bdc760ba384" />
 
-# Ongelman ratkaisu 
+## Ongelman ratkaisu 
 
 Kysyin Microsoft Copilotilta, mistä ongelma voisi johtua ja se ohjeisti minua avaamaan 000-default.conf tiedoston ja tarkastamaan DocumentRoot sijainnin eli /var/www/html".
 
@@ -180,7 +180,7 @@ Localhost avaa 000-default.conf tiedoston mukaan index.html -tiedoston polusta "
 <img width="552" height="382" alt="image" src="https://github.com/user-attachments/assets/f287064b-e9a8-4ad2-b694-98afddd814c2" />
 
 
-# (e Validi HTML5 sivu
+## (e Validi HTML5 sivu
 
 Tässä raportin vaiheessa loin validin HTML5 -sivun. Hyödynnän tässä kohtaa edellisessä kappaleessa ollut ongelmaa eli localhost polkua. Loin uuden index.html -tiedoston /var/www/html kansioon. 
 
@@ -205,7 +205,7 @@ Lopputuloss kieli -atribuutin jälkeen oli virheetön html -dokumentti.
 <img width="698" height="568" alt="image" src="https://github.com/user-attachments/assets/649eae8a-1337-404f-8a91-ce40a113e226" />
 
 
-# f) curl -l ja curl komentojen esimerkit
+## f) curl -l ja curl komentojen esimerkit
 
 Seuraavaksi demostroin curl ja curl -I -komentojen erot. 
 Curl -komento on tarkoitettu yksinkertaisuudessa datan siirtämiseen palvelimelle tai palvelimelta : https://www.hostinger.com/tutorials/curlcommand#:~:text=The%20cURL%20command%20lets%20you,or%20updates%20an%20existing%20one.
@@ -252,7 +252,7 @@ HTTP otsikoita on todella paljon ja yllä oleville löysin selitykset: https://e
 Perus tiedot eri HTML statuksille tarkastin täältä: https://umbraco.com/knowledge-base/http-status-codes
 
 
-# Lähdeluettelo 
+## Lähdeluettelo 
 
 https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-debian-11
 
