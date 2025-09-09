@@ -113,6 +113,7 @@ Toinen testi latasi eri tiedoston sisällöin, jonka olin tehnyt aikaisemmin. On
 <img width="544" height="180" alt="image" src="https://github.com/user-attachments/assets/af9296ff-de9b-480d-8ffa-cc266777b811" />
 
 Avasin "hosts" -tiedoston sijainnista "/var/temp/hosts.."
+
 <img width="557" height="603" alt="image" src="https://github.com/user-attachments/assets/5919f85d-0f4e-46c4-8255-e71c60207a8b" />
 
 Host tiedostoon lisäsin seuraavat osoitetiedot:
