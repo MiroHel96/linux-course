@@ -17,7 +17,7 @@ Tässä raportissa käyn vaiheittan Apache 2 Web-palvelimen asentamisen virtuaal
 
 <img width="696" height="162" alt="image" src="https://github.com/user-attachments/assets/be5811a3-90c8-47aa-85fa-47de253cdc60" />
 
-Sain seuraavan virheen "sudo apt update" -komennon jälkeen " " ja sille ilmeisesti löytyy korjaus täältä:https://askubuntu.com/questions/776721/problem-with-sudo-apt-get-update-the-repository-cdrom-does-not-have-a-releas
+Sain seuraavan virheen "sudo apt update" -komennon jälkeen " " ja sille ilmeisesti löytyy korjaus täältä: https://askubuntu.com/questions/776721/problem-with-sudo-apt-get-update-the-repository-cdrom-does-not-have-a-releas
 
 <img width="1080" height="416" alt="image" src="https://github.com/user-attachments/assets/49b79686-87c4-4866-b81b-4cbd7ab94c0d" />
 
@@ -251,14 +251,30 @@ Komennolla curl -I palvelimelta saa ladattua paljon monipuolista tietoa, lähtei
 HTTP otsikoita on todella paljon ja yllä oleville löysin selitykset: https://en.wikipedia.org/wiki/List_of_HTTP_header_fields ja tarkemmat kysymyt kysyin Microsoft Copilotilta kohtiin, joita en ymmärtänyt.
 Perus tiedot eri HTML statuksille tarkastin täältä: https://umbraco.com/knowledge-base/http-status-codes
 
- 
-
-# (m Vapaaehtoinen 1
-
-# (0 vapaaehtoinen 2
 
 # Lähdeluettelo 
 
 https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-debian-11
 
 https://www.linux.fi/wiki/CURL
+
+https://httpd.apache.org/docs/2.4/vhosts/name-based.html 
+
+https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu
+
+https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-03092025.md
+
+ps://askubuntu.com/questions/776721/problem-with-sudo-apt-get-update-the-repository-cdrom-does-not-have-a-releas
+
+https://www.w3schools.com/html/default.asp
+
+https://www.w3.org/International/questions/qa-html-language-declarations
+ 
+https://www.hostinger.com/tutorials/curlcommand#:~:text=The%20cURL%20command%20lets%20you,or%20updates%20an%20existing%20one.
+
+https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
+
+https://umbraco.com/knowledge-base/http-status-codes
+
