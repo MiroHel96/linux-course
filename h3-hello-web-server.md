@@ -9,9 +9,9 @@ Muutamia kohtia seuraavista artikkeleista: https://httpd.apache.org/docs/2.4/vho
 - Todellisuudessa verkkosivun nimi kannattaa vuorkata, mutta voimme simuloida nimipalvelua "hosts" -tiedostolla sijainnissa /etc/hosts.
 - Palvelimen alias, mahdollistaa samalle verkkosivulle yhdistämisen eri nimellä. Nimet pitää kuitekin ensin määritellä DNS:älle, jotta se osaa yhdistää oikeat IP-osoitteet nimiin.
 
-## H3 Demonit 
+# H3 Demonit 
 
-# a) Apache 2 asentaminen Linuxille
+## a) Apache 2 asentaminen Linuxille
 
 Tässä raportissa käyn vaiheittan Apache 2 Web-palvelimen asentamisen virtuaalikoneelleni. Aloitin asennuksen avaamalla virtuaalikoneeni, avasin terminaali-ikkunna ja syötin seuraavan komennon "sudo apt update" ja tämän jälkeen komennon "sudo apt install apache2". 
 
