@@ -267,7 +267,7 @@ https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-u
 
 https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-03092025.md
 
-ps://askubuntu.com/questions/776721/problem-with-sudo-apt-get-update-the-repository-cdrom-does-not-have-a-releas
+https://askubuntu.com/questions/776721/problem-with-sudo-apt-get-update-the-repository-cdrom-does-not-have-a-releas
 
 https://www.w3schools.com/html/default.asp
 
