@@ -8,6 +8,10 @@ Tehtävänanto: h4 Maailma kuulee
 
 ## a) Vuokraa oma palvelin
 
+Tässä raportin vaiheessa vuokrasin verkosta palvelimen, jonka alkukonfiguraatiot toteutin aikaisemmin luomallani virtuaali Linuxilla. Harjoituksen tarkoitus on luoda verkkosivu, joka näkyy verkossa ulkopuolisille. 
+
+
+
 
 ## b) Tee alkutoimet omalla virtuaalipalvelimella
 
