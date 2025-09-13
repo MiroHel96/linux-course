@@ -8,6 +8,8 @@ Tehtävänanto: h4 Maailma kuulee
 
 ## a) Vuokraa oma palvelin
 
+Käytin seuraavaa opasta tukemaan palvelimen vuokrausta: https://www.tutkit.com/fi/tekstioppaat/17058-vuokraa-linux-palvelimesi-digitaloceanilta-yksinkertainen-opas
+
 Tässä raportin vaiheessa vuokrasin verkosta palvelimen, jonka alkukonfiguraatiot toteutin aikaisemmin luomallani virtuaali Linuxilla. Harjoituksen tarkoitus on luoda verkkosivu, joka näkyy verkossa ulkopuolisille. 
 Valitsin palvelimen vuokraamiseen DigitalOcean, joten tämä ohjeistus koskettaa vain kyseistä palveluntarjoajaa palvelimen vuokraukseen.
 
