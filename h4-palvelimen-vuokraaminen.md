@@ -28,7 +28,7 @@ Valitsin palvelimelle alueeksi "Frankfurt", koska se oli lähin vaihtoehto. Data
 - 25 GN SSD Disk
 - 1000 GB transfer
 
-Kyseiset resurssit ovat tämän kurssin demostraation riittävät. En valinnut ylimääräistä tallenustilaa, enkä varmuuskopiointia. Autentikointi keinoksi valitsin salasanan, koska luon SSH -avaimen virtuaalikoneella myöhemmässä vaiheessa tätä raporttia.
+Kyseiset resurssit ovat tämän kurssin demostraation riittävät. En valinnut ylimääräistä tallenustilaa, enkä varmuuskopiointia. Autentikointi keinoksi valitsin salasanan, koska luon SSH -avaimen virtuaalikoneella myöhemmässä vaiheessa tätä raporttia. Tarkastin vielä asettamani asetukset ja viimeistelin palvelimen nimellä "miro-school-test-linux
 
 <img width="1701" height="1356" alt="image" src="https://github.com/user-attachments/assets/eccdec1d-026e-4c29-a63a-b9fb21858842" />
 
@@ -39,6 +39,14 @@ Käyttöjärjestelmän valitseminen
 Palvelimen koon ja "raudan" valitseminen
 
 <img width="1485" height="1003" alt="image" src="https://github.com/user-attachments/assets/37ec2367-fc8f-4f0f-92a1-88e7201cc842" />
+
+Salasanan asettaminen
+
+<img width="1485" height="845" alt="image" src="https://github.com/user-attachments/assets/758e7cc4-74a2-4144-8569-caa6f85641b4" />
+
+Viimeistely 
+
+<img width="1342" height="443" alt="image" src="https://github.com/user-attachments/assets/310fff2b-49f1-4b96-af86-f0074de72e07" />
 
 
 
