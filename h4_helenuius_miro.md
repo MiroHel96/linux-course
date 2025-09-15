@@ -93,21 +93,19 @@ Jätin verkon asetukset ja vaihtoehtoiset asetukset vakioiksi. Seuraavaksi siirr
 
 Käytin SSH -avaimen luomiseen seuraavia ohjeita: https://upcloud.com/docs/guides/use-ssh-keys-authentication, https://terokarvinen.com/linux-palvelimet/#h4-maailma-kuulee, https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ ja tarkensin vielä kysymyksiä ongelma tilanteissa Microsoft Copilot avulla.
 
-Kuvassa Tero Karvisen ohjeistus SSH-avaimen tekemiseen Linuxilla
+Kuvassa Tero Karvisen ohjeistus SSH avaimen tekemiseen Linuxilla.
 
 <img width="1550" height="430" alt="image" src="https://github.com/user-attachments/assets/34c4e7d7-4ac3-492c-92ea-7895b01d9d8c" />
 
-Aloitin SSH-avaimen luomisen avaamalla VirtualBoxin työasemallani ja käynnistämällä aikaisemmissa ohjeissa luodon Linux Virtuaalikoneen. Avasin terminaali-ikkunan ja tarkastin oliko SSH-client asennettu Linuxille. 
+Aloitin SSH-avaimen luomisen avaamalla VirtualBoxin työasemallani ja käynnistämällä aikaisemmissa ohjeissa luodun Linux Virtuaalikoneen.
 
-Ensiksi ajoin komennon "sudo apt-get update", seuraavaksi tarkastin onko SSH asennettu Linuxille komennolla "ssh -V".  Tarkastamisen jälkeen aloitin luomaan SSH -avainta. Käytin komentoa "ssh-keygen #" ja painoin enter kolme kertaa. (Jätin kuvan laittamatta ssh-avaimen generoinnista, tietoturva syistä). Nyt SSH-avain on generoitu ja voin syöttää sen virtuaalikoneelta UpCloudiin. Kopion SSH-avaimen käyttmällä Micro -editoria virtuaalikoneella avaamalla polun, johon SSH-avain luotiin.
+Ensiksi ajoin komennon "**sudo apt-get update**", seuraavaksi tarkastin onko SSH asennettu Linuxille komennolla "**ssh -V**". Tarkastamisen jälkeen aloitin luomaan SSH avainta, käytin komentoa "**ssh-keygen #**" ja painoin "enter" kolme kertaa. SSH avaimen generoimisen kopoin sen käyttämällä Micro -editoria virtuaalikoneella avaamalla polun "~/.ssh/..". 
 
 <img width="1660" height="308" alt="image" src="https://github.com/user-attachments/assets/6b7c48ba-611f-4226-96ef-170e4bbef1bc" />
 
+SSH avaimen kopiointi quest -koneelta host -koneelle ei onnistunut. Jouduin asentamaan "VirtualBox Guest Additions" -ajurit virtuaalikoneelleni, jotta sain kopioinnin toimimaan. Olin asettanut tiedostojen siirtämisen/kopioimisen asetukset aikaisemmin VirtualBoxista "bidirectional" -muotoon, joka tarkoittaa, että voin siirtää tiedsotja edestakaisin koneiden välillä. Selvästi asetukset eivät toimineet oikein, joten jouduin tekemään lisäselvitystä. En avaa asiaa tässä raportissa sen tarkemmin, mutta jos sama ongelma toistuu tätä raporttia seuratessa niin seuraavalla ohjeella ongelman saa ratkaistua: https://linuxconfig.org/install-virtualbox-guest-additions-on-linux-guest
 
-Minulla tuli ongelma avaiken kopioimisessa virtuaalikoneelta host -koneelle. Jouduin asentamaan "VirtualBox Guest Additions" virtuaalikoneelleni, jotta sain kopioitua SSH-avaimen. En avaa asiaa tässä vaiheessa sen tarkemmin, mutta jos sama ongelma toistuu niin seuraamalla seuraavaa ohjetta, ongelman saa varmasti ratkaistua: https://linuxconfig.org/install-virtualbox-guest-additions-on-linux-guest
-
-
-Syötin SSH-avaimen UpCloudiin ja jatkoin nimen viimeistelyyn. Jätin Hostnamen vakioksi ja Server Nameksi asetin "LinuxPalvelinTestMiro".
+Lopulta sain kopioitua SSH-avaimen UpCloudiin ja jatkoin palvelimen viimeistelyyn. Jätin Hostnamen vakioksi ja Server Nameksi asetin "LinuxPalvelinTestMiro". Huomasin, että näitä voi jälkikäteen muokata palvelimen käynnistämisen jälkeen, joten muutan niitä todennäköisesti myöhemmin.
 
 <img width="990" height="850" alt="image" src="https://github.com/user-attachments/assets/0050370f-749e-4fe1-9233-3b46801a87fb" />
 
