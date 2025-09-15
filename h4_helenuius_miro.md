@@ -91,7 +91,7 @@ Jätin verkon asetukset ja vaihtoehtoiset asetukset vakioiksi. Seuraavaksi siirr
 
 ## SSH avaimen luominen 
 
-Käytin SSH -avaimen luomiseen seuraavia ohjeita: https://upcloud.com/docs/guides/use-ssh-keys-authentication ja https://terokarvinen.com/linux-palvelimet/#h4-maailma-kuulee. 
+Käytin SSH -avaimen luomiseen seuraavia ohjeita: https://upcloud.com/docs/guides/use-ssh-keys-authentication, https://terokarvinen.com/linux-palvelimet/#h4-maailma-kuulee, https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ ja tarkensin vielä kysymyksiä ongelma tilanteissa Microsoft Copilot avulla.
 
 Kuvassa Tero Karvisen ohjeistus SSH-avaimen tekemiseen Linuxilla
 
