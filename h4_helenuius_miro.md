@@ -115,7 +115,7 @@ Lopulta sain kopioitua SSH-avaimen UpCloudiin ja jatkoin palvelimen viimeistelyy
 
 <img width="2310" height="958" alt="image" src="https://github.com/user-attachments/assets/340ab372-3ceb-4208-a203-2b1c91e9d240" />
 
-En saanut yhteyttä palvelimeen, koska palvelin ei tunnista virtuaalikonettani. Muokkasin käyttöoikeuksia ja loin virtuaalikoneelleni "known_hosts" tiedoston konelloa "**touch ~/.ssh/known_hosts**". Lisäsim julkisen SSH avaimen luomaani "known_hosts" -tiedostoon manuaalisesti komennolla "**ssh-keyscan 80.69.173.150 >> ~/.ssh/known_hosts**". Muokkasin vielä kansion ja tiedoston oikeudet kuntoon varmuudenvuoksi "**chmod 700 ~/ .ssh/**" ja "**chmod 644 ~/. ssh/known_hosts**".  Tämän jälkeen kokeilin yhteyttä SSH:lla palvelimeen ja se onnistui. Tarkastin oikeudet ja niiden tarkoitukset: https://chmodcommand.com/chmod-700/, kysyin apua tähän Ongelmaan Microsoft Copilotilta: 
+En saanut yhteyttä palvelimeen, koska palvelin ei pystynyt autentikoimaan SSH avaintani. Ongelman ratkaisi seuraavat toimenpiteet. Muokkasin käyttöoikeuksia ja loin virtuaalikoneelleni "known_hosts" tiedoston konelloa "**touch ~/.ssh/known_hosts**". Lisäsim julkisen SSH avaimen luomaani "known_hosts" -tiedostoon manuaalisesti komennolla "**ssh-keyscan 80.69.173.150 >> ~/.ssh/known_hosts**". Muokkasin vielä kansion ja tiedoston oikeudet kuntoon varmuudenvuoksi "**chmod 700 ~/ .ssh/**" ja "**chmod 644 ~/. ssh/known_hosts**".  Tämän jälkeen kokeilin yhteyttä SSH:lla palvelimeen ja se onnistui. Tarkastin oikeudet ja niiden tarkoitukset: https://chmodcommand.com/chmod-700/, kysyin apua tähän Ongelmaan Microsoft Copilotilta: 
 
 <img width="766" height="351" alt="image" src="https://github.com/user-attachments/assets/26cedc5f-6ab4-43f4-bb1e-54d3b759d210" />
 
@@ -126,36 +126,40 @@ En saanut yhteyttä palvelimeen, koska palvelin ei tunnista virtuaalikonettani. 
 <img width="788" height="569" alt="image" src="https://github.com/user-attachments/assets/0623a763-9c3d-42be-8d02-3df8ee536c01" />
 
 
-
 <img width="1830" height="104" alt="image" src="https://github.com/user-attachments/assets/26d0cc7b-220d-43cd-a1d4-4fe618dfb703" />
 
 <img width="2652" height="748" alt="image" src="https://github.com/user-attachments/assets/2f27999f-2714-4593-94a3-7e997a6171ac" />
 
-# Käyttäjien luominen palvelimelle 
+# Käyttäjän luominen vuokratulle palvelimelle
 
+Loin vanhigossa kaksi käyttäjää "miro" ja "miro_sudo", vaikka tarkoitus oli lisätä pääkäyttäjä sudo -ryhmään. Poistan ylimääräisen käyttäjän myöhemmin. Seurasin käyttäjän luomisessa Tero Karvisen ohjeistusta, koska en muistanut ulkoa, miten käyttäjiä luotiin/muokattiin. 
+
+<img width="804" height="518" alt="image" src="https://github.com/user-attachments/assets/cb14cb73-632e-4930-9768-419b85c2e727" />
+
+Loin käyttäjän miro komennolla "sudo adduser miro", määritin salasanan ja vastasin promptiin "Y".
 <img width="2568" height="872" alt="image" src="https://github.com/user-attachments/assets/53477e3b-15db-47b2-8a78-b5fd2d1ae33d" />
 
+Loin käyttäjän miro_sudo komennolla "sudo adduser miro_sudo", määritin salasanan ja vastasin promptiin "Y".
 <img width="2448" height="718" alt="image" src="https://github.com/user-attachments/assets/4766d687-63ba-4eb7-8675-72e60b53ac14" />
 
+Kopioin root:n SSH -asetukset omalle käyttäjälle kirjautumista varten ohjeistuksen mukaisesti.
 <img width="2600" height="616" alt="image" src="https://github.com/user-attachments/assets/88c4672a-3f95-4e21-9935-09736c1352f9" />
 
-Kirjauduin ulos ja kokeilen peruskäyttäjällä kirjautumista 
+Tämän jälkeen kirjauduin ulos ja kokeilen peruskäyttäjällä kirjautumista takaisin palvelimelle.
 
 <img width="2598" height="214" alt="image" src="https://github.com/user-attachments/assets/036602c3-e24b-4fef-b297-0cf761ce49db" />
 
-Seuraavaksi lukitsin ROOT -käyttäjän 
+Lopuksi lukitsin ROOT -käyttäjän pääsyn palvelimelle. 
 
 <img width="2598" height="836" alt="image" src="https://github.com/user-attachments/assets/392f31b5-7490-4b2b-857c-41e872aa4f83" />
 
-## b) Tee alkutoimet omalla virtuaalipalvelimella
+# b) alkutoimien tekeminen palvelimella, palomuurin ja muiden palveluiden asenttamienn
 
-# Palomuurin ja muiden palveluiden asenttamienn
+Tein palvelimen alkutoimet väärässä järjestyksessä, koska en aikaisemmin heti päässyt kirjatumaan salasanalla. Jatkossa tiedän, että hoidan alkutoimenpiteet heti SSH yhteyden toimiessa.
 
-Aloitin asentamalla palomuurin ufw
+Seuraavaksi asensin palomuurin palvelimelle. Käytin Uncomplicatedd Firewall (UFW). Asensin palomuurin palvelimelle komennolla "**sudo apt install ufw**". Sallin palomuuriin seuraavat portit "sudo ufw allow 22/tcp" ja "sudo ufw allow 80/tcp". Sallin säännöt komennolla "sudo ufw enable".
 
 <img width="2576" height="926" alt="image" src="https://github.com/user-attachments/assets/ab8493b7-7364-4e29-b751-37f319879153" />
-
-Seuraavaksi asetin säännöt palomuurille
 
 <img width="2594" height="568" alt="image" src="https://github.com/user-attachments/assets/325dfa54-27d7-48ab-991e-47f8daddea70" />
 
@@ -163,13 +167,7 @@ Sallin vielä erikseen SSH, mutta sillä ei ole väliä, koska avasin jo portin 
 
 <img width="2578" height="934" alt="image" src="https://github.com/user-attachments/assets/fa499727-545b-4cbb-86a6-86a7be22ab8a" />
 
-Nyt olet luonut palvelimen ja kiteytettynä tein seuraavat asiat:
-- Loin tunnukset UpCloudiin
-- Loin SSH-avaimen virtuaalikoneellani ja jaoin sen UpCLoudin virtuaalikonelle luomisen yhteydessä
-- Yhdistin virtuaalikoneeseen SSH -sessiolla (Jouduin tekemään tässä omia muokkauksia)
-- Asensin palomuurin ja sallin portit 22/TPC (SSH) ja 80/TCP (HTTP)
-- Loin uuden käyttäjän ja sudo oikeudet sille
-- lukitin root -käyttäjän.
+Tässä kohtaa olin asettanut palvelimen alkutoimet kuntoon ja seuraavaksi siirryin asentamaan apache2 web-palvelua palvelimelle.
 
 # c) Apache2 asentaminen palvelimelle
 
