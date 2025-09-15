@@ -85,9 +85,21 @@ Valitsin palvelimen suunnitelmaksi "Developer", koska palvelimen ei tässä vaih
 
 <img width="1618" height="1334" alt="image" src="https://github.com/user-attachments/assets/eb89db59-ca99-4f98-a4ae-231e0192c056" />
 
-Jätin verkon asetukset ja lisäasetukset vakioksi. Seuraavaksi siirryin SSH-avaimen luomiseen. Kyseinen käyttöjärjestelmäversio ei mahdollisanut "one time password" käyttämistä.
+Jätin verkon asetukset ja lisäasetukset vakioksi. Seuraavaksi siirryin SSH-avaimen luomiseen. Kyseinen käyttöjärjestelmäversio ei mahdollisanut "one time password" käyttämistä. Kyseinen tapa ei ole ohjeistuksen mukainen, mutta kokelin sen tekemistä silti. Jos olisin halunnut käyttää salasanaa, niin Linuxin versio olisi pitänyt olla "Debian GNU/Linux 11 (Bullseye)".
 
 <img width="1518" height="1534" alt="image" src="https://github.com/user-attachments/assets/f5a2ef8b-f1f1-4ad0-ac51-3e787c688a74" />
+
+# SSH avaimen luominen 
+
+Käytin SSH -avaimen luomiseen seuraavia ohjeita: https://upcloud.com/docs/guides/use-ssh-keys-authentication ja https://terokarvinen.com/linux-palvelimet/#h4-maailma-kuulee. 
+
+Kuvassa Tero Karvisen ohjeistus SSH-avaimen tekemiseen Linuxilla
+
+<img width="1550" height="430" alt="image" src="https://github.com/user-attachments/assets/34c4e7d7-4ac3-492c-92ea-7895b01d9d8c" />
+
+Aloitin SSH-avaimen luomisen avaamalla VirtualBoxin työasemallani ja käynnistämällä aikaisemmissa ohjeissa luodon Linux Virtuaalikoneen. Avasin terminaali-ikkunan ja tarkastin oliko SSH-client asennettu Linuxille. 
+
+
 
 
 
