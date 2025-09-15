@@ -99,6 +99,15 @@ Kuvassa Tero Karvisen ohjeistus SSH-avaimen tekemiseen Linuxilla
 
 Aloitin SSH-avaimen luomisen avaamalla VirtualBoxin työasemallani ja käynnistämällä aikaisemmissa ohjeissa luodon Linux Virtuaalikoneen. Avasin terminaali-ikkunan ja tarkastin oliko SSH-client asennettu Linuxille. 
 
+Ensiksi ajoin komennon "sudo apt-get update", seuraavaksi tarkastin onko SSH asennettu Linuxille komennolla "ssh -V".  Tarkastamisen jälkeen aloitin luomaan SSH -avainta. Käytin komentoa "ssh-keygen #" ja painoin enter kolme kertaa. (Jätin kuvan laittamatta ssh-avaimen generoinnista, tietoturva syistä). Nyt SSH-avain on generoitu ja voin syöttää sen virtuaalikoneelta UpCloudiin. Kopion SSH-avaimen käyttmällä Micro -editoria virtuaalikoneella avaamalla polun, johon SSH-avain luotiin.
+
+<img width="1660" height="308" alt="image" src="https://github.com/user-attachments/assets/6b7c48ba-611f-4226-96ef-170e4bbef1bc" />
+
+
+Minulla tuli ongelma avaiken kopioimisessa virtuaalikoneelta host -koneelle. Jouduin asentamaan "VirtualBox Guest Additions" virtuaalikoneelleni, jotta sain kopioitua SSH-avaimen. En avaa asiaa tässä vaiheessa sen tarkemmin, mutta jos sama ongelma toistuu niin seuraamalla seuraavaa ohjetta, ongelman saa varmasti ratkaistua: https://linuxconfig.org/install-virtualbox-guest-additions-on-linux-guest
+
+
+
 
 
 
