@@ -115,7 +115,7 @@ Lopulta sain kopioitua SSH-avaimen UpCloudiin ja jatkoin palvelimen viimeistelyy
 
 <img width="2310" height="958" alt="image" src="https://github.com/user-attachments/assets/340ab372-3ceb-4208-a203-2b1c91e9d240" />
 
-En saanut yhteyttä palvelimeen, koska palvelin ei tunnista virtuaalikonettani. Muokkasin käyttöoikeuksia ja loin virtuaalikoneelleni "known_hosts" tiedoston konelloa "**touch ~/.ssh/known_hosts**". Lisäsim julkisen SSH avaimen luomaani "known_hosts" -tiedostoon manuaalisesti komennolla "**ssh-keyscan 80.69.173.150 >> ~/.ssh/known_hosts**". Muokkasin vielä kansion ja tiedoston oikeudet kuntoon varmuudenvuoksi "**chmod 700 ~/ .ssh/**" ja "**chmod 644 ~/. ssh/known_hosts**".  Tämän jälkeen kokeilin yhteyttä SSH:lla palvelimeen ja se onnistui. Tarkastin oikeudet ja niiden tarkoitukset: https://chmodcommand.com/chmod-700/, kysyin apua tähän Ongemlaan Microsoft Copilotilta: 
+En saanut yhteyttä palvelimeen, koska palvelin ei tunnista virtuaalikonettani. Muokkasin käyttöoikeuksia ja loin virtuaalikoneelleni "known_hosts" tiedoston konelloa "**touch ~/.ssh/known_hosts**". Lisäsim julkisen SSH avaimen luomaani "known_hosts" -tiedostoon manuaalisesti komennolla "**ssh-keyscan 80.69.173.150 >> ~/.ssh/known_hosts**". Muokkasin vielä kansion ja tiedoston oikeudet kuntoon varmuudenvuoksi "**chmod 700 ~/ .ssh/**" ja "**chmod 644 ~/. ssh/known_hosts**".  Tämän jälkeen kokeilin yhteyttä SSH:lla palvelimeen ja se onnistui. Tarkastin oikeudet ja niiden tarkoitukset: https://chmodcommand.com/chmod-700/, kysyin apua tähän Ongelmaan Microsoft Copilotilta: 
 
 <img width="766" height="351" alt="image" src="https://github.com/user-attachments/assets/26cedc5f-6ab4-43f4-bb1e-54d3b759d210" />
 
