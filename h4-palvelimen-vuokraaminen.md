@@ -114,7 +114,7 @@ Syötin SSH-avaimen UpCloudiin ja jatkoin nimen viimeistelyyn. Jätin Hostnamen 
 <img width="1608" height="612" alt="image" src="https://github.com/user-attachments/assets/e8766acc-1d17-4d23-855a-8527c1204c89" />
 
 
-Valmis palvelin 
+# Toimiva palvelin
 
 <img width="2310" height="958" alt="image" src="https://github.com/user-attachments/assets/340ab372-3ceb-4208-a203-2b1c91e9d240" />
 
@@ -140,6 +140,7 @@ Seuraavaksi lukitsin ROOT -käyttäjän
 
 <img width="2598" height="836" alt="image" src="https://github.com/user-attachments/assets/392f31b5-7490-4b2b-857c-41e872aa4f83" />
 
+## b) Tee alkutoimet omalla virtuaalipalvelimella
 
 # Palomuurin ja muiden palveluiden asenttamienn
 
@@ -163,11 +164,38 @@ Nyt olet luonut palvelimen ja kiteytettynä tein seuraavat asiat:
 - Loin uuden käyttäjän ja sudo oikeudet sille
 - lukitin root -käyttäjän.
 
-## b) Tee alkutoimet omalla virtuaalipalvelimella
+# c) Apache2 asentaminen palvelimelle
+
+Palvelin luomisen ja esiastuksien jälkeen aloitin web-palvelimen asentamisen. 
+
+Avasin yhteyden palvelimeen ja terminaali-ikkunaan syötin komennon "sudo apt-get install apache".
+
+<img width="1702" height="388" alt="image" src="https://github.com/user-attachments/assets/d1ba449d-bfcc-4836-a719-67857c6a7a89" />
+
+Apachen statuksen tarkastamienn komennola "sudo systemctl status apache2"
+
+<img width="2658" height="1324" alt="image" src="https://github.com/user-attachments/assets/3191e0cf-0816-469f-b2da-feaa91237c70" />
+
+Indeksitiedoston muokkaaminen 
+
+Seuraavaksi siirryin hakemistoon /var/www/html. Kopioin index.html tiedoston nimellä index.html.orig ja poistin alkuperäisin. Tämän jälkeen lisälin Micro-editorilla tekstiä tiedostoon ja tallensin sen index.html nimellä samaan polkuun.
+
+<img width="2528" height="176" alt="image" src="https://github.com/user-attachments/assets/a10ade26-9a0d-45c6-ae65-36f298651c65" />
+
+<img width="2598" height="258" alt="image" src="https://github.com/user-attachments/assets/7db04d78-3b32-46d2-865e-18d53a4c631c" />
+
+<img width="2600" height="72" alt="image" src="https://github.com/user-attachments/assets/ad04f07d-b283-48cd-81c2-fdb6c790a462" />
+
+<img width="2674" height="1328" alt="image" src="https://github.com/user-attachments/assets/d996f2f0-cc77-4e5a-a511-e1ae37333abb" />
+
+Seuraavaksi avasin verkkoselaimen omalta tietokoneeltani ja testasin sivun toimivuutta. 
+
+<img width="2572" height="272" alt="image" src="https://github.com/user-attachments/assets/84f55a8f-8860-4a39-b514-1787c60e1223" />
+
+<img width="2770" height="412" alt="image" src="https://github.com/user-attachments/assets/c06eba86-9b44-45df-bb15-e6d550fe8da4" />
 
 
-
-## c) Vapaaehtoinen, luo namebased virtualhost palvelimelle
+# d) Vapaaehtoinen, luo namebased virtualhost palvelimelle
 
 
 
