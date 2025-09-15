@@ -155,6 +155,13 @@ Sallin vielä erikseen SSH, mutta sillä ei ole väliä, koska avasin jo portin 
 
 <img width="2578" height="934" alt="image" src="https://github.com/user-attachments/assets/fa499727-545b-4cbb-86a6-86a7be22ab8a" />
 
+Nyt olet luonut palvelimen ja kiteytettynä tein seuraavat asiat:
+- Loin tunnukset UpCloudiin
+- Loin SSH-avaimen virtuaalikoneellani ja jaoin sen UpCLoudin virtuaalikonelle luomisen yhteydessä
+- Yhdistin virtuaalikoneeseen SSH -sessiolla (Jouduin tekemään tässä omia muokkauksia)
+- Asensin palomuurin ja sallin portit 22/TPC (SSH) ja 80/TCP (HTTP)
+- Loin uuden käyttäjän ja sudo oikeudet sille
+- lukitin root -käyttäjän.
 
 ## b) Tee alkutoimet omalla virtuaalipalvelimella
 
