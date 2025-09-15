@@ -111,11 +111,21 @@ Lopulta sain kopioitua SSH-avaimen UpCloudiin ja jatkoin palvelimen viimeistelyy
 
 <img width="1608" height="612" alt="image" src="https://github.com/user-attachments/assets/e8766acc-1d17-4d23-855a-8527c1204c89" />
 
-# SSH yhteyden testaaminen
+# SSH yhteyden testaaminen 
 
 <img width="2310" height="958" alt="image" src="https://github.com/user-attachments/assets/340ab372-3ceb-4208-a203-2b1c91e9d240" />
 
-En saanut yhteyttä palvelimeen, koska palvelin ei tunnista virtuaalikonettani. Muokkasin käyttöoikeuksia ja loin virtuaalikoneelleni "known_hosts" tiedoston konelloa "**touch ~/.ssh/known_hosts**". Lisäsim julkisen SSH avaimen luomaani "known_hosts" -tiedostoon manuaalisesti komennolla "**ssh-keyscan 80.69.173.150 >> ~/.ssh/known_hosts**". Muokkasin vielä kansion ja tiedoston oikeudet kuntoon varmuudenvuoksi "**chmod 700 ~/ .ssh/**" ja "**chmod 644 ~/. ssh/known_hosts**".  Tämän jälkeen kokeilin yhteyttä SSH:lla palvelimeen ja se onnistui. 
+En saanut yhteyttä palvelimeen, koska palvelin ei tunnista virtuaalikonettani. Muokkasin käyttöoikeuksia ja loin virtuaalikoneelleni "known_hosts" tiedoston konelloa "**touch ~/.ssh/known_hosts**". Lisäsim julkisen SSH avaimen luomaani "known_hosts" -tiedostoon manuaalisesti komennolla "**ssh-keyscan 80.69.173.150 >> ~/.ssh/known_hosts**". Muokkasin vielä kansion ja tiedoston oikeudet kuntoon varmuudenvuoksi "**chmod 700 ~/ .ssh/**" ja "**chmod 644 ~/. ssh/known_hosts**".  Tämän jälkeen kokeilin yhteyttä SSH:lla palvelimeen ja se onnistui. Tarkastin oikeudet ja niiden tarkoitukset: https://chmodcommand.com/chmod-700/, kysyin apua tähän Ongemlaan Microsoft Copilotilta: 
+
+<img width="766" height="351" alt="image" src="https://github.com/user-attachments/assets/26cedc5f-6ab4-43f4-bb1e-54d3b759d210" />
+
+<img width="782" height="1088" alt="image" src="https://github.com/user-attachments/assets/875651c9-b892-4fc6-b3bb-8c0c635b380d" />
+
+<img width="770" height="353" alt="image" src="https://github.com/user-attachments/assets/3c9c4155-8c5f-4959-93fb-5e66764139a2" />
+
+<img width="788" height="569" alt="image" src="https://github.com/user-attachments/assets/0623a763-9c3d-42be-8d02-3df8ee536c01" />
+
+
 
 <img width="1830" height="104" alt="image" src="https://github.com/user-attachments/assets/26d0cc7b-220d-43cd-a1d4-4fe618dfb703" />
 
