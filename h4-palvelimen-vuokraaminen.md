@@ -107,7 +107,22 @@ Ensiksi ajoin komennon "sudo apt-get update", seuraavaksi tarkastin onko SSH ase
 Minulla tuli ongelma avaiken kopioimisessa virtuaalikoneelta host -koneelle. Jouduin asentamaan "VirtualBox Guest Additions" virtuaalikoneelleni, jotta sain kopioitua SSH-avaimen. En avaa asiaa tässä vaiheessa sen tarkemmin, mutta jos sama ongelma toistuu niin seuraamalla seuraavaa ohjetta, ongelman saa varmasti ratkaistua: https://linuxconfig.org/install-virtualbox-guest-additions-on-linux-guest
 
 
+Syötin SSH-avaimen UpCloudiin ja jatkoin nimen viimeistelyyn. Jätin Hostnamen vakioksi ja Server Nameksi asetin "LinuxPalvelinTestMiro".
 
+<img width="990" height="850" alt="image" src="https://github.com/user-attachments/assets/0050370f-749e-4fe1-9233-3b46801a87fb" />
+
+<img width="1608" height="612" alt="image" src="https://github.com/user-attachments/assets/e8766acc-1d17-4d23-855a-8527c1204c89" />
+
+
+Valmis palvelin 
+
+<img width="2310" height="958" alt="image" src="https://github.com/user-attachments/assets/340ab372-3ceb-4208-a203-2b1c91e9d240" />
+
+En saanut yhteyttä palvelimeen, koska palvelin ei tunnista virtuaalikonettani. Muokkasin käyttöoikeuksia ja loin virtuaalikoneelleni "known_hosts" -kansion. Lisäsim palvelimen julkiseavaimen tänne ja pääsin yhdistämään palvelimelle.
+
+<img width="1830" height="104" alt="image" src="https://github.com/user-attachments/assets/26d0cc7b-220d-43cd-a1d4-4fe618dfb703" />
+
+<img width="2652" height="748" alt="image" src="https://github.com/user-attachments/assets/2f27999f-2714-4593-94a3-7e997a6171ac" />
 
 
 
