@@ -6,7 +6,7 @@ Tehtävänanto: h4 Maailma kuulee
 ## Tiivistelmä 
 
 
-## a) Vuokraa oma palvelin
+## a) Palvelimen Vuokraaminen DigitalOcean
 
 Käytin seuraavaa opasta tukemaan palvelimen vuokrausta: https://www.tutkit.com/fi/tekstioppaat/17058-vuokraa-linux-palvelimesi-digitaloceanilta-yksinkertainen-opas
 
@@ -49,6 +49,10 @@ Salasanan asettaminen
 Viimeistely 
 
 <img width="1342" height="443" alt="image" src="https://github.com/user-attachments/assets/310fff2b-49f1-4b96-af86-f0074de72e07" />
+
+Digital Ocean ei jostain syystä suostunyt hyväksymään korttitietojani ja tästä syystä en saanut palvelinta vuokrattua. Päätin vaihtaa UpCloudiin ja kyseisen palvelinvuokraajan kautta sain aktivoitua tunnukseni. Jätin kuitekin tähän raporttiin kyseiset vaihee, jos tulevaisuudessa tarvitsen ohjeita. 
+
+# Palvelimen Vuokraaminen UpCloud
 
 
 
