@@ -34,38 +34,37 @@ Kyseiset resurssit ovat tämän kurssin demostraation riittävät. En valinnut y
 
 <img width="1701" height="1356" alt="image" src="https://github.com/user-attachments/assets/eccdec1d-026e-4c29-a63a-b9fb21858842" />
 
-Käyttöjärjestelmän valitseminen
+## Käyttöjärjestelmän valitseminen
 
 <img width="1490" height="764" alt="image" src="https://github.com/user-attachments/assets/f1459856-000f-4b7c-b217-2ce713cbe38b" />
 
-Palvelimen koon ja "raudan" valitseminen
+## Palvelimen koon ja "raudan" valitseminen
 
 <img width="1485" height="1003" alt="image" src="https://github.com/user-attachments/assets/37ec2367-fc8f-4f0f-92a1-88e7201cc842" />
 
-Salasanan asettaminen
+## Salasanan asettaminen
 
 <img width="1485" height="845" alt="image" src="https://github.com/user-attachments/assets/758e7cc4-74a2-4144-8569-caa6f85641b4" />
 
-Viimeistely 
+## Viimeistely 
 
 <img width="1342" height="443" alt="image" src="https://github.com/user-attachments/assets/310fff2b-49f1-4b96-af86-f0074de72e07" />
 
 Digital Ocean ei jostain syystä suostunyt hyväksymään korttitietojani ja tästä syystä en saanut palvelinta vuokrattua. Päätin vaihtaa UpCloudiin ja kyseisen palvelinvuokraajan kautta sain aktivoitua tunnukseni. Jätin kuitekin tähän raporttiin kyseiset vaihee, jos tulevaisuudessa tarvitsen ohjeita. 
 
-# Palvelimen Vuokraaminen UpCloud
+## Palvelimen Vuokraaminen UpCloud
 
-Aloitin palvelimen vuokraamisen menemällä UpCloudin kotisivuille: https://upcloud.com
-Valitsin "Sing Up", loin käyttäjätunnuksen, vahvistin sen maksukortillani ja tämän jälkeen aloitin palvelimen vuokraamisen. Tukeuduin palvelimen luomisessa UpCloudin omaan dokumentaatioon: https://upcloud.com/docs/guides/quick-start-guide
+Aloitin palvelimen vuokraamisen menemällä UpCloudin kotisivuille: https://upcloud.com. Valitsin "Sing Up", loin käyttäjätunnuksen, vahvistin sen maksukortillani ja tämän jälkeen pääsin valitsemaan halutun palvelun. Tukeuduin tässä raportissa palvelimen luomiseen UpCloudin oman dokumentaation avulla: https://upcloud.com/docs/guides/quick-start-guide
 
 <img width="2754" height="1604" alt="image" src="https://github.com/user-attachments/assets/a14d4a07-ac5e-4a63-8b20-347134558a63" />
 
 <img width="2768" height="1628" alt="image" src="https://github.com/user-attachments/assets/60c21077-3617-4b5c-bc70-f9e7b8215d9b" />
 
-Dashboard näkymä rekisteröitymisen jälkeen
+## Dashboard näkymä, josta voidaan valita eri palveluita. 
 
 <img width="2742" height="1534" alt="image" src="https://github.com/user-attachments/assets/a521f183-b893-4611-9772-8b259d10fa2d" />
 
-Seuraavaksi aloitin luomaan uutta virtuaalikonetta, valitsemalla "Deploy" -ikkunasta. Valitsin palvelimen ja seuraavaksi määritin palvelimen sijainnin. Valitsin sijainniksi "FI-HEL1".
+Seuraavaksi aloitin luomaan virtuaalikonetta valitsemalla Deploy your trial services -ikkunasta "Deploy now". Valitsin palvelimen ja seuraavaksi määritin palvelimen sijainnin. Valitsin sijainniksi "FI-HEL1".
 
 <img width="1408" height="456" alt="image" src="https://github.com/user-attachments/assets/e379a2d3-d03a-4e44-a97c-8d2db684d9dd" />
 
@@ -73,9 +72,10 @@ Seuraavaksi aloitin luomaan uutta virtuaalikonetta, valitsemalla "Deploy" -ikkun
 
 <img width="2210" height="1448" alt="image" src="https://github.com/user-attachments/assets/8815c1de-703f-491a-8350-4d8a8d57c0c3" />
 
-# Komponenttien valitseminen 
+## Komponenttien valitseminen 
 
-Valitsin palvelimen suunnitelmaksi "Developer", koska palvelimen ei tässä vaiheessa tarvitse olla kovin tehokas, joten valitsin RAM-muistin määräksi "1GB", yhden ytimen prosessoriin ja tallenustilaa "25GB". Jätin varmuuskopion ja tallenuksen asetukset vakioksi. Tämän jälkeen jatkoin käyttöjärjestelmän valintaan. Valitsin käyttöjärjestelmäksi "Debian GNU/Linux 13(Trixie). 
+Valitsin palvelimen suunnitelmaksi "Developer", valitsin RAM-muistin määräksi "1GB", yhden ytimen prosessoriin ja tallenustilaa "20GB". Jätin varmuuskopion ja tallenuksen asetukset vakioksi. 
+Tämän jälkeen jatkoin käyttöjärjestelmän valintaan. Valitsin käyttöjärjestelmäksi "Debian GNU/Linux 13(Trixie). 
 
 <img width="2212" height="1416" alt="image" src="https://github.com/user-attachments/assets/e6b5e335-114e-4f42-886c-5bb0235768b9" />
 
@@ -85,11 +85,11 @@ Valitsin palvelimen suunnitelmaksi "Developer", koska palvelimen ei tässä vaih
 
 <img width="1618" height="1334" alt="image" src="https://github.com/user-attachments/assets/eb89db59-ca99-4f98-a4ae-231e0192c056" />
 
-Jätin verkon asetukset ja lisäasetukset vakioksi. Seuraavaksi siirryin SSH-avaimen luomiseen. Kyseinen käyttöjärjestelmäversio ei mahdollisanut "one time password" käyttämistä. Kyseinen tapa ei ole ohjeistuksen mukainen, mutta kokelin sen tekemistä silti. Jos olisin halunnut käyttää salasanaa, niin Linuxin versio olisi pitänyt olla "Debian GNU/Linux 11 (Bullseye)".
+Jätin verkon asetukset ja vaihtoehtoiset asetukset vakioiksi. Seuraavaksi siirryin SSH avaimen luomiseen. Olisin tässä kohtaa halunnut luoda kertakäyttöisen salasana, mutta kyseinen käyttöjärjestelmäversio ei mahdollistanut "one time password" käyttämistä. Jos olisin halunnut käyttää salasanaa, niin Linuxin versio olisi pitänyt olla "Debian GNU/Linux 11 (Bullseye)".
 
 <img width="1518" height="1534" alt="image" src="https://github.com/user-attachments/assets/f5a2ef8b-f1f1-4ad0-ac51-3e787c688a74" />
 
-# SSH avaimen luominen 
+## SSH avaimen luominen 
 
 Käytin SSH -avaimen luomiseen seuraavia ohjeita: https://upcloud.com/docs/guides/use-ssh-keys-authentication ja https://terokarvinen.com/linux-palvelimet/#h4-maailma-kuulee. 
 
