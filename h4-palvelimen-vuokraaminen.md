@@ -124,7 +124,21 @@ En saanut yhteyttä palvelimeen, koska palvelin ei tunnista virtuaalikonettani. 
 
 <img width="2652" height="748" alt="image" src="https://github.com/user-attachments/assets/2f27999f-2714-4593-94a3-7e997a6171ac" />
 
+# Käyttäjien luominen palvelimelle 
 
+<img width="2568" height="872" alt="image" src="https://github.com/user-attachments/assets/53477e3b-15db-47b2-8a78-b5fd2d1ae33d" />
+
+<img width="2448" height="718" alt="image" src="https://github.com/user-attachments/assets/4766d687-63ba-4eb7-8675-72e60b53ac14" />
+
+<img width="2600" height="616" alt="image" src="https://github.com/user-attachments/assets/88c4672a-3f95-4e21-9935-09736c1352f9" />
+
+Kirjauduin ulos ja kokeilen peruskäyttäjällä kirjautumista 
+
+<img width="2598" height="214" alt="image" src="https://github.com/user-attachments/assets/036602c3-e24b-4fef-b297-0cf761ce49db" />
+
+Seuraavaksi lukitsin ROOT -käyttäjän 
+
+<img width="2598" height="836" alt="image" src="https://github.com/user-attachments/assets/392f31b5-7490-4b2b-857c-41e872aa4f83" />
 
 
 ## b) Tee alkutoimet omalla virtuaalipalvelimella
