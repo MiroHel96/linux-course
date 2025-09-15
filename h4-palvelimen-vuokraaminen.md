@@ -54,6 +54,41 @@ Digital Ocean ei jostain syystä suostunyt hyväksymään korttitietojani ja tä
 
 # Palvelimen Vuokraaminen UpCloud
 
+Aloitin palvelimen vuokraamisen menemällä UpCloudin kotisivuille: https://upcloud.com
+Valitsin "Sing Up", loin käyttäjätunnuksen, vahvistin sen maksukortillani ja tämän jälkeen aloitin palvelimen vuokraamisen. Tukeuduin palvelimen luomisessa UpCloudin omaan dokumentaatioon: https://upcloud.com/docs/guides/quick-start-guide
+
+<img width="2754" height="1604" alt="image" src="https://github.com/user-attachments/assets/a14d4a07-ac5e-4a63-8b20-347134558a63" />
+
+<img width="2768" height="1628" alt="image" src="https://github.com/user-attachments/assets/60c21077-3617-4b5c-bc70-f9e7b8215d9b" />
+
+Dashboard näkymä rekisteröitymisen jälkeen
+
+<img width="2742" height="1534" alt="image" src="https://github.com/user-attachments/assets/a521f183-b893-4611-9772-8b259d10fa2d" />
+
+Seuraavaksi aloitin luomaan uutta virtuaalikonetta, valitsemalla "Deploy" -ikkunasta. Valitsin palvelimen ja seuraavaksi määritin palvelimen sijainnin. Valitsin sijainniksi "FI-HEL1".
+
+<img width="1408" height="456" alt="image" src="https://github.com/user-attachments/assets/e379a2d3-d03a-4e44-a97c-8d2db684d9dd" />
+
+<img width="1394" height="1198" alt="image" src="https://github.com/user-attachments/assets/ccb66956-53c4-48a8-a834-d12889165e64" />
+
+<img width="2210" height="1448" alt="image" src="https://github.com/user-attachments/assets/8815c1de-703f-491a-8350-4d8a8d57c0c3" />
+
+# Komponenttien valitseminen 
+
+Valitsin palvelimen suunnitelmaksi "Developer", koska palvelimen ei tässä vaiheessa tarvitse olla kovin tehokas, joten valitsin RAM-muistin määräksi "1GB", yhden ytimen prosessoriin ja tallenustilaa "25GB". Jätin varmuuskopion ja tallenuksen asetukset vakioksi. Tämän jälkeen jatkoin käyttöjärjestelmän valintaan. Valitsin käyttöjärjestelmäksi "Debian GNU/Linux 13(Trixie). 
+
+<img width="2212" height="1416" alt="image" src="https://github.com/user-attachments/assets/e6b5e335-114e-4f42-886c-5bb0235768b9" />
+
+<img width="1574" height="654" alt="image" src="https://github.com/user-attachments/assets/79b25ad0-534c-43ce-b25b-0e92dd0c1623" />
+
+<img width="1588" height="1288" alt="image" src="https://github.com/user-attachments/assets/9fd96f42-955d-4124-bc92-7a9fc300ed0d" />
+
+<img width="1618" height="1334" alt="image" src="https://github.com/user-attachments/assets/eb89db59-ca99-4f98-a4ae-231e0192c056" />
+
+Jätin verkon asetukset ja lisäasetukset vakioksi. Seuraavaksi siirryin SSH-avaimen luomiseen. Kyseinen käyttöjärjestelmäversio ei mahdollisanut "one time password" käyttämistä.
+
+<img width="1518" height="1534" alt="image" src="https://github.com/user-attachments/assets/f5a2ef8b-f1f1-4ad0-ac51-3e787c688a74" />
+
 
 
 ## b) Tee alkutoimet omalla virtuaalipalvelimella
