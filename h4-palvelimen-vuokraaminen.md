@@ -141,7 +141,24 @@ Seuraavaksi lukitsin ROOT -käyttäjän
 <img width="2598" height="836" alt="image" src="https://github.com/user-attachments/assets/392f31b5-7490-4b2b-857c-41e872aa4f83" />
 
 
+# Palomuurin ja muiden palveluiden asenttamienn
+
+Aloitin asentamalla palomuurin ufw
+
+<img width="2576" height="926" alt="image" src="https://github.com/user-attachments/assets/ab8493b7-7364-4e29-b751-37f319879153" />
+
+Seuraavaksi asetin säännöt palomuurille
+
+<img width="2594" height="568" alt="image" src="https://github.com/user-attachments/assets/325dfa54-27d7-48ab-991e-47f8daddea70" />
+
+Sallin vielä erikseen SSH, mutta sillä ei ole väliä, koska avasin jo portin 22/TCP. Tarkastin vielä asetukset ja käynnistin tämän jälkeen virtuaalikoneen uudestaan. 
+
+<img width="2578" height="934" alt="image" src="https://github.com/user-attachments/assets/fa499727-545b-4cbb-86a6-86a7be22ab8a" />
+
+
 ## b) Tee alkutoimet omalla virtuaalipalvelimella
+
+
 
 ## c) Vapaaehtoinen, luo namebased virtualhost palvelimelle
 
