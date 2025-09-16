@@ -21,6 +21,8 @@ Alla tiivistelmä seuraavista artikkeleista: https://terokarvinen.com/2017/first
 
 ## a) Palvelimen Vuokraaminen DigitalOcean
 
+Huomiona raportin lukijalle, suosittelen suoraan hyppäämään kohtaan "**Palvelimen Vuokraaminen UpCloud**", koska jouduin vaihtamaan palveluntarjoajaa kesken tämän raportin teon. Jätin demostraatio syistä DigitalOceanin palvelun vuokraamisen raporttiin.
+
 Käytin seuraavaa opasta tukemaan palvelimen vuokrausta: https://www.tutkit.com/fi/tekstioppaat/17058-vuokraa-linux-palvelimesi-digitaloceanilta-yksinkertainen-opas
 
 Tässä raportin vaiheessa vuokrasin verkosta palvelimen, jonka alkukonfiguraatiot toteutin aikaisemmin luomallani virtuaali Linuxilla. Harjoituksen tarkoitus on luoda verkkosivu, joka näkyy verkossa ulkopuolisille. 
@@ -36,9 +38,7 @@ Hain verkkoselaimesta "DigitalOcean", avasin palveluntarjoajan kotisivun ja rull
 
 ## Palvelimen asetuksien valitseminen 
 
-Sisäänkirjautumisen jälkeen pääsin "Create DropletS" -sivulle, pisara viittaa ilmeisesti palvelimeen palvelimien meressä. 
-
-Valitsin palvelimelle alueeksi "Frankfurt", koska se oli lähin vaihtoehto. Datakeskusta en voinut muuttaa, joten jätin sen vakioksi. Seuraavaksi valitsin käyttöjärjestelmän versioksi "Debian, 12 x64". Versio 13 olisi ollut parempi vaihtoehto, mutta jatkoin saatavailla olevalla versiolla. Valitsin palvelimelle peruspaketin eli jaetun prosessorin, koska en tarvitse paljon tehoa palvelimelle. CPU -asetuksista valitsin seuraavan kuukausisuunitelman:
+Sisäänkirjautumisen jälkeen pääsin "Create DropletS" -sivulle. Valitsin palvelimelle alueeksi "Frankfurt", koska se oli lähin vaihtoehto. Datakeskusta en voinut muuttaa, joten jätin sen vakioksi. Seuraavaksi valitsin käyttöjärjestelmän versioksi "Debian, 12 x64". Versio 13 olisi ollut parempi vaihtoehto, mutta jatkoin saatavailla olevalla versiolla. Valitsin palvelimelle peruspaketin eli jaetun prosessorin, koska en tarvitse paljon tehoa palvelimelle. CPU -asetuksista valitsin seuraavan kuukausisuunitelman:
 - 1GB / 1CPU
 - 25 GN SSD Disk
 - 1000 GB transfer
@@ -65,7 +65,7 @@ Kyseiset resurssit ovat tämän kurssin demostraation riittävät. En valinnut y
 
 Digital Ocean ei jostain syystä suostunyt hyväksymään korttitietojani ja tästä syystä en saanut palvelinta vuokrattua. Päätin vaihtaa UpCloudiin ja kyseisen palvelinvuokraajan kautta sain aktivoitua tunnukseni. Jätin kuitekin tähän raporttiin kyseiset vaihee, jos tulevaisuudessa tarvitsen ohjeita. 
 
-## Palvelimen Vuokraaminen UpCloud
+## a) Palvelimen Vuokraaminen UpCloud
 
 Aloitin palvelimen vuokraamisen menemällä UpCloudin kotisivuille: https://upcloud.com. Valitsin "Sing Up", loin käyttäjätunnuksen, vahvistin sen maksukortillani ja tämän jälkeen pääsin valitsemaan halutun palvelun. Tukeuduin tässä raportissa palvelimen luomiseen UpCloudin oman dokumentaation avulla: https://upcloud.com/docs/guides/quick-start-guide
 
