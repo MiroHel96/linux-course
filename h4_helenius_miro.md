@@ -21,7 +21,7 @@ Alla tiivistelmä seuraavista artikkeleista: https://terokarvinen.com/2017/first
 
 ## a) Palvelimen Vuokraaminen DigitalOcean
 
-Huomiona raportin lukijalle, suosittelen suoraan hyppäämään kohtaan "**Palvelimen Vuokraaminen UpCloud**", koska jouduin vaihtamaan palveluntarjoajaa kesken tämän raportin teon. Jätin demostraatio syistä DigitalOceanin palvelun vuokraamisen raporttiin.
+**Huomiona raportin lukijalle, suosittelen suoraan hyppäämään kohtaan "**Palvelimen Vuokraaminen UpCloud**", koska jouduin vaihtamaan palveluntarjoajaa kesken tämän raportin teon. Jätin demostraatio syistä DigitalOceanin palvelun vuokraamisen raporttiin.**
 
 Käytin seuraavaa opasta tukemaan palvelimen vuokrausta: https://www.tutkit.com/fi/tekstioppaat/17058-vuokraa-linux-palvelimesi-digitaloceanilta-yksinkertainen-opas
 
