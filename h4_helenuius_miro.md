@@ -1,10 +1,17 @@
 # Tero Karvinen Haaga-Helia ammatikorkeakoulu syksy 2025 - Linux Palvelimet
 
-Tehtävänanto: h4 Maailma kuulee 
+Tehtävänanto: h4 Maailma kuulee Linux Palvelimet syksy 2025 Haaga-Helia Ammatikorkeakoulu - Tero Karvinen
 
+## Tiivistelmä:
 
-## Tiivistelmä 
+Alla tiivistelmä seuraavista artikkeleista: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean ja https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4
 
+- Pilvipalvelimen vuokrausta kannattaa harjoitella oikeilla palveluntarjoajilla, kuten DigitalOcean tai UpCloud. Ilmaisena versiona voi käyttää esim. Vagrant. Muista vahva salasana!
+- Suojaa palvelin palomuurilla, hyvä perusmuuri on Uncomplicated Firewall (ufw), muista myös sallia ssh-yhteys, jotta palvelimeen pääsee kiinni etänä. 
+- Asenna palvelimelle Apache2 webbipalvelin. Muokkaa vakiosivua ja testaa sen toimivuus toisella laitteella. Oikeita verkkosivuja tehdessä luo indeksitiedostot peruskäyttäjänä public_html/ alle.
+- luo käyttäjätunnus ja lisää se sudoers ryhmään, lopuksi lukitse root -käyttäjä. Muista myös disabloida root login ssh:lla.
+- Muista ladata päivitykset palvelimelle viimeistään lopuksi "sudo apt upgrade"
+  
 
 ## a) Palvelimen Vuokraaminen DigitalOcean
 
@@ -200,7 +207,20 @@ Seuraavaksi avasin verkkoselaimen omalta tietokoneeltani ja testasin sivun toimi
 <img width="2770" height="412" alt="image" src="https://github.com/user-attachments/assets/c06eba86-9b44-45df-bb15-e6d550fe8da4" />
 
 
-# d) Vapaaehtoinen, luo namebased virtualhost palvelimelle
+Lähdeluettelo: 
 
+https://www.tutkit.com/fi/tekstioppaat/17058-vuokraa-linux-palvelimesi-digitaloceanilta-yksinkertainen-opas
+
+https://upcloud.com/docs/guides/quick-start-guide
+
+https://upcloud.com/docs/guides/use-ssh-keys-authentication
+
+https://terokarvinen.com/linux-palvelimet/#h4-maailma-kuulee
+
+https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/
+
+https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/
+
+https://chmodcommand.com/chmod-700/
 
 
