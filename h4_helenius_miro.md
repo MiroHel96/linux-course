@@ -1,4 +1,4 @@
-# Tero Karvinen Haaga-Helia ammatikorkeakoulu syksy 2025 - Linux Palvelimet
+## Haaga-Helia ammattikorkeakoulu syksy 2025 - Linux Palvelimet
 
 Tehtävänanto: h4 Maailma kuulee Linux Palvelimet syksy 2025 Haaga-Helia Ammatikorkeakoulu - Tero Karvinen
 
@@ -7,10 +7,16 @@ Tehtävänanto: h4 Maailma kuulee Linux Palvelimet syksy 2025 Haaga-Helia Ammati
 Alla tiivistelmä seuraavista artikkeleista: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean ja https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4
 
 - Pilvipalvelimen vuokrausta kannattaa harjoitella oikeilla palveluntarjoajilla, kuten DigitalOcean tai UpCloud. Ilmaisena versiona voi käyttää esim. Vagrant. Muista vahva salasana!
-- Suojaa palvelin palomuurilla, hyvä perusmuuri on Uncomplicated Firewall (ufw), muista myös sallia ssh-yhteys, jotta palvelimeen pääsee kiinni etänä. 
+  
+- Suojaa palvelin palomuurilla, hyvä perusmuuri on Uncomplicated Firewall (ufw), muista myös sallia ssh-yhteys (22/tcp), jotta palvelimeen pääsee kiinni etänä. Muista avata myös portti palvelinta varten (80/tcp).
+  
 - Asenna palvelimelle Apache2 webbipalvelin. Muokkaa vakiosivua ja testaa sen toimivuus toisella laitteella. Oikeita verkkosivuja tehdessä luo indeksitiedostot peruskäyttäjänä public_html/ alle.
+  
 - luo käyttäjätunnus ja lisää se sudoers ryhmään, lopuksi lukitse root -käyttäjä. Muista myös disabloida root login ssh:lla.
-- Muista ladata päivitykset palvelimelle viimeistään lopuksi "sudo apt upgrade"
+  
+- Muista ladata päivitykset palvelimelle viimeistään lopuksi "sudo apt-get update" ja "sudo apt-get upgrade" -komennoilla.
+
+- Lisää palvelimelle julkinen DNS nimi. Hyvä palveluntarjoaja on esim. NameCheap
   
 
 ## a) Palvelimen Vuokraaminen DigitalOcean
