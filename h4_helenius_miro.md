@@ -87,7 +87,7 @@ Seuraavaksi aloitin luomaan virtuaalikonetta valitsemalla Deploy your trial serv
 
 ## Komponenttien valitseminen 
 
-Valitsin palvelimen suunnitelmaksi "Developer", valitsin RAM-muistin määräksi "1GB", yhden ytimen prosessoriin ja tallenustilaa "20GB". Jätin varmuuskopion ja tallenuksen asetukset vakioksi. 
+Valitsin palvelimen suunnitelmaksi "Developer", RAM-muistin määräksi määritin "1GB", prosessorille yhden ytimen ja tallenustilaa "20GB". Jätin varmuuskopion ja tallenuksen asetukset vakioksi. 
 Tämän jälkeen jatkoin käyttöjärjestelmän valintaan. Valitsin käyttöjärjestelmäksi "Debian GNU/Linux 13(Trixie). 
 
 <img width="2212" height="1416" alt="image" src="https://github.com/user-attachments/assets/e6b5e335-114e-4f42-886c-5bb0235768b9" />
@@ -112,11 +112,14 @@ Kuvassa Tero Karvisen ohjeistus SSH avaimen tekemiseen Linuxilla.
 
 Aloitin SSH-avaimen luomisen avaamalla VirtualBoxin työasemallani ja käynnistämällä aikaisemmissa ohjeissa luodun Linux Virtuaalikoneen.
 
-Ensiksi ajoin komennon "**sudo apt-get update**", seuraavaksi tarkastin onko SSH asennettu Linuxille komennolla "**ssh -V**". Tarkastamisen jälkeen aloitin luomaan SSH avainta, käytin komentoa "**ssh-keygen #**" ja painoin "enter" kolme kertaa. SSH avaimen generoimisen kopoin sen käyttämällä Micro -editoria virtuaalikoneella avaamalla polun "~/.ssh/..". 
+Ensiksi ajoin komennon "**sudo apt-get update**", seuraavaksi tarkastin onko SSH asennettu Linuxille komennolla "**ssh -V**". Tarkastamisen jälkeen aloitin luomaan SSH avainta, käytin komentoa "**ssh-keygen #**" ja painoin "enter" kolme kertaa. SSH avaimen generoimisen jälkeen kopioin sen käyttämällä Micro -editoria virtuaalikoneella avaamalla polun "~/.ssh/..". 
 
 <img width="1660" height="308" alt="image" src="https://github.com/user-attachments/assets/6b7c48ba-611f-4226-96ef-170e4bbef1bc" />
 
-SSH avaimen kopiointi quest -koneelta host -koneelle ei onnistunut. Jouduin asentamaan "VirtualBox Guest Additions" -ajurit virtuaalikoneelleni, jotta sain kopioinnin toimimaan. Olin asettanut tiedostojen siirtämisen/kopioimisen asetukset aikaisemmin VirtualBoxista "bidirectional" -muotoon, joka tarkoittaa, että voin siirtää tiedsotja edestakaisin koneiden välillä. Selvästi asetukset eivät toimineet oikein, joten jouduin tekemään lisäselvitystä. En avaa asiaa tässä raportissa sen tarkemmin, mutta jos sama ongelma toistuu tätä raporttia seuratessa niin seuraavalla ohjeella ongelman saa ratkaistua: https://linuxconfig.org/install-virtualbox-guest-additions-on-linux-guest
+SSH avaimen kopiointi quest -koneelta host -koneelle ei onnistunut. Jouduin asentamaan "VirtualBox Guest Additions" -ajurit virtuaalikoneelleni, jotta sain kopioinnin toimimaan. 
+Olin asettanut tiedostojen siirtämisen/kopioimisen asetukset aikaisemmin VirtualBoxista "bidirectional" -muotoon, joka tarkoittaa, että voin siirtää tiedsotja edestakaisin koneiden välillä. Selvästi asetukset eivät toimineet oikein, joten jouduin tekemään lisäselvitystä. 
+
+En avaa asiaa tässä raportissa sen tarkemmin, mutta jos sama ongelma toistuu tätä raporttia seuratessa niin seuraavalla ohjeella ongelman saa ratkaistua: https://linuxconfig.org/install-virtualbox-guest-additions-on-linux-guest
 
 Lopulta sain kopioitua SSH-avaimen UpCloudiin ja jatkoin palvelimen viimeistelyyn. Jätin Hostnamen vakioksi ja Server Nameksi asetin "LinuxPalvelinTestMiro". Huomasin, että näitä voi jälkikäteen muokata palvelimen käynnistämisen jälkeen, joten muutan niitä todennäköisesti myöhemmin.
 
@@ -128,7 +131,7 @@ Lopulta sain kopioitua SSH-avaimen UpCloudiin ja jatkoin palvelimen viimeistelyy
 
 <img width="2310" height="958" alt="image" src="https://github.com/user-attachments/assets/340ab372-3ceb-4208-a203-2b1c91e9d240" />
 
-En saanut yhteyttä palvelimeen, koska palvelin ei pystynyt autentikoimaan SSH avaintani. Ongelman ratkaisi seuraavat toimenpiteet. Muokkasin käyttöoikeuksia ja loin virtuaalikoneelleni "known_hosts" tiedoston konelloa "**touch ~/.ssh/known_hosts**". Lisäsim julkisen SSH avaimen luomaani "known_hosts" -tiedostoon manuaalisesti komennolla "**ssh-keyscan 80.69.173.150 >> ~/.ssh/known_hosts**". Muokkasin vielä kansion ja tiedoston oikeudet kuntoon varmuudenvuoksi "**chmod 700 ~/ .ssh/**" ja "**chmod 644 ~/. ssh/known_hosts**".  Tämän jälkeen kokeilin yhteyttä SSH:lla palvelimeen ja se onnistui. Tarkastin oikeudet ja niiden tarkoitukset: https://chmodcommand.com/chmod-700/, kysyin apua tähän Ongelmaan Microsoft Copilotilta: 
+En saanut yhteyttä palvelimeen, koska palvelin ei pystynyt autentikoimaan SSH avaintani. Ongelman ratkaisi seuraavat toimenpiteet. Muokkasin käyttöoikeuksia ja loin virtuaalikoneelleni "known_hosts" tiedoston komenolla "**touch ~/.ssh/known_hosts**". Lisäsim julkisen SSH avaimen luomaani "known_hosts" -tiedostoon manuaalisesti komennolla "**ssh-keyscan 80.69.173.150 >> ~/.ssh/known_hosts**". Muokkasin vielä kansion ja tiedoston oikeudet kuntoon varmuuden vuoksi "**chmod 700 ~/ .ssh/**" ja "**chmod 644 ~/. ssh/known_hosts**".  Tämän jälkeen kokeilin yhteyttä SSH:lla palvelimeen ja se onnistui. Tarkastin oikeudet ja niiden tarkoitukset: https://chmodcommand.com/chmod-700/, kysyin apua tähän Ongelmaan Microsoft Copilotilta: 
 
 <img width="766" height="351" alt="image" src="https://github.com/user-attachments/assets/26cedc5f-6ab4-43f4-bb1e-54d3b759d210" />
 
@@ -166,7 +169,7 @@ Lopuksi lukitsin ROOT -käyttäjän pääsyn palvelimelle.
 
 <img width="2598" height="836" alt="image" src="https://github.com/user-attachments/assets/392f31b5-7490-4b2b-857c-41e872aa4f83" />
 
-# b) alkutoimien tekeminen palvelimella, palomuurin ja muiden palveluiden asenttamienn
+# b) Alkutoimien tekeminen palvelimella, palomuurin ja muiden palveluiden asentaminen
 
 Tein palvelimen alkutoimet väärässä järjestyksessä, koska en aikaisemmin heti päässyt kirjatumaan salasanalla. Jatkossa tiedän, että hoidan alkutoimenpiteet heti SSH yhteyden toimiessa.
 
@@ -182,7 +185,7 @@ Sallin vielä erikseen SSH, mutta sillä ei ole väliä, koska avasin jo portin 
 
 Tässä kohtaa olin asettanut palvelimen alkutoimet kuntoon ja seuraavaksi siirryin asentamaan apache2 web-palvelua palvelimelle.
 
-# c) Apache2 asentaminen palvelimelle
+# c) Apache2 asentaminen palvelimelle ja testisivun testaaminen
 
 Palvelin luomisen ja esiastuksien jälkeen aloitin web-palvelimen asentamisen. 
 
