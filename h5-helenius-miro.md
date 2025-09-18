@@ -105,6 +105,9 @@ www.mirohelenius.com
 
 # c) nimen dns tietojen tukiminen komennoilla "host" ja "dig"
 
+Tässä raportin vaiheessa testasin komentoja "host" ja "dig" palvelimeeni. Seuraavat artikkelit selittivät hyvin komentojen käyttötarkoitukset: 
+https://phoenixnap.com/kb/linux-host ja https://phoenixnap.com/kb/linux-dig-command-examples
+
 ## mirohelenius.com host ja dig -komentojen tulokset 
 
 
