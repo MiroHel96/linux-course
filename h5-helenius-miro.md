@@ -96,3 +96,11 @@ www.mirohelenius.com
 
 
 # c) nimen dns tietojen tukiminen komennoilla "host" ja "dig"
+
+## mirohelenius.com host ja dig -komentojen tulokset 
+
+
+## about.mirohelenius.com host ja dig -komentojen tulokset
+
+
+## www.mirohelenius.com host ja dig -komentojen tulokset
