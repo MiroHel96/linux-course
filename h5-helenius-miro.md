@@ -108,6 +108,24 @@ www.mirohelenius.com
 Tässä raportin vaiheessa testasin komentoja "host" ja "dig" palvelimeeni. Seuraavat artikkelit selittivät hyvin komentojen käyttötarkoitukset: 
 https://phoenixnap.com/kb/linux-host ja https://phoenixnap.com/kb/linux-dig-command-examples
 
+Jouduin asentamaan työasemalleni "DNS Utilities" -paketin, jotta sain kyseiset työkalut käyttööni. Käytin seuraavaa artikkelia apuna: https://webhostinggeeks.com/howto/how-to-fix-nslookup-host-dig-bash-command-not-found-in-linux 
+
+Syötin virtuaalikoneeni terminaaliin seuraavat komennot:
+<pre> 
+  - sudo apt-get update
+  - sudo apt-get install dnsutils
+    
+
+</pre>
+
+<img width="2664" height="1016" alt="image" src="https://github.com/user-attachments/assets/7ffbfb56-dcb1-43a8-b0de-3e24c8eb0ded" />
+
+<img width="2658" height="912" alt="image" src="https://github.com/user-attachments/assets/5d33c17b-1865-48d4-a3a8-41adfa95ef2f" />
+
+Asentamisen jälkeen avasin molempien työkalujen Manual -pages ja selvitin kunkin työkalun tarkoituksen, vaikka hyödynsin jo artikkeleita, jotka mainitsin kappaleen alussa. 
+
+
+
 ## mirohelenius.com host ja dig -komentojen tulokset 
 
 
