@@ -41,8 +41,8 @@ Advanced DNS -valikko
 
 <img width="2728" height="1510" alt="image" src="https://github.com/user-attachments/assets/504d2534-8628-4623-b23e-20739d59270d" />
 
-<img width="2202" height="620" alt="image" src="https://github.com/user-attachments/assets/5668ff92-f99b-40dc-9ff8-8d8a904ed4e5" />
 
+<img width="2350" height="1180" alt="image" src="https://github.com/user-attachments/assets/f84a6a0e-cac8-4ca4-82df-4c6038ef172c" />
 
 
 # b) Alidomaininen luominen palvelimelle
