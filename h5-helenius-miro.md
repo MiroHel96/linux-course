@@ -53,7 +53,11 @@ Seuraavaksi testasin toimiiko mirohelenius.com. Ei näyttänyt vielä toimivan, 
 
 Tässä raportin vaiheessa loin kaksi uutta alidomainia mirohelenius.com:ille. Käytin apuna NameCheapin omaa ohjetta heidän verkkosivuilta: https://www.namecheap.com/support/knowledgebase/article.aspx/9776/2237/how-to-create-a-subdomain-for-my-domain
 
-Avasin Dashboardin ja menin "Domain List" -alivalikkoon. Valitsin oikealta "Verify Contants" -pudotusvalikosta "Manage". Tämän jälkeen pääsin domain -ikkunaan ja valitsin "Advanced DNS". Valitsin Host Records kohdasta, johon loin aikaisemmin jo A -tietueen "Add New Record". 
+Käytin myös seuraavia ohjeita apuna: 
+https://www.namecheap.com/support/knowledgebase/article.aspx/579/2237/which-record-type-option-should-i-choose-for-the-information-im-about-to-enter
+https://www.namecheap.com/support/knowledgebase/article.aspx/319/2237/how-can-i-set-up-an-a-address-record-for-my-domain
+
+Avasin Dashboardin ja menin "Domain List" -alivalikkoon. Valitsin oikealta "Verify Contants" -pudotusvalikosta "Manage". Tämän jälkeen pääsin domain -ikkunaan ja valitsin "Advanced DNS". Valitsin Host Records kohdasta, johon loin aikaisemmin jo A -tietueen "Add New Record". Tämän jälkeen loin vielä CNAME -tietueen. Vaihdoin samalla ensimmäisen A -tietueen isännän "@", koska tajusin, että se osoittaa juureen. Lopuksi tallensin molemmat. 
 
 Loin uuden A-tietueen seuraavilla tiedoilla: 
 - host about
@@ -68,5 +72,8 @@ Loin uuden A-tietueen seuraavilla tiedoilla:
 
 <img width="2256" height="676" alt="image" src="https://github.com/user-attachments/assets/f41a1a4d-4553-4e81-ac7a-df2d8c1933c6" />
 
+<img width="2182" height="648" alt="image" src="https://github.com/user-attachments/assets/e7e1740a-4103-4948-b74c-0331e08b0f47" />
+
+## Alidomainien testaaminen
 
 # c) nimen dns tietojen tukiminen komennoilla "host" ja "dig"
