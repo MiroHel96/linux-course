@@ -59,10 +59,15 @@ https://www.namecheap.com/support/knowledgebase/article.aspx/319/2237/how-can-i-
 
 Avasin Dashboardin ja menin "Domain List" -alivalikkoon. Valitsin oikealta "Verify Contants" -pudotusvalikosta "Manage". Tämän jälkeen pääsin domain -ikkunaan ja valitsin "Advanced DNS". Valitsin Host Records kohdasta, johon loin aikaisemmin jo A -tietueen "Add New Record". Tämän jälkeen loin vielä CNAME -tietueen. Vaihdoin samalla ensimmäisen A -tietueen isännän "@", koska tajusin, että se osoittaa juureen. Lopuksi tallensin molemmat. 
 
-Loin uuden A-tietueen seuraavilla tiedoilla: 
+Loin uuden A -tietueen seuraavilla tiedoilla: 
 - host about
-- IP - palvelimen IP osoite
-- TTL 5Min
+- target palvelimen osoite
+- TTL 5 Min
+  
+Loin CNAME -tietueen seuraavilla tiedoilla:
+- host wwww
+- target mirohelenius.com
+- TTL 5 Min
 
 <img width="2728" height="1290" alt="image" src="https://github.com/user-attachments/assets/9d43802e-b34c-4b70-a242-6ea6bb1078ac" />
 
