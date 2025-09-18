@@ -81,4 +81,10 @@ Loin CNAME -tietueen seuraavilla tiedoilla:
 
 ## Alidomainien testaaminen
 
+about.mirohelenius.com
+
+www.mirohelenius.com
+
+
+
 # c) nimen dns tietojen tukiminen komennoilla "host" ja "dig"
