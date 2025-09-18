@@ -33,6 +33,17 @@ Domain Dashboardissa
 
 <img width="2372" height="1286" alt="image" src="https://github.com/user-attachments/assets/b46c11ac-b278-494c-895e-be2fdd7553d4" />
 
+# Domain nimen ohjaaminen omalle palvelimelle 
+
+Seuraavaksi laitoin domainnimen osoittamaan vuokraamani palvelimeen UpCloudin verkkosivuilta. Dashboard näkymästä valitsin valikon "Advanced DNS". Host Records valikon alta valitsin "CNAME Record" ja "URL Redirection Record", poistin ne ja klikkasin punaista "Add New Record" -nappia. Loin kaksi uutta A -tietuetta, miksi? A-tietue ohjaa/kääntää domainien nimet IPv4 osoitteiksi. Lopuksi tallensin muutokseni rivien oikeasta reunasta vihreää kuittaus merkkiä painamalla. 
+
+Advanced DNS -valikko 
+
+<img width="2728" height="1510" alt="image" src="https://github.com/user-attachments/assets/504d2534-8628-4623-b23e-20739d59270d" />
+
+<img width="2202" height="620" alt="image" src="https://github.com/user-attachments/assets/5668ff92-f99b-40dc-9ff8-8d8a904ed4e5" />
+
+
 
 # b) Alidomaininen luominen palvelimelle
 
