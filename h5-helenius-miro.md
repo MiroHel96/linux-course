@@ -35,7 +35,7 @@ Domain Dashboardissa
 
 # Domain nimen ohjaaminen omalle palvelimelle 
 
-Seuraavaksi laitoin domainnimen osoittamaan vuokraamani palvelimeen UpCloudin verkkosivuilta. Dashboard näkymästä valitsin valikon "Advanced DNS". Host Records valikon alta valitsin "CNAME Record" ja "URL Redirection Record", poistin ne ja klikkasin punaista "Add New Record" -nappia. Loin uuden A -tietueen, miksi? A-tietue ohjaa/kääntää domainien nimet IPv4 osoitteiksi. Lopuksi tallensin muutokseni rivin oikeasta reunasta vihreää kuittaus merkkiä painamalla. 
+Seuraavaksi laitoin domainnimen osoittamaan vuokraamani palvelimeen UpCloudin verkkosivuilta. Dashboard näkymästä valitsin valikon "Advanced DNS". Host Records valikon alta valitsin "CNAME Record" ja "URL Redirection Record", poistin ne ja klikkasin punaista "Add New Record" -nappia. Loin uuden A -tietueen, miksi? A-tietue ohjaa/kääntää domainien nimet IPv4 osoitteiksi. Laitoin host nimeksi "upcloud", IP-osoitteeseen palvelimen osoitteen ja TTL ajaksi "5Min". Lopuksi tallensin muutokseni rivin oikeasta reunasta vihreää kuittaus merkkiä painamalla. 
 
 Advanced DNS -valikko 
 
