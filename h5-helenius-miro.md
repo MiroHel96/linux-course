@@ -89,9 +89,17 @@ Loin CNAME -tietueen seuraavilla tiedoilla:
 
 ## Alidomainien testaaminen
 
+Seuraavaksi testasin alidomainien toimimisen. Molemmat alidomainit toimivat siis halutusti.
+
 about.mirohelenius.com
 
+<img width="2878" height="896" alt="image" src="https://github.com/user-attachments/assets/ea7c063b-45d7-4fb0-9d68-611ad3a78fee" />
+
+
 www.mirohelenius.com
+
+<img width="2864" height="982" alt="image" src="https://github.com/user-attachments/assets/74f5d190-3617-4216-810a-fdc3e0ed5620" />
+
 
 
 
