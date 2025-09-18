@@ -44,8 +44,29 @@ Advanced DNS -valikko
 
 <img width="2350" height="1180" alt="image" src="https://github.com/user-attachments/assets/f84a6a0e-cac8-4ca4-82df-4c6038ef172c" />
 
+Seuraavaksi testasin toimiiko mirohelenius.com. Ei näyttänyt vielä toimivan, kävin aktivoimasta kontaktitietoni NameCheapille ja kokeilen uudestaan myöhemmin. 
+
+<img width="2732" height="1502" alt="image" src="https://github.com/user-attachments/assets/7c8a9341-57d1-41bb-8e70-c83741469e5b" />
+
 
 # b) Alidomaininen luominen palvelimelle
+
+Tässä raportin vaiheessa loin kaksi uutta alidomainia mirohelenius.com:ille. Käytin apuna NameCheapin omaa ohjetta heidän verkkosivuilta: https://www.namecheap.com/support/knowledgebase/article.aspx/9776/2237/how-to-create-a-subdomain-for-my-domain
+
+Avasin Dashboardin ja menin "Domain List" -alivalikkoon. Valitsin oikealta "Verify Contants" -pudotusvalikosta "Manage". Tämän jälkeen pääsin domain -ikkunaan ja valitsin "Advanced DNS". Valitsin Host Records kohdasta, johon loin aikaisemmin jo A -tietueen "Add New Record". 
+
+Loin uuden A-tietueen seuraavilla tiedoilla: 
+- host about
+- IP - palvelimen IP osoite
+- TTL 5Min
+
+<img width="2728" height="1290" alt="image" src="https://github.com/user-attachments/assets/9d43802e-b34c-4b70-a242-6ea6bb1078ac" />
+
+<img width="2356" height="1514" alt="image" src="https://github.com/user-attachments/assets/343b0753-bb2f-4bde-a7c3-384af13afbf7" />
+
+<img width="2737" height="1533" alt="image" src="https://github.com/user-attachments/assets/686551d3-04c2-48b0-9d04-cb862dd5ea1f" />
+
+<img width="2256" height="676" alt="image" src="https://github.com/user-attachments/assets/f41a1a4d-4553-4e81-ac7a-df2d8c1933c6" />
 
 
 # c) nimen dns tietojen tukiminen komennoilla "host" ja "dig"
