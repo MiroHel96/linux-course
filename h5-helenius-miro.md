@@ -115,3 +115,10 @@ https://phoenixnap.com/kb/linux-host ja https://phoenixnap.com/kb/linux-dig-comm
 
 
 ## www.mirohelenius.com host ja dig -komentojen tulokset
+
+
+## Pienyrityksen tulokset host ja dig -komennolla
+
+## Suuryrityksen tulokset host ja dig -komennolla
+
+
