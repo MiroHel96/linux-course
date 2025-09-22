@@ -145,6 +145,8 @@ Seuraavaksi syötin terminaaliin komennon "host mirohelenius.com". Host -komenno
 
 ## Pienyrityksen tulokset host ja dig -komennolla
 
+
+
 ## Suuryrityksen tulokset host ja dig -komennolla
 
 Tässä vaiheessa tarkastin suuryrityksen DNS -tietoja. Valitsin testiä varten NVIDIA:n. Syötin terminaliin komennon "dig www.nvidia.com ANY" ja sain seuraavan tuloksen:
