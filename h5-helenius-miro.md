@@ -129,6 +129,18 @@ Asentamisen jälkeen avasin molempien työkalujen Manual -pages ja selvitin kunk
 ## mirohelenius.com host ja dig -komentojen tulokset 
 
 
+### Dig -komento 
+Avasin terminaalin virtuaalikoneellani ja käytin komentoa "dig mirohelenius.com ANY". Kyseinen komento hakee kaikki DNS tietueet. https://www.geeksforgeeks.org/linux-unix/dig-command-in-linux-with-examples
+
+<img width="2776" height="1474" alt="image" src="https://github.com/user-attachments/assets/9e7240c9-9f8b-4aac-91e8-21e4213efce5" />
+
+### Host -komento 
+
+Seuraavaksi syötin terminaaliin komennon "host mirohelenius.com". 
+
+<img width="2416" height="402" alt="image" src="https://github.com/user-attachments/assets/8b0ca8ab-6047-4473-93d9-390c90e84db1" />
+
+
 ## about.mirohelenius.com host ja dig -komentojen tulokset
 
 
