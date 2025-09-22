@@ -145,11 +145,25 @@ Seuraavaksi syötin terminaaliin komennon "host mirohelenius.com". Host -komenno
 
 ## Pienyrityksen tulokset host ja dig -komennolla
 
+Valitsin pienyritykseen Varusteleka.com, ei välttämättä kovin pieni yritys nykyään, mutta menkööt tässä esimerkissä. Syötin terminaalin komennon "dig www.varusteleka.com ANY" ja sain seuraavat tulokset:
+
+<img width="2422" height="1398" alt="varusteleka" src="https://github.com/user-attachments/assets/bef11a80-0153-4da9-b44c-025868375f31" />
+
+Seuraavaksi syötin host komennon ja sain seuraavat tulokset: 
+
+<img width="2446" height="216" alt="varusteleka host" src="https://github.com/user-attachments/assets/64593a12-34fe-43d0-aeda-a5dcc561750e" />
 
 
 ## Suuryrityksen tulokset host ja dig -komennolla
 
 Tässä vaiheessa tarkastin suuryrityksen DNS -tietoja. Valitsin testiä varten NVIDIA:n. Syötin terminaliin komennon "dig www.nvidia.com ANY" ja sain seuraavan tuloksen:
+
+
+<img width="2400" height="980" alt="nvidia" src="https://github.com/user-attachments/assets/4d7138da-8044-4ed5-b852-590e19240af8" />
+
+Seuraavaksi ajoin komennon "host wwww.nvidia.com" ja sain seuraavan tulokset: 
+
+<img width="2426" height="268" alt="nvidia host" src="https://github.com/user-attachments/assets/2d535445-3fa2-46a7-a0d7-c6bb8ed8058e" />
 
 
 
