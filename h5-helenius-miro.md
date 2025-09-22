@@ -122,7 +122,7 @@ Syötin virtuaalikoneeni terminaaliin seuraavat komennot:
 
 <img width="2658" height="912" alt="image" src="https://github.com/user-attachments/assets/5d33c17b-1865-48d4-a3a8-41adfa95ef2f" />
 
-Asentamisen jälkeen avasin molempien työkalujen Manual -pages ja selvitin kunkin työkalun tarkoituksen, vaikka hyödynsin jo artikkeleita, jotka mainitsin kappaleen alussa. 
+Asentamisen jälkeen avasin molempien työkalujen Manual -page:sit ja selvitin kunkin työkalun tarkoituksen niiden ja akaisemmin mainitsemieni artikkeleiden avulla. 
 
 
 
@@ -136,19 +136,19 @@ Avasin terminaalin virtuaalikoneellani ja käytin komentoa "dig mirohelenius.com
 
 ### Host -komento 
 
-Seuraavaksi syötin terminaaliin komennon "host mirohelenius.com". 
+Seuraavaksi syötin terminaaliin komennon "host mirohelenius.com". Host -komennolla lähtökohtaisesti haetaan domainin nimeä vastaava IP-osoite tai päinvastoin. 
 
 <img width="2416" height="402" alt="image" src="https://github.com/user-attachments/assets/8b0ca8ab-6047-4473-93d9-390c90e84db1" />
 
-
-## about.mirohelenius.com host ja dig -komentojen tulokset
-
-
-## www.mirohelenius.com host ja dig -komentojen tulokset
+<img width="2672" height="972" alt="image" src="https://github.com/user-attachments/assets/6ea6c6e1-6fc5-47d5-996b-8413a281fa06" />
 
 
 ## Pienyrityksen tulokset host ja dig -komennolla
 
 ## Suuryrityksen tulokset host ja dig -komennolla
+
+Tässä vaiheessa tarkastin suuryrityksen DNS -tietoja. Valitsin testiä varten NVIDIA:n. Syötin terminaliin komennon "dig www.nvidia.com ANY" ja sain seuraavan tuloksen:
+
+
 
 
