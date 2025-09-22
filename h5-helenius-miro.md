@@ -106,7 +106,9 @@ www.mirohelenius.com
 # c) nimen dns tietojen tukiminen komennoilla "host" ja "dig"
 
 Tässä raportin vaiheessa testasin komentoja "host" ja "dig" palvelimeeni. Seuraavat artikkelit selittivät hyvin komentojen käyttötarkoitukset: 
-https://phoenixnap.com/kb/linux-host ja https://phoenixnap.com/kb/linux-dig-command-examples
+https://phoenixnap.com/kb/linux-host ja https://phoenixnap.com/kb/linux-dig-command-examples 
+
+Hyödynsin myös näitä artikkeleita komentojen toimintoja tutkiessa ja käyttäessä: 
 
 Jouduin asentamaan työasemalleni "DNS Utilities" -paketin, jotta sain kyseiset työkalut käyttööni. Käytin seuraavaa artikkelia apuna: https://webhostinggeeks.com/howto/how-to-fix-nslookup-host-dig-bash-command-not-found-in-linux 
 
