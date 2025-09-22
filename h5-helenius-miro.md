@@ -144,6 +144,19 @@ Seuraavaksi syötin terminaaliin komennon "host mirohelenius.com". Host -komenno
 
 <img width="2672" height="972" alt="image" src="https://github.com/user-attachments/assets/6ea6c6e1-6fc5-47d5-996b-8413a281fa06" />
 
+### Tuloksien vertailu NameCheap käyttöliittymään
+
+Kuten "dig"-komennon tuloksista näkyy niin luomani A-tietue NameCheapissa näkyy ja mihin IP-osoitteiseen sen viittaa. Vastaus sektion merkitykset olivat selitetty tässä artikkelissa kätevästi: https://www.uptimia.com/questions/what-do-the-five-fields-in-a-dig-querys-answer-section-mean
+
+Vastauskohdan kentät vielä purettuna: 
+- Domain Name Field - domainin nimi eli tässä tapauksessa mirohelenius.com.
+- TTL - (Time To Live), kertoo miten pitkään DNS resolveri ja client säilöö tietuetta. 
+- Class - eli luokka, tässä tapauksessa IN = Internet.
+- Record Type Field - eli tietuetyyppi, luomani A -tietue näkyy ja muitakin. NS (Name Server) eli nimipalvelin ja SOA (Start Of Authority), määrittää DNS -alueen auktoritäärisen lähteen.
+- IP Address Field, IP-osoitekenttä. Minun tapauksessani UpCloudissa luodun palvelimen osoite.
+
+Kysyin ylläoleviin kenttiin tarkentavia kysymyksiä Microsoft CoPilotilta, koska DNS-teoria on vähän ruosteessa ja tämän tehtävän tarkoituksena ei ole sen läpikäyminen.
+
 
 ## Pienyrityksen tulokset host ja dig -komennolla
 
@@ -154,6 +167,7 @@ Valitsin pienyritykseen Varusteleka.com, ei välttämättä kovin pieni yritys n
 Seuraavaksi syötin host komennon ja sain seuraavat tulokset: 
 
 <img width="2446" height="216" alt="varusteleka host" src="https://github.com/user-attachments/assets/64593a12-34fe-43d0-aeda-a5dcc561750e" />
+
 
 
 ## Suuryrityksen tulokset host ja dig -komennolla
