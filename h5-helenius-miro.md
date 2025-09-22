@@ -108,7 +108,7 @@ www.mirohelenius.com
 Tässä raportin vaiheessa testasin komentoja "host" ja "dig" palvelimeeni. Seuraavat artikkelit selittivät hyvin komentojen käyttötarkoitukset: 
 https://phoenixnap.com/kb/linux-host ja https://phoenixnap.com/kb/linux-dig-command-examples 
 
-Hyödynsin myös näitä artikkeleita komentojen toimintoja tutkiessa ja käyttäessä: 
+Hyödynsin myös näitä artikkeleita komentojen toimintoja tutkiessa ja käyttäessä: https://www.geeksforgeeks.org/linux-unix/dig-command-in-linux-with-examples/ ja https://www.geeksforgeeks.org/linux-unix/host-command-in-linux-with-examples/
 
 Jouduin asentamaan työasemalleni "DNS Utilities" -paketin, jotta sain kyseiset työkalut käyttööni. Käytin seuraavaa artikkelia apuna: https://webhostinggeeks.com/howto/how-to-fix-nslookup-host-dig-bash-command-not-found-in-linux 
 
