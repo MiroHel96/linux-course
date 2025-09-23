@@ -164,23 +164,36 @@ Valitsin pienyritykseen Varusteleka.com, ei välttämättä kovin pieni yritys n
 
 <img width="2422" height="1398" alt="varusteleka" src="https://github.com/user-attachments/assets/bef11a80-0153-4da9-b44c-025868375f31" />
 
+Varusteleka sai useampia erikoisempia tuloksia DNS-haulle. Löysin näille selitykset seuraavista artikkelista: https://www.cloudflare.com/en-gb/learning/dns/dns-records ja https://www.cloudflare.com/en-gb/learning/dns/dns-records/dnskey-ds-records
+
+Uusia tietuetyyppijä olivat mm:
+- DNSKEY, on julkinen avain, jota käytetään Domain Name System Security Extensions (DNSSEC) allekirjoituksissa.
+- DS tietue sisältää DNSKEY julkisen avaimen hash:hin. 
+- NSEC (next secure record), on osa DNSSEC:iä ja sitä käytetään todistamaan, että pyydettyä DNS resurssin tietuetta ei ole olemassa. 
+- RRSIG (resource record signature) on tietue, jota käytetään tallentamaan digitaaliset allekirjoitukset, joita käytetään DNSSEC tietueiden todentamisessa.
+  
+
 Seuraavaksi syötin host komennon ja sain seuraavat tulokset: 
 
 <img width="2446" height="216" alt="varusteleka host" src="https://github.com/user-attachments/assets/64593a12-34fe-43d0-aeda-a5dcc561750e" />
 
+Erona omaan palvelimeen host -komennossa oli alias. Varusteleka.com:illa on alias shops.myshopify.com:iin. Alias on CNMAE-tietua ja voimme päätellä tämnä tiedon perusteella, että Varusteleka käyttää Shopifya palvelun alustana ja erillistä domain-nimeä linkitettynä kyseiseen palveluun.
 
 
 ## Suuryrityksen tulokset host ja dig -komennolla
 
 Tässä vaiheessa tarkastin suuryrityksen DNS -tietoja. Valitsin testiä varten NVIDIA:n. Syötin terminaliin komennon "dig www.nvidia.com ANY" ja sain seuraavan tuloksen:
 
-
 <img width="2400" height="980" alt="nvidia" src="https://github.com/user-attachments/assets/4d7138da-8044-4ed5-b852-590e19240af8" />
+
 
 Seuraavaksi ajoin komennon "host wwww.nvidia.com" ja sain seuraavan tulokset: 
 
 <img width="2426" height="268" alt="nvidia host" src="https://github.com/user-attachments/assets/2d535445-3fa2-46a7-a0d7-c6bb8ed8058e" />
 
 
+# Lähdeluettelo
 
+
+https://www.cloudflare.com/en-gb/learning/dns/dns-records
 
