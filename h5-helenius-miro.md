@@ -194,6 +194,28 @@ Seuraavaksi ajoin komennon "host wwww.nvidia.com" ja sain seuraavan tulokset:
 
 # Lähdeluettelo
 
+https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4
+
+https://www.namecheap.com/
+
+https://www.namecheap.com/support/knowledgebase/article.aspx/9776/2237/how-to-create-a-subdomain-for-my-domain
+
+https://www.namecheap.com/support/knowledgebase/article.aspx/579/2237/which-record-type-option-should-i-choose-for-the-information-im-about-to-enter
+
+https://phoenixnap.com/kb/linux-host
+
+https://phoenixnap.com/kb/linux-dig-command-examples
+
+https://www.geeksforgeeks.org/linux-unix/dig-command-in-linux-with-examples/
+
+https://www.geeksforgeeks.org/linux-unix/host-command-in-linux-with-examples/
+
+https://webhostinggeeks.com/howto/how-to-fix-nslookup-host-dig-bash-command-not-found-in-linux
+
+https://www.geeksforgeeks.org/linux-unix/dig-command-in-linux-with-examples
+
+https://www.uptimia.com/questions/what-do-the-five-fields-in-a-dig-querys-answer-section-mean
 
 https://www.cloudflare.com/en-gb/learning/dns/dns-records
 
+https://www.cloudflare.com/en-gb/learning/dns/dns-records/dnskey-ds-records
