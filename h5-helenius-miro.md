@@ -172,6 +172,7 @@ Uusia tietuetyyppijä olivat mm:
 - NSEC (next secure record), on osa DNSSEC:iä ja sitä käytetään todistamaan, että pyydettyä DNS resurssin tietuetta ei ole olemassa. 
 - RRSIG (resource record signature) on tietue, jota käytetään tallentamaan digitaaliset allekirjoitukset, joita käytetään DNSSEC tietueiden todentamisessa.
   
+Näiden tietojen perusteella käytössä on DNSSEC protokolla. DNSSEC selitettynä suomeksi ja englanniksi, jos asiasta haluaa tarkennusta: https://www.traficom.fi/fi/viestinta/fi-verkkotunnukset/nimipalvelun-tietoturvalaajennus-dnssec ja https://www.cloudflare.com/en-gb/learning/dns/dnssec/how-dnssec-works
 
 Seuraavaksi syötin host komennon ja sain seuraavat tulokset: 
 
@@ -191,6 +192,7 @@ Seuraavaksi ajoin komennon "host wwww.nvidia.com" ja sain seuraavan tulokset:
 
 <img width="2426" height="268" alt="nvidia host" src="https://github.com/user-attachments/assets/2d535445-3fa2-46a7-a0d7-c6bb8ed8058e" />
 
+Nvidia käyttää myös aliasta, kuten Varusteleka. Dig -komennolla tuli kutekin vähemmän tuloksia, kuin Varustelekalla. Jos käyttäisin vielä samoja komentoja, löytyneisiin IP-osoitteisiin ja domain-nimiin, niin uskoisin löytäväni enemmän tietoja. En tässä raportissa, kuitekaan sen syvällisemmin rupea näitä analysoimaan, koska oletettavasti tarve oli perustasolla analysoida näitä. 
 
 # Lähdeluettelo
 
@@ -215,6 +217,8 @@ https://webhostinggeeks.com/howto/how-to-fix-nslookup-host-dig-bash-command-not-
 https://www.geeksforgeeks.org/linux-unix/dig-command-in-linux-with-examples
 
 https://www.uptimia.com/questions/what-do-the-five-fields-in-a-dig-querys-answer-section-mean
+
+https://www.traficom.fi/fi/viestinta/fi-verkkotunnukset/nimipalvelun-tietoturvalaajennus-dnssec
 
 https://www.cloudflare.com/en-gb/learning/dns/dns-records
 
