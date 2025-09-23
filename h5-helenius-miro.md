@@ -2,7 +2,7 @@
 
 ## Tehtävä h5 nimekäs 
 
-Tässä raportissa vuokrasin domainin ja laitoin sen osoittamaan aikaisemmin vuokraamani virtuaalipalvelimeen. 
+Tässä raportissa vuokrasin domainin NameCheap palveluntarjoalta ja laitoin sen osoittamaan aikaisemmin vuokraamani virtuaalipalvelimeen, jonka vuokrasin UpCloudilta. 
 
 ## Host-operating system spesifikaatiot
   - Operating system: Windows 11 Home
@@ -17,7 +17,9 @@ Tässä raportissa vuokrasin domainin ja laitoin sen osoittamaan aikaisemmin vuo
 
 Valitsin domain nimen vuokraamiseen "NameCheap", koska olin kuullut siitä suosituksia. Tukeuduin domain nimen vuokraamisessa seuraavaan blogiin: https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4
 
-Aloitin nimen vuokraamisen menemällä NameCheap kotisivuille: https://www.namecheap.com. Tarkistin onko domain "mirohelenius.com" saatavilla. Domain oli saatavilla, joten lisäsin sen ostoskoriin ja loin tunnuksen palveluun. Siirryin ostoskoriin ja tarkastin, että oikea domain on valittuna. Valitsin vuokrauksen ajaksi vuoden ja jatkoin tietojen täyttämistä. Valitsin myös "Domain Privacy" -vaihtoehdon, koska se estää henkilökohtaisten tietojen näkymisen "whois" -komentoja käyttäessä. Nimipalvelimen asetukset jätin vakioksi, eli käytön NameCheap:in omaa perus nimipalvelua. Lisäsin maksutiedot ja maksoin tilaukseni. Lopputuloksena minulla on nyt omalla nimelläni vuokrattu domaini. 
+Aloitin nimen vuokraamisen menemällä NameCheap kotisivuille: https://www.namecheap.com. Tarkistin onko domain "mirohelenius.com" saatavilla. Domain oli saatavilla, joten lisäsin sen ostoskoriin ja loin tunnuksen palveluun. Siirryin ostoskoriin ja tarkastin, että oikea domain on valittuna. Valitsin vuokrauksen ajaksi vuoden ja jatkoin tietojen täyttämistä.
+
+Valitsin myös "Domain Privacy" -vaihtoehdon, koska se estää henkilökohtaisten tietojen näkymisen "whois" -komentoja käyttäessä. Nimipalvelimen asetukset jätin vakioksi, eli käytin NameCheap:in omaa perus nimipalvelua. Lisäsin maksutiedot ja maksoin tilaukseni. Lopputuloksena minulla on nyt omalla nimelläni vuokrattu domaini. 
 
 NameCheap kotisivu
 
@@ -41,9 +43,13 @@ Domain Dashboardissa
 
 <img width="2372" height="1286" alt="image" src="https://github.com/user-attachments/assets/b46c11ac-b278-494c-895e-be2fdd7553d4" />
 
-# Domain nimen ohjaaminen omalle palvelimelle 
+## Domain nimen ohjaaminen omalle palvelimelle 
 
-Seuraavaksi laitoin domainnimen osoittamaan vuokraamani palvelimeen UpCloudin verkkosivuilta. Dashboard näkymästä valitsin valikon "Advanced DNS". Host Records valikon alta valitsin "CNAME Record" ja "URL Redirection Record", poistin ne ja klikkasin punaista "Add New Record" -nappia. Loin uuden A -tietueen, miksi? A-tietue ohjaa/kääntää domainien nimet IPv4 osoitteiksi. Laitoin host nimeksi "upcloud", IP-osoitteeseen palvelimen osoitteen ja TTL ajaksi "5Min". Lopuksi tallensin muutokseni rivin oikeasta reunasta vihreää kuittaus merkkiä painamalla. 
+Seuraavaksi laitoin domainnimen osoittamaan vuokraamani palvelimeen UpCloudin verkkosivuilta. Dashboard näkymästä valitsin valikon "Advanced DNS". Host Records valikon alta valitsin "CNAME Record" ja "URL Redirection Record", poistin ne ja klikkasin punaista "Add New Record" -nappia. Loin uuden A -tietueen. 
+
+Huom! Tässä kohtaa minun olisi pitänyt laittaa host nimeen "@", koska se viittaa juureen. Korjasin kyseisen ongelman, kun lisäsin alidomainit raportin myöhemmässä vaiheessa.
+
+A-tietue ohjaa/kääntää domainien nimet IPv4 osoitteiksi. Laitoin host nimeksi "upcloud", IP-osoitteeseen palvelimen osoitteen ja TTL ajaksi "5Min". Lopuksi tallensin muutokseni rivin oikeasta reunasta vihreää kuittaus merkkiä painamalla. 
 
 Advanced DNS -valikko 
 
@@ -65,16 +71,16 @@ Käytin myös seuraavia ohjeita apuna:
 https://www.namecheap.com/support/knowledgebase/article.aspx/579/2237/which-record-type-option-should-i-choose-for-the-information-im-about-to-enter
 https://www.namecheap.com/support/knowledgebase/article.aspx/319/2237/how-can-i-set-up-an-a-address-record-for-my-domain
 
-Avasin Dashboardin ja menin "Domain List" -alivalikkoon. Valitsin oikealta "Verify Contants" -pudotusvalikosta "Manage". Tämän jälkeen pääsin domain -ikkunaan ja valitsin "Advanced DNS". Valitsin Host Records kohdasta, johon loin aikaisemmin jo A -tietueen "Add New Record". Tämän jälkeen loin vielä CNAME -tietueen. Vaihdoin samalla ensimmäisen A -tietueen isännän "@", koska tajusin, että se osoittaa juureen. Lopuksi tallensin molemmat. 
+Avasin Dashboardin ja menin "Domain List" -alivalikkoon. Valitsin oikealta "Verify Contants" -pudotusvalikosta "Manage". Tämän jälkeen pääsin domain -ikkunaan ja valitsin "Advanced DNS". Valitsin Host Records kohdasta, johon loin aikaisemmin jo A -tietueen "Add New Record". Tämän jälkeen loin vielä CNAME -tietueen. Vaihdoin samalla ensimmäisen A -tietueen isännän "@", koska tajusin ohjeita lukiessa, että sen viittaa juuridomainiin eli "mirohelenius.com" tässä tapauksessa.
 
 Loin uuden A -tietueen seuraavilla tiedoilla: 
-- host about
-- target palvelimen osoite
+- host,  about
+- target,  palvelimen osoite
 - TTL 5 Min
   
 Loin CNAME -tietueen seuraavilla tiedoilla:
-- host wwww
-- target mirohelenius.com
+- host, wwww
+- target, mirohelenius.com
 - TTL 5 Min
 
 <img width="2728" height="1290" alt="image" src="https://github.com/user-attachments/assets/9d43802e-b34c-4b70-a242-6ea6bb1078ac" />
@@ -89,7 +95,7 @@ Loin CNAME -tietueen seuraavilla tiedoilla:
 
 ## Alidomainien testaaminen
 
-Seuraavaksi testasin alidomainien toimimisen. Molemmat alidomainit toimivat siis halutusti.
+Seuraavaksi testasin alidomainien toimimisen. Molemmat alidomainit toimivat, joten asetukset olivat kohdallaan.
 
 about.mirohelenius.com
 
@@ -105,7 +111,7 @@ www.mirohelenius.com
 
 # c) nimen dns tietojen tukiminen komennoilla "host" ja "dig"
 
-Tässä raportin vaiheessa testasin komentoja "host" ja "dig" palvelimeeni. Seuraavat artikkelit selittivät hyvin komentojen käyttötarkoitukset: 
+Tässä raportin vaiheessa testasin komentoja "host" ja "dig" palvelimeeni ja muutamaan ulkopuoliseen tahoon. Seuraavat artikkelit selittivät hyvin komentojen käyttötarkoitukset: 
 https://phoenixnap.com/kb/linux-host ja https://phoenixnap.com/kb/linux-dig-command-examples 
 
 Hyödynsin myös näitä artikkeleita komentojen toimintoja tutkiessa ja käyttäessä: https://www.geeksforgeeks.org/linux-unix/dig-command-in-linux-with-examples/ ja https://www.geeksforgeeks.org/linux-unix/host-command-in-linux-with-examples/
@@ -124,7 +130,7 @@ Syötin virtuaalikoneeni terminaaliin seuraavat komennot:
 
 <img width="2658" height="912" alt="image" src="https://github.com/user-attachments/assets/5d33c17b-1865-48d4-a3a8-41adfa95ef2f" />
 
-Asentamisen jälkeen avasin molempien työkalujen Manual -page:sit ja selvitin kunkin työkalun tarkoituksen niiden ja akaisemmin mainitsemieni artikkeleiden avulla. 
+Asentamisen jälkeen avasin molempien työkalujen Manual -paget ja selvitin kunkin työkalun tarkoituksen niiden ja aikaisemmin mainitsemieni artikkeleiden avulla. 
 
 
 
@@ -150,10 +156,10 @@ Kuten "dig"-komennon tuloksista näkyy niin luomani A-tietue NameCheapissa näky
 
 Vastauskohdan kentät vielä purettuna: 
 - Domain Name Field - domainin nimi eli tässä tapauksessa mirohelenius.com.
-- TTL - (Time To Live), kertoo miten pitkään DNS resolveri ja client säilöö tietuetta. 
-- Class - eli luokka, tässä tapauksessa IN = Internet.
-- Record Type Field - eli tietuetyyppi, luomani A -tietue näkyy ja muitakin. NS (Name Server) eli nimipalvelin ja SOA (Start Of Authority), määrittää DNS -alueen auktoritäärisen lähteen.
-- IP Address Field, IP-osoitekenttä. Minun tapauksessani UpCloudissa luodun palvelimen osoite.
+- TTL (Time To Live) - kertoo miten pitkään DNS resolveri ja client säilöö tietuetta. 
+- Class eli luokka - tässä tapauksessa IN = Internet.
+- Record Type Field eli tietuetyyppi - luomani A -tietue näkyy ja muitakin. NS (Name Server) eli nimipalvelin ja SOA (Start Of Authority), määrittää DNS -alueen auktoritäärisen lähteen.
+- IP Address Field eli IP-osoitekenttä - Minun tapauksessani UpCloudissa luodun palvelimen osoite.
 
 Kysyin ylläoleviin kenttiin tarkentavia kysymyksiä Microsoft CoPilotilta, koska DNS-teoria on vähän ruosteessa ja tämän tehtävän tarkoituksena ei ole sen läpikäyminen.
 
@@ -174,7 +180,7 @@ Uusia tietuetyyppijä olivat mm:
   
 Näiden tietojen perusteella käytössä on DNSSEC protokolla. DNSSEC selitettynä suomeksi ja englanniksi, jos asiasta haluaa tarkennusta: https://www.traficom.fi/fi/viestinta/fi-verkkotunnukset/nimipalvelun-tietoturvalaajennus-dnssec ja https://www.cloudflare.com/en-gb/learning/dns/dnssec/how-dnssec-works
 
-Seuraavaksi syötin host komennon ja sain seuraavat tulokset: 
+Seuraavaksi syötin host -komennon ja sain seuraavat tulokset: 
 
 <img width="2446" height="216" alt="varusteleka host" src="https://github.com/user-attachments/assets/64593a12-34fe-43d0-aeda-a5dcc561750e" />
 
