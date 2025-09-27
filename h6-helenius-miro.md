@@ -30,7 +30,7 @@ Aloitin avaamalla virtuaalikoneeni ja kirjauduin sisään. Tämän jälkeen otin
 
 Käynnistin ensiksi apache palvelun uudestaan, ennekuin aloitin tekemään TLS-sertifikaattia. 
 
-'sudo systemcelt restart apache2' 
+`sudo systemcelt restart apache2`
 
 Tämän jälken testastin, että verkkosivu toimii eri päätelaitteilla. 
 
