@@ -22,7 +22,7 @@ Tiivistelmä seuraavista artikkeleista https://letsencrypt.org/how-it-works/ ja 
 
 # a) TLS-sertifikaatin hankinta Let's Encrypt
 
-Tässä raportin vaiheessa loin ilmaisen TLS-Sertifikaatin palvelimelleni. Hyödynsin seuraavia verkkosivuja sen tekemisessä: https://terokarvinen.com/linux-palvelimet/#h6-salataampa, https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample ja ....
+Tässä raportin vaiheessa loin ilmaisen TLS-Sertifikaatin palvelimelleni. Hyödynsin seuraavia verkkosivuja sen tekemisessä: https://terokarvinen.com/linux-palvelimet/#h6-salataampa, https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample ja https://certbot.eff.org/instructions?ws=apache&os=snap
 
 Aloitin avaamalla virtuaalikoneeni ja kirjauduin sisään. Tämän jälkeen otin SSH -yhteyden luomaani palvelimeen. 
 
@@ -36,6 +36,30 @@ Tämän jälken testastin, että verkkosivu toimii eri päätelaitteilla.
 
 <img width="2552" height="524" alt="image" src="https://github.com/user-attachments/assets/dfe08231-fc0b-47c7-b5eb-fe9158fe801d" />
 
+### Palomuurin asetukset 
+
+Ennen aloitusta minun piti vielä avata palomuurista seuraavat portit http eli 80/tcp; ja https eli 443/tcp.
+
+Tarkastin palomuurin tilanteen komennolla `sudo ufw status verbose`
+
+<img width="1642" height="560" alt="image" src="https://github.com/user-attachments/assets/9c3b1241-c35a-444f-882b-6d4c70211faf" />
+
+Portti 80 oli jo avattu, joten minun piti vielä sallia portti 443. Käytin komentoa `sudo ufw allow 443/tcp`
+
+<img width="1252" height="248" alt="image" src="https://github.com/user-attachments/assets/b7069624-90f4-4af2-97c3-ffaa95752e7d" />
+
+<img width="1588" height="578" alt="image" src="https://github.com/user-attachments/assets/900431a4-61d9-4a95-afb2-6ddb1735f6d2" />
+
+Kuten kuvissa näkyy portit 80 ja 443 ovat sallittu tcp yhtetydelle. Palvelua ei tarvitse päivitää, koska en muokannut palomuurin konfiguraatiota käsin. 
+Nyt palvelin on valmis. Lopuksi ajoin vielä varmuudenvuoksi komennot: `sudo apt upgrade` ja `sudo apt update`.
+
+Tarkastin vielä oliko automaattiset tietoturvapäivitykset käytössä palvelimella ja en ollut jostain syystä niitä asentanut, joten asensin ne vielä lopuksi seuraavilla komennoilla ja tarkastin palvelun tilanteen.
+
+`sudo apt install unattended-upgrades apt-listchanges bsd-mailx`
+
+`sudo dpkg-reconfigure unattended-upgrades`
+
+`sudo systemctl status unattended-upgrades`
 
 # b) TLS-testaus 
 
