@@ -22,6 +22,19 @@ Tiivistelmä seuraavista artikkeleista https://letsencrypt.org/how-it-works/ ja 
 
 # a) TLS-sertifikaatin hankinta Let's Encrypt
 
+Tässä raportin vaiheessa loin ilmaisen TLS-Sertifikaatin palvelimelleni. Hyödynsin seuraavia verkkosivuja sen tekemisessä: https://terokarvinen.com/linux-palvelimet/#h6-salataampa, https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample ja ....
+
+Aloitin avaamalla virtuaalikoneeni ja kirjauduin sisään. Tämän jälkeen otin SSH -yhteyden luomaani palvelimeen. 
+
+<img width="1660" height="570" alt="image" src="https://github.com/user-attachments/assets/780dec72-50d1-4a4c-be72-af006f3d4df5" />
+
+Käynnistin ensiksi apache palvelun uudestaan, ennekuin aloitin tekemään TLS-sertifikaattia. 
+
+'sudo systemcelt restart apache2' 
+
+Tämän jälken testastin, että verkkosivu toimii eri päätelaitteilla. 
+
+<img width="2552" height="524" alt="image" src="https://github.com/user-attachments/assets/dfe08231-fc0b-47c7-b5eb-fe9158fe801d" />
 
 
 # b) TLS-testaus 
