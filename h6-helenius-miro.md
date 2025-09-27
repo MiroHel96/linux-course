@@ -63,7 +63,7 @@ Tarkastin vielä oliko automaattiset tietoturvapäivitykset käytössä palvelim
 
 ## Certbot asennus ja TLS-sertifikaatin luominen
 
-Seurasin seuraavaa ohjetta Certbotin asennuksessa: https://certbot.eff.org/instructions?ws=apache&os=snap
+Seurasin seuraavaa ohjetta Certbotin asennuksessa: https://certbot.eff.org/instructions?ws=apache&os=snap, https://medium.com/@pi_45757/generate-lets-encrypt-certificate-using-certbot-on-linux-414d8adf2ff3, https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample ja https://terokarvinen.com/linux-palvelimet/#h6-salataampa
 
 Vertasin MicrosoftCopilotilla komentojen `tero karvinen certbot ja certbotin ommia versioita`
 
