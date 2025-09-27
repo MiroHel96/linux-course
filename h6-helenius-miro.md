@@ -65,11 +65,12 @@ Tarkastin vielä oliko automaattiset tietoturvapäivitykset käytössä palvelim
 
 Seurasin seuraavaa ohjetta Certbotin asennuksessa: https://certbot.eff.org/instructions?ws=apache&os=snap
 
-Vertasin MicrosoftCopilotilla komentojen "s
+Vertasin MicrosoftCopilotilla komentojen `tero karvinen certbot ja certbotin ommia versioita`
 
 Syötin terminaaliin komennon `sudo apt-get install certbot python3-certbot-apache`
 
 <img width="1652" height="916" alt="pythoncertbot" src="https://github.com/user-attachments/assets/7a5d6006-71f0-47a1-b249-fe24fa29169a" />
+
 
 
 
