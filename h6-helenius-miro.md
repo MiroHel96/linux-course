@@ -4,6 +4,12 @@
 
 Tässä raportissa hankin ilmaisen TLS-sertifikaatin luomalleni palvelimelle Let's Encryptilta. 
 
+## Tiivistelmä 
+
+Tiivistelmä seuraavista artikkeleista https://letsencrypt.org/how-it-works/ ja https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample
+
+
+
 ## Host-operating system spesifikaatiot
   - Operating system: Windows 11 Home
   - Version	10.0.26100 Build 26100
@@ -22,3 +28,10 @@ Tässä raportissa hankin ilmaisen TLS-sertifikaatin luomalleni palvelimelle Let
 
 
 # c) Vapaaehtoinen 
+
+
+
+# Lähdeluettelo 
+
+https://letsencrypt.org/how-it-works/
+https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample
