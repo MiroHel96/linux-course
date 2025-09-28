@@ -118,6 +118,17 @@ Palaan mahdollisesti myöhemmin ohjeen: https://medium.com/@pi_45757/generate-le
 
 # b) TLS-testaus 
 
+Tässä raportin vaiheessa testasin TSL -salaukseni seuraavalla verkkosivulla: https://www.ssllabs.com/ssltest
+Syötin hakukenttään domainin `mirohelenius.com.
+
+## mirohelenius.com
+
+<img width="1098" height="638" alt="image" src="https://github.com/user-attachments/assets/502906ef-5d8e-424c-bc75-d14ad4ee5e13" />
+
+<img width="1014" height="732" alt="image" src="https://github.com/user-attachments/assets/7e44896e-9b14-4300-8c8b-92a0fc5d5497" />
+
+Kuten tuloksista näkyy domainini sai A -luokan arvion, joka on virallisen SSL Labs dokumentaation mukaan korkein taso: https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide
+
 
 # c) Vapaaehtoinen 
 
