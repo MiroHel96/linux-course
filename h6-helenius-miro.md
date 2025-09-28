@@ -85,7 +85,7 @@ Käytin komentoa `sudo mkdir -p webroot`
 <img width="1630" height="424" alt="webroot 1" src="https://github.com/user-attachments/assets/40fa09fb-b097-421a-8a13-34a0b020206f" />
 
 
-Tämän jälkeen kokeilin ajaa komennon uudestaan ja se onnistui, mutta epä
+Tämän jälkeen kokeilin ajaa komennon uudestaan ja se onnistui, mutta en päässyt alkua pidemmälle. Sain uuden virheilmoituksen `Some challenges have failed`, ilmeisesti tilapäisiä haastetiedostoja ei pystytty lataamaan palvelimelta. En osaa sanoa ongelman syytä, mutta ongelma mahdollisesti voisi johtua kansion oikeuksista. 
 
 <img width="1634" height="148" alt="certbot komento 1" src="https://github.com/user-attachments/assets/10269d59-a0e2-4b6c-9493-a41aedf0237f" />
 
