@@ -71,6 +71,29 @@ Syötin terminaaliin komennon `sudo apt-get install certbot python3-certbot-apac
 
 <img width="1652" height="916" alt="pythoncertbot" src="https://github.com/user-attachments/assets/7a5d6006-71f0-47a1-b249-fe24fa29169a" />
 
+Asentamisen jälkeen syötin seuraavan kommennon terminaaliin, ohjeistuksessa oli kaksi vaihtoehtoa, joko omalla Linuxilla komennon suorittaminen tai vaihtoehtoisesti pavelimella, jos portti 80 on avattu. Minulla on, joten ajoin komennon vuokraamallani palvelimella. 
+
+`sudo certbot certonly --webroot -w /tmp/webroot -d neural1.dns-dynamic.net \
+--staple-ocsp -m test@neural1.dns-dynamic.net --agree-tos`
+
+Sain seuraavan virheilmoituksen, koska ajoin komennon ennen ohjeistuksen loppuun lukemista. Minun pitää vaihtaa `neurall.dns-dynamic.net` omaan domainiini eli `mirohelenius.com`. Sama prosessi piti tehdä sähköpostiosoitteen suhteen, koska SSL sertifikaatin vanhemistiedot lähetetään sinne. Tarkastin vielä `/tpm/webroot/` polun palvelimelta ja loin sen, koska sitä ei ollut olemassa. 
+
+<img width="1598" height="282" alt="tmp kansio ei ole olemassa " src="https://github.com/user-attachments/assets/ca9282f9-558f-42cc-8465-434b1547e75a" />
+
+Käytin komentoa `sudo mkdir -p webroot`
+
+<img width="1630" height="424" alt="webroot 1" src="https://github.com/user-attachments/assets/40fa09fb-b097-421a-8a13-34a0b020206f" />
+
+
+Tämän jälkeen kokeilin ajaa komennon uudestaan ja se onnistui, mutta epä
+
+<img width="1634" height="148" alt="certbot komento 1" src="https://github.com/user-attachments/assets/10269d59-a0e2-4b6c-9493-a41aedf0237f" />
+
+
+<img width="1666" height="460" alt="certifikaatti onnistui" src="https://github.com/user-attachments/assets/d547aef6-960b-4b49-982f-b76289611995" />
+
+
+<img width="1634" height="788" alt="certifikaatti ei onnistunut 1" src="https://github.com/user-attachments/assets/fc3f2f70-7b94-4562-99e5-54f2a29ad7d8" />
 
 
 
