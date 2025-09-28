@@ -95,6 +95,12 @@ Tämän jälkeen kokeilin ajaa komennon uudestaan ja se onnistui, mutta en pää
 
 <img width="1634" height="788" alt="certifikaatti ei onnistunut 1" src="https://github.com/user-attachments/assets/fc3f2f70-7b94-4562-99e5-54f2a29ad7d8" />
 
+Tässä vaiheessa kokeilin Tero Karvisen h6 tehtävänannossa olevaa komentoa `Sudo certbot --apache --mirohelenius.com, wwwmirohelenius.com`. Sain vastauksen sertifikaattien hakemisen onnistumisesta. Certbot kuitekin ilmoitti, että www.mirohelenius.com ei löytynyt virtualhostia. Valitsin promtista virtuaalihostiksi `mirohelenius.com`.
+
+<img width="712" height="258" alt="image" src="https://github.com/user-attachments/assets/cced8e49-aec2-43cf-8bee-3afa5a0ab235" />
+
+<img width="1814" height="692" alt="certifikaatit toimivat 2 tero" src="https://github.com/user-attachments/assets/0352ebce-87ea-41c7-aa95-f8f8cb0282eb" />
+
 
 
 # b) TLS-testaus 
