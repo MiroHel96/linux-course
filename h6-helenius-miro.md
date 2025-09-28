@@ -99,9 +99,22 @@ Tässä vaiheessa kokeilin Tero Karvisen h6 tehtävänannossa olevaa komentoa `S
 
 <img width="712" height="258" alt="image" src="https://github.com/user-attachments/assets/cced8e49-aec2-43cf-8bee-3afa5a0ab235" />
 
+Certbot sertifikaatin hakeminen
+
+<img width="1850" height="924" alt="certifikaatit toimivat 1 tero" src="https://github.com/user-attachments/assets/81d026c1-9133-49d3-a5fe-fa2e7a6bc492" />
+
+
 <img width="1814" height="692" alt="certifikaatit toimivat 2 tero" src="https://github.com/user-attachments/assets/0352ebce-87ea-41c7-aa95-f8f8cb0282eb" />
 
+Lopuksi sain promtin `You have successfully enabled HTTPS..` Seuraavaksi avasin domainit `mirohelenius.com` ja `www.mirohelenius.com`. Molemmat sivut olivat nyt salattuja, sertitikaatin saaminen olikin helmpompaa, mitä odotin muiden sivujen ohjeiden mukaan. 
 
+Palaan mahdollisesti myöhemmin ohjeen: https://medium.com/@pi_45757/generate-lets-encrypt-certificate-using-certbot-on-linux-414d8adf2ff3 pariin ja selvitän, miten kyseisen ohjeen sertifikaattien haku eroaa edelliseen tapaan. 
+
+### Verkkosivut ja salaus 
+
+<img width="2126" height="618" alt="Salasutoimii mirohelenius" src="https://github.com/user-attachments/assets/c40ce373-fba2-46a8-942f-882ca635f545" />
+
+<img width="2120" height="602" alt="Salasutoimii wwwmirohelenius" src="https://github.com/user-attachments/assets/f9dd7358-fdc8-40f4-bdca-fdbbbfe64999" />
 
 # b) TLS-testaus 
 
