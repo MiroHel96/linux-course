@@ -22,8 +22,8 @@ Listen 443
     SSLEngine on
     SSLCertificateFile "/path/to/www.example.com.cert"
     SSLCertificateKeyFile "/path/to/www.example.com.key"
-</VirtualHost>```
-
+</VirtualHost>
+````
 
 
 ## Host-operating system spesifikaatiot
