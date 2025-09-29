@@ -6,11 +6,14 @@ Tässä raportissa hankin ilmaisen TLS-sertifikaatin luomalleni palvelimelle Let
 
 ## Tiivistelmä 
 
-Tiivistelmä seuraavista artikkeleista https://letsencrypt.org/how-it-works/ ja https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample
+Tiivistelmä seuraavista artikkeleista [Let's Encrypt - How it works](https://letsencrypt.org/how-it-works/) ja [Apache - SSL/TLS Strong Encryption: How-To](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample)
+
+
 
 
 
 ## Host-operating system spesifikaatiot
+
   - Operating system: Windows 11 Home
   - Version	10.0.26100 Build 26100
   - Device name	BOOK-QUCSCTFCNT
@@ -132,9 +135,11 @@ Lopuksi sain ilmoituksen `You have successfully enabled HTTPS..` Seuraavaksi ava
 
 Lopputuloksena molemmat sivut olivat nyt salattuja. Sertitikaatin saaminen olikin helmpompi prosessi, mitä odotin lukemieni ohjeistuksien perustella.
 
-Palaan mahdollisesti myöhemmin ohjeen:[Generate Let’s Encrypt certificate using Certbot On Linux.](https://medium.com/@pi_45757/generate-lets-encrypt-certificate-using-certbot-on-linux-414d8adf2ff3) pariin ja selvitän, miten kyseisen ohjeen sertifikaattien haku eroaa edelliseen tapaan. 
+Palaan mahdollisesti myöhemmin ohjeen: [Generate Let’s Encrypt certificate using Certbot On Linux.](https://medium.com/@pi_45757/generate-lets-encrypt-certificate-using-certbot-on-linux-414d8adf2ff3) pariin ja selvitän, miten kyseisen ohjeen sertifikaattien haku eroaa edelliseen tapaan. 
 
 ### Verkkosivut ja salaus 
+
+Kuten allaolevista kuvista näkyy, niin molemmat domainit ovat nyt suojattuja ja sertifikaatti on varmistettu Let's Encryptila.
 
 <img width="2126" height="618" alt="Salasutoimii mirohelenius" src="https://github.com/user-attachments/assets/c40ce373-fba2-46a8-942f-882ca635f545" />
 
@@ -142,8 +147,9 @@ Palaan mahdollisesti myöhemmin ohjeen:[Generate Let’s Encrypt certificate usi
 
 # b) TLS-testaus 
 
-Tässä raportin vaiheessa testasin TSL -salaukseni seuraavalla verkkosivulla: https://www.ssllabs.com/ssltest
-Syötin hakukenttään domainin `mirohelenius.com.
+Tässä raportin vaiheessa testasin TSL -salaukseni luokitusta seuraavalla verkkosivulla: [Qualys SSL labs - SSL Server Test] (https://www.ssllabs.com/ssltest) Syötin hakukenttään domainin `mirohelenius.com ja odotin tuloksien valmistumista.
+
+Kuten tuloksista näkyy domainini sai A -luokan arvion, joka on virallisen SSL Labs dokumentaation mukaan korkein taso: [Github SSL Server Rating Guide] (https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide)
 
 ## mirohelenius.com
 
@@ -151,17 +157,21 @@ Syötin hakukenttään domainin `mirohelenius.com.
 
 <img width="1014" height="732" alt="image" src="https://github.com/user-attachments/assets/7e44896e-9b14-4300-8c8b-92a0fc5d5497" />
 
-Kuten tuloksista näkyy domainini sai A -luokan arvion, joka on virallisen SSL Labs dokumentaation mukaan korkein taso: https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide
-
-
-# c) Vapaaehtoinen 
-
-
 
 # Lähdeluettelo 
 
 https://www.cloudflare.com/en-gb/learning/ssl/transport-layer-security-tls
 
+https://terokarvinen.com/linux-palvelimet/#h6-salataampa
+
+https://medium.com/@pi_45757/generate-lets-encrypt-certificate-using-certbot-on-linux-414d8adf2ff3
 
 https://letsencrypt.org/how-it-works/
+
 https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample
+
+https://certbot.eff.org/instructions?ws=apache&os=snap
+
+https://www.ssllabs.com/ssltest
+
+https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide
