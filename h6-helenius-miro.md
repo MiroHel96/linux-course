@@ -6,7 +6,7 @@ Tässä raportissa hankin ilmaisen TLS-sertifikaatin luomalleni palvelimelle Let
 
 Tiivistelmä seuraavista artikkeleista [Let's Encrypt - How it works](https://letsencrypt.org/how-it-works/) ja [Apache - SSL/TLS Strong Encryption: How-To](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample)
 
-- Let's Encryptin ja ACME (Automatic Certificate Management Environment) -protokollan tarkoitus on automatisoida HTTPS palvelinen asentaminen ja sen sertifikaattien hakeminen. Tämä on mahdollista,kun  ACME asiakasohjelman ajetanaa verkkopalvelimella.
+- Let's Encryptin ja ACME (Automatic Certificate Management Environment) -protokollan tarkoitus on automatisoida verkkoselaimen TLS-sertifikaattien hakeminen HTTPS pavelimelle. Tämä on mahdollista,kun ACME asiakasohjelmaa ajetaan verkkopalvelimella.
 - Sertifikaatin hakeminen on kaksivaiheinen prosessi. ACME asikas todistaa Let's Encryptille (Certificate Authority (CA)), hallitsevansa ilmoitettua domainia. Varmistusprosessin jälkeen asiakas voi pyytää tai kumota sertifikaatteja hallitulle domainille.
 - Varmistus prosessissa ACME asiaks tunnistetaan julkisella-avaimella ja useilla haastekyselyillä, tietoturvallisuuden varmistamiseksi.
 - SSL manuaalinen kongfiguraatio Apachella vaatii vähintään seuraavat:
