@@ -27,9 +27,9 @@ Tässä raportin vaiheessa loin ilmaisen TLS-Sertifikaatin (Transport Layer Secu
 
 Hyödynsin seuraavia verkkosivuja sen tekemisessä: 
 
-[Terokarvine.com](https://terokarvinen.com/linux-palvelimet/#h6-salataampa)
-https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample 
-https://certbot.eff.org/instructions?ws=apache&os=snap
+[Terokarvine.com h6 salataampa](https://terokarvinen.com/linux-palvelimet/#h6-salataampa)
+[Apache - SSL/TLS Strong Encryption: How-To](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample)
+[Certbot Apache on Linux](https://certbot.eff.org/instructions?ws=apache&os=snap)
 
 Aloitin avaamalla virtuaalikoneeni ja kirjauduin sisään. Tämän jälkeen otin SSH -yhteyden luomaani palvelimeen. 
 
