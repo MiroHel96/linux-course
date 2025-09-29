@@ -22,7 +22,14 @@ Tiivistelmä seuraavista artikkeleista https://letsencrypt.org/how-it-works/ ja 
 
 # a) TLS-sertifikaatin hankinta Let's Encrypt
 
-Tässä raportin vaiheessa loin ilmaisen TLS-Sertifikaatin palvelimelleni. Hyödynsin seuraavia verkkosivuja sen tekemisessä: https://terokarvinen.com/linux-palvelimet/#h6-salataampa, https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample ja https://certbot.eff.org/instructions?ws=apache&os=snap
+Tässä raportin vaiheessa loin ilmaisen TLS-Sertifikaatin (Transport Layer Security) palvelimelleni. Lisää tietoa TLS-protokollasta löytyy täältä: https://www.cloudflare.com/en-gb/learning/ssl/transport-layer-security-tls
+
+
+Hyödynsin seuraavia verkkosivuja sen tekemisessä: 
+
+[Terokarvine.com](https://terokarvinen.com/linux-palvelimet/#h6-salataampa)
+https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample 
+https://certbot.eff.org/instructions?ws=apache&os=snap
 
 Aloitin avaamalla virtuaalikoneeni ja kirjauduin sisään. Tämän jälkeen otin SSH -yhteyden luomaani palvelimeen. 
 
@@ -135,6 +142,9 @@ Kuten tuloksista näkyy domainini sai A -luokan arvion, joka on virallisen SSL L
 
 
 # Lähdeluettelo 
+
+https://www.cloudflare.com/en-gb/learning/ssl/transport-layer-security-tls
+
 
 https://letsencrypt.org/how-it-works/
 https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample
