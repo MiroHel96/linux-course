@@ -13,15 +13,16 @@ Tiivistelmä seuraavista artikkeleista [Let's Encrypt - How it works](https://le
 - Varmistus prosessissa ACME asiaks tunnistetaan julkisella-avaimella ja useilla haastekyselyillä, tietoturvallisuuden varmistamiseksi.
 - SSL kongfiguraatio Apachella vaatii vähintään seuraavan:
 
-`LoadModule ssl_module modules/mod_ssl.so`
+```Apache 
+LoadModule ssl_module modules/mod_ssl.so
 
-`Listen 443
+Listen 443
 <VirtualHost *:443>
     ServerName www.example.com
     SSLEngine on
     SSLCertificateFile "/path/to/www.example.com.cert"
     SSLCertificateKeyFile "/path/to/www.example.com.key"
-</VirtualHost>`
+</VirtualHost>```
 
 
 
