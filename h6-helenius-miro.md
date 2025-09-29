@@ -147,9 +147,9 @@ Kuten allaolevista kuvista näkyy, niin molemmat domainit ovat nyt suojattuja ja
 
 # b) TLS-testaus 
 
-Tässä raportin vaiheessa testasin TSL -salaukseni luokitusta seuraavalla verkkosivulla: [Qualys SSL labs - SSL Server Test] (https://www.ssllabs.com/ssltest) Syötin hakukenttään domainin `mirohelenius.com ja odotin tuloksien valmistumista.
+Tässä raportin vaiheessa testasin TSL -salaukseni luokitusta seuraavalla verkkosivulla: [Qualys SSL labs - SSL Server Test](https://www.ssllabs.com/ssltest) Syötin hakukenttään domainin `mirohelenius.com ja odotin tuloksien valmistumista.
 
-Kuten tuloksista näkyy domainini sai A -luokan arvion, joka on virallisen SSL Labs dokumentaation mukaan korkein taso: [Github SSL Server Rating Guide] (https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide)
+Kuten tuloksista näkyy domainini sai A -luokan arvion, joka on virallisen SSL Labs dokumentaation mukaan korkein taso: [Github SSL Server Rating Guide](https://github.com/ssllabs/research/wiki/SSL-Server-Rating-Guide)
 
 ## mirohelenius.com
 
