@@ -11,7 +11,7 @@ Tiivistelmä seuraavista artikkeleista [Let's Encrypt - How it works](https://le
 - Let's Encryptin ja ACME (Automatic Certificate Management Environment) -protokollan tarkoitus on automatisoida HTTPS palvelinen asentaminen ja sen sertifikaattien hakeminen. Tämä on mahdollista,kun  ACME asiakasohjelman ajetanaa verkkopalvelimella.
 - Sertifikaatin hakeminen on kaksivaiheinen prosessi. ACME asikas todistaa Let's Encryptille (Certificate Authority (CA)), hallitsevansa ilmoitettua domainia. Varmistusprosessin jälkeen asiakas voi pyytää tai kumota sertifikaatteja hallitulle domainille.
 - Varmistus prosessissa ACME asiaks tunnistetaan julkisella-avaimella ja useilla haastekyselyillä, tietoturvallisuuden varmistamiseksi.
-- SSL kongfiguraatio Apachella vaatii vähintään seuraavan:
+- SSL manuaalinen kongfiguraatio Apachella vaatii vähintään seuraavat:
 
 ```Apache 
 LoadModule ssl_module modules/mod_ssl.so
