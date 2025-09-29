@@ -1,8 +1,6 @@
-# Haaga-Helia Ammatikorkeakoulu Linux Palvelimet 2025 - Tero Karvinen 
+# Haaga-Helia Ammatikorkeakoulu Linux Palvelimet 2025 H6 - salataampa
 
-## Tehtävä h6 salataampa
-
-Tässä raportissa hankin ilmaisen TLS-sertifikaatin luomalleni palvelimelle Let's Encryptilta. 
+Tässä raportissa hankin ilmaisen TLS-sertifikaatin luomalleni palvelimelle Let's Encryptilta sekä testaan sen luokituksen. 
 
 ## Tiivistelmä 
 
