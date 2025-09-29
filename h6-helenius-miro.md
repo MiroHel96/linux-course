@@ -61,7 +61,7 @@ Kuten palomuurin statuksesta näkyy, portti 80 oli jo avattu, joten jäljelle j�
 
 Portit 80 ja 443 ovat nyt sallittu tcp yhtetydelle. Palvelua ei tässä tilanteessa tarvitse päivitää tai käynnistää uudestaan, koska en muokannut palomuurin konfiguraatiotiedostoa käsin. Palvelin on nyt valmis sertifikaatin hakemista varten. Lopuksi ajoin vielä varmuuden vuoksi komennot: `sudo apt upgrade` ja `sudo apt update`.
 
-Tarkastin vielä oliko automaattiset tietoturvapäivitykset käytössä palvelimella ja en ollut jostain syystä niitä asentanut, joten asensin ne vielä lopuksi seuraavilla komennoilla ja tarkastin palvelun tilanteen.
+Tarkastin vielä oliko automaattiset tietoturvapäivitykset käytössä palvelimella ja en ollut jostain syystä niitä asentanut, joten asensin ne vielä lopuksi seuraavilla komennoilla sekä lopuksi tarkastin tietoturvapäivityksien palvelun tilan:
 
 `sudo apt install unattended-upgrades apt-listchanges bsd-mailx`
 
@@ -71,20 +71,32 @@ Tarkastin vielä oliko automaattiset tietoturvapäivitykset käytössä palvelim
 
 ## Certbot asennus ja TLS-sertifikaatin luominen
 
-Seurasin seuraavaa ohjetta Certbotin asennuksessa: https://certbot.eff.org/instructions?ws=apache&os=snap, https://medium.com/@pi_45757/generate-lets-encrypt-certificate-using-certbot-on-linux-414d8adf2ff3, https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample ja https://terokarvinen.com/linux-palvelimet/#h6-salataampa
+Seurasin seuraavaa ohjetta Certbotin asennuksessa: 
 
-Vertasin MicrosoftCopilotilla komentojen `tero karvinen certbot ja certbotin ommia versioita`
+[Certbot Apache on Linux](https://certbot.eff.org/instructions?ws=apache&os=snap)
+
+[Generate Let’s Encrypt certificate using Certbot On Linux.](https://medium.com/@pi_45757/generate-lets-encrypt-certificate-using-certbot-on-linux-414d8adf2ff3)
+
+[Apache - SSL/TLS Strong Encryption: How-To](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample)
+
+[Terokarvine.com h6 salataampa](https://terokarvinen.com/linux-palvelimet/#h6-salataampa)
+
+Tässä kohtaa seurasin Mediumin ohjetta, kuten eteenpäin lukemalla huomaa niin asennus ei onnistunut. En ole varma, johtuuko se versioeroista tms, mutta päädyin lopulta asentamaan sertifikaatin seuraamalla Tero Karvisen sivuilla olevaa pikaohjetta ulkomuistista. 
 
 Syötin terminaaliin komennon `sudo apt-get install certbot python3-certbot-apache`
 
+Tämän jälkeen kokeilen alla olevia komentoja, jotka johtivat virheilmoituksiin.
+
 <img width="1652" height="916" alt="pythoncertbot" src="https://github.com/user-attachments/assets/7a5d6006-71f0-47a1-b249-fe24fa29169a" />
 
-Asentamisen jälkeen syötin seuraavan kommennon terminaaliin, ohjeistuksessa oli kaksi vaihtoehtoa, joko omalla Linuxilla komennon suorittaminen tai vaihtoehtoisesti pavelimella, jos portti 80 on avattu. Minulla on, joten ajoin komennon vuokraamallani palvelimella. 
+Asentamisen jälkeen syötin seuraavan kommennon terminaaliin, Mediumin ohjeistuksessa oli kaksi vaihtoehtoa, joko omalla Linuxilla komennon suorittaminen tai vaihtoehtoisesti pavelimella. Toisena vaihtoehtona oli asentaminen portti 80 avattuna. Minulla on, joten ajoin seuraavan komennon palvelimellani: 
 
 `sudo certbot certonly --webroot -w /tmp/webroot -d neural1.dns-dynamic.net \
 --staple-ocsp -m test@neural1.dns-dynamic.net --agree-tos`
 
-Sain seuraavan virheilmoituksen, koska ajoin komennon ennen ohjeistuksen loppuun lukemista. Minun pitää vaihtaa `neurall.dns-dynamic.net` omaan domainiini eli `mirohelenius.com`. Sama prosessi piti tehdä sähköpostiosoitteen suhteen, koska SSL sertifikaatin vanhemistiedot lähetetään sinne. Tarkastin vielä `/tpm/webroot/` polun palvelimelta ja loin sen, koska sitä ei ollut olemassa. 
+Sain seuraavan virheilmoituksen, koska ajoin komennon ennen ohjeistuksen loppuun lukemista. Minun pitää vaihtaa `neurall.dns-dynamic.net` omaan domainiini eli `mirohelenius.com`. Sama prosessi piti tehdä sähköpostiosoitteen suhteen, koska SSL sertifikaatin vanhemistiedot lähetetään sinne. 
+
+Tarkastin vielä `/tpm/webroot/` -polun palvelimelta, loin `webroot` -kansion, koska sitä ei ollut olemassa. 
 
 <img width="1598" height="282" alt="tmp kansio ei ole olemassa " src="https://github.com/user-attachments/assets/ca9282f9-558f-42cc-8465-434b1547e75a" />
 
@@ -93,7 +105,7 @@ Käytin komentoa `sudo mkdir -p webroot`
 <img width="1630" height="424" alt="webroot 1" src="https://github.com/user-attachments/assets/40fa09fb-b097-421a-8a13-34a0b020206f" />
 
 
-Tämän jälkeen kokeilin ajaa komennon uudestaan ja se onnistui, mutta en päässyt alkua pidemmälle. Sain uuden virheilmoituksen `Some challenges have failed`, ilmeisesti tilapäisiä haastetiedostoja ei pystytty lataamaan palvelimelta. En osaa sanoa ongelman syytä, mutta ongelma mahdollisesti voisi johtua kansion oikeuksista. 
+Tämän jälkeen kokeilin ajaa komennon uudestaa ja se onnistuikin tällä kertaa. En päässyt lähtötilanteesta kovinkaan pitkälle, koska seuraavaksi sain uuden virheilmoituksen `Some challenges have failed`, ilmeisesti tilapäisiä haastetiedostoja ei pystytty lataamaan palvelimelta. En osaa sanoa ongelman syytä, mutta ongelma mahdollisesti voisi johtua kansion oikeuksista. Seuraavaksi kokeilin toista lähestymistapaa.
 
 <img width="1634" height="148" alt="certbot komento 1" src="https://github.com/user-attachments/assets/10269d59-a0e2-4b6c-9493-a41aedf0237f" />
 
@@ -103,20 +115,24 @@ Tämän jälkeen kokeilin ajaa komennon uudestaan ja se onnistui, mutta en pää
 
 <img width="1634" height="788" alt="certifikaatti ei onnistunut 1" src="https://github.com/user-attachments/assets/fc3f2f70-7b94-4562-99e5-54f2a29ad7d8" />
 
-Tässä vaiheessa kokeilin Tero Karvisen h6 tehtävänannossa olevaa komentoa `Sudo certbot --apache --mirohelenius.com, wwwmirohelenius.com`. Sain vastauksen sertifikaattien hakemisen onnistumisesta. Certbot kuitekin ilmoitti, että www.mirohelenius.com ei löytynyt virtualhostia. Valitsin promtista virtuaalihostiksi `mirohelenius.com`.
+Raporttia lukevalle huomiona, että olisin voinut aikaisemmat kohdat jättää tekemättä ja syöttää suoraan alla olevan komennon. Jatkossa tiedänkin, että näin voi tehdä. 
+
+Kokeilin Tero Karvisen h6 tehtävänannossa olevaa komentoa `Sudo certbot --apache --mirohelenius.com, wwwmirohelenius.com`. Sain vastauksen sertifikaattien hakemisen onnistumisesta. Certbot kuitekin ilmoitti, että www.mirohelenius.com ei löytynyt virtualhostia. Valitsin promtista virtuaalihostiksi `mirohelenius.com`. 
 
 <img width="712" height="258" alt="image" src="https://github.com/user-attachments/assets/cced8e49-aec2-43cf-8bee-3afa5a0ab235" />
 
-Certbot sertifikaatin hakeminen
+### Certbot sertifikaatin hakeminen
 
 <img width="1850" height="924" alt="certifikaatit toimivat 1 tero" src="https://github.com/user-attachments/assets/81d026c1-9133-49d3-a5fe-fa2e7a6bc492" />
 
 
 <img width="1814" height="692" alt="certifikaatit toimivat 2 tero" src="https://github.com/user-attachments/assets/0352ebce-87ea-41c7-aa95-f8f8cb0282eb" />
 
-Lopuksi sain promtin `You have successfully enabled HTTPS..` Seuraavaksi avasin domainit `mirohelenius.com` ja `www.mirohelenius.com`. Molemmat sivut olivat nyt salattuja, sertitikaatin saaminen olikin helmpompaa, mitä odotin muiden sivujen ohjeiden mukaan. 
+Lopuksi sain ilmoituksen `You have successfully enabled HTTPS..` Seuraavaksi avasin verkkoselaimesta domainit `mirohelenius.com` ja `www.mirohelenius.com`. 
 
-Palaan mahdollisesti myöhemmin ohjeen: https://medium.com/@pi_45757/generate-lets-encrypt-certificate-using-certbot-on-linux-414d8adf2ff3 pariin ja selvitän, miten kyseisen ohjeen sertifikaattien haku eroaa edelliseen tapaan. 
+Lopputuloksena molemmat sivut olivat nyt salattuja. Sertitikaatin saaminen olikin helmpompi prosessi, mitä odotin lukemieni ohjeistuksien perustella.
+
+Palaan mahdollisesti myöhemmin ohjeen:[Generate Let’s Encrypt certificate using Certbot On Linux.](https://medium.com/@pi_45757/generate-lets-encrypt-certificate-using-certbot-on-linux-414d8adf2ff3) pariin ja selvitän, miten kyseisen ohjeen sertifikaattien haku eroaa edelliseen tapaan. 
 
 ### Verkkosivut ja salaus 
 
