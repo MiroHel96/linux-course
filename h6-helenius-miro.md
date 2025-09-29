@@ -8,7 +8,21 @@ Tässä raportissa hankin ilmaisen TLS-sertifikaatin luomalleni palvelimelle Let
 
 Tiivistelmä seuraavista artikkeleista [Let's Encrypt - How it works](https://letsencrypt.org/how-it-works/) ja [Apache - SSL/TLS Strong Encryption: How-To](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample)
 
+- Let's Encryptin ja ACME (Automatic Certificate Management Environment) -protokollan tarkoitus on automatisoida HTTPS palvelinen asentaminen ja sen sertifikaattien hakeminen. Tämä on mahdollista,kun  ACME asiakasohjelman ajetanaa verkkopalvelimella.
+- Sertifikaatin hakeminen on kaksivaiheinen prosessi. ACME asikas todistaa Let's Encryptille (Certificate Authority (CA)), hallitsevansa ilmoitettua domainia. Varmistusprosessin jälkeen asiakas voi pyytää tai kumota sertifikaatteja hallitulle domainille.
+- Varmistus prosessissa ACME asiaks tunnistetaan julkisella-avaimella ja useilla haastekyselyillä, tietoturvallisuuden varmistamiseksi.
+- SSL kongfiguraatio Apachella vaatii vähintään seuraavan:
+  `Your SSL configuration will need to contain, at minimum, the following directives.
 
+LoadModule ssl_module modules/mod_ssl.so
+
+Listen 443
+<VirtualHost *:443>
+    ServerName www.example.com
+    SSLEngine on
+    SSLCertificateFile "/path/to/www.example.com.cert"
+    SSLCertificateKeyFile "/path/to/www.example.com.key"
+</VirtualHost>`
 
 
 
@@ -158,7 +172,7 @@ Kuten tuloksista näkyy domainini sai A -luokan arvion, joka on virallisen SSL L
 <img width="1014" height="732" alt="image" src="https://github.com/user-attachments/assets/7e44896e-9b14-4300-8c8b-92a0fc5d5497" />
 
 
-# Lähdeluettelo 
+## Lähdeluettelo 
 
 https://www.cloudflare.com/en-gb/learning/ssl/transport-layer-security-tls
 
