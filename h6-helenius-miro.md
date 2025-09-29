@@ -12,9 +12,8 @@ Tiivistelmä seuraavista artikkeleista [Let's Encrypt - How it works](https://le
 - Sertifikaatin hakeminen on kaksivaiheinen prosessi. ACME asikas todistaa Let's Encryptille (Certificate Authority (CA)), hallitsevansa ilmoitettua domainia. Varmistusprosessin jälkeen asiakas voi pyytää tai kumota sertifikaatteja hallitulle domainille.
 - Varmistus prosessissa ACME asiaks tunnistetaan julkisella-avaimella ja useilla haastekyselyillä, tietoturvallisuuden varmistamiseksi.
 - SSL kongfiguraatio Apachella vaatii vähintään seuraavan:
-  `Your SSL configuration will need to contain, at minimum, the following directives.
 
-LoadModule ssl_module modules/mod_ssl.so
+`LoadModule ssl_module modules/mod_ssl.so
 
 Listen 443
 <VirtualHost *:443>
