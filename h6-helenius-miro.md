@@ -22,7 +22,7 @@ Tiivistelmä seuraavista artikkeleista https://letsencrypt.org/how-it-works/ ja 
 
 # a) TLS-sertifikaatin hankinta Let's Encrypt
 
-Tässä raportin vaiheessa loin ilmaisen TLS-Sertifikaatin (Transport Layer Security) palvelimelleni. Lisää tietoa TLS-protokollasta löytyy täältä: https://www.cloudflare.com/en-gb/learning/ssl/transport-layer-security-tls
+Tässä raportin vaiheessa loin ilmaisen TLS-Sertifikaatin (Transport Layer Security) palvelimelleni. Lisää tietoa TLS-protokollasta löytyy täältä: [Cloudflare - What is TLS (Transport Layer Security)?](https://www.cloudflare.com/en-gb/learning/ssl/transport-layer-security-tls)
 
 
 Hyödynsin seuraavia verkkosivuja sen tekemisessä: 
