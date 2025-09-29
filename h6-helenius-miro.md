@@ -41,7 +41,6 @@ Listen 443
 
 Tässä raportin vaiheessa loin ilmaisen TLS-Sertifikaatin (Transport Layer Security) palvelimelleni. Lisää tietoa TLS-protokollasta löytyy täältä: [Cloudflare - What is TLS (Transport Layer Security)?](https://www.cloudflare.com/en-gb/learning/ssl/transport-layer-security-tls)
 
-
 Hyödynsin seuraavia verkkosivuja sen tekemisessä: 
 
 [Terokarvine.com h6 salataampa](https://terokarvinen.com/linux-palvelimet/#h6-salataampa)
