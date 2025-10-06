@@ -13,6 +13,8 @@ Tässä raportin vaiheessa loin Linux palvelimellani scriptin kolmella eri ohjel
 
 ### Python 3 
 
+Hyödynsin tehtävässä seuraavia artikkeleita: [Hello World Python3, Bash, C, C++, Go, Lua, Ruby, Java – Programming Languages on Ubuntu 18.04](https://terokarvinen.com/2018/hello-python3-bash-c-c-go-lua-ruby-java-programming-languages-on-ubuntu-18-04) ja [Tero Karvinen - Shell Scripting](https://terokarvinen.com/2007/12/04/shell-scripting-4)
+
 
 ### Bash 
 
