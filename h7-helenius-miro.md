@@ -95,7 +95,7 @@ Ajoin seuraavaksi komennon `./hellomiroc`, kuten terminaalissa näkyy tekstitied
 
 ## c) Shellscript oman komennon luominen 
 
-Tässä raportissa loin shellscriptin avulla oman komennon Linuxpalvelimelleni, jota kuka tahansa muu voi tarvittaessa käyttää. Hyödynsin tehtävässä seuraavaa artikkelia: [Tero Karvinen - Shell Scripting](https://terokarvinen.com/2007/12/04/shell-scripting-4)
+Tässä raportissa loin shellscriptin avulla oman komennon Linuxpalvelimelleni, jota kuka tahansa muu voi tarvittaessa käyttää. Hyödynsin tehtävässä seuraavaa artikkelia: [Tero Karvinen - Shell Scripting](https://terokarvinen.com/2007/12/04/shell-scripting-4) ja [How to update Debian Linux](https://linuxhandbook.com/update-debian)
 
 Päätin luoda komennon joka automaattisesti ajaa komennot `sudo apt list --upgradable`, `sudo apt update` ja `sudo apt upgrade`. Seuraavaksi muokkasin tiedoston oikeuksia. Muokkasin tiedoston kaikkien suoritettavaksi komennolla `chmod a+x autoupdate.sh`. Tarkemmat tiedot käyttöoikeuksista löysin täältä: [Linuxize - Chmod Command in Linux (File Permissions)](https://linuxize.com/post/chmod-command-in-linux)
 
