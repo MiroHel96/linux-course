@@ -173,6 +173,15 @@ Aloitin howdy -komennon tekemisen siirtymällä terminaalissa työpöydälle ja 
 
 <img width="1656" height="996" alt="image" src="https://github.com/user-attachments/assets/23670271-88e5-45b8-bbd4-013dfab15bee" />
 
+Lopuksi muokkasin tiedoston kaikkien käyttäjien suoritettavaksi, jotta voin ajaa Bash-skriptin. Käytin komentoa `chmod a+x howdy.sh`. Lopuksi testasin sen toimivuutta komennolla `./howdy.sh`. 
+
+<img width="1632" height="300" alt="image" src="https://github.com/user-attachments/assets/c968b33c-b26c-4865-a2dc-0bf2a78aaac7" />
+
+
+Jouduin asentamaan paketit `sudo apt-get install coreutils` ja `install sysvinit-utils`, jotta komentoni tulostaisi luomani komennot. En saanut `last reoot` - komentoa toimimaan, joten pitää palata asiaan myöhemmin, jos mahdollista. 
+
+
+<img width="1622" height="912" alt="image" src="https://github.com/user-attachments/assets/4d8005b1-c843-468d-90c3-d6b106f8881d" />
 
 
 
