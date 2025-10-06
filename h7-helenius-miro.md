@@ -111,9 +111,11 @@ Seuraavaksi suoritin oman komentoni komennolla `./autoupdate.sh` ja huomasin, et
 <img width="1626" height="592" alt="image" src="https://github.com/user-attachments/assets/5401da7d-f9dc-4790-8df8-28143ebe3fe4" />
 
 
-
 <img width="1654" height="992" alt="image" src="https://github.com/user-attachments/assets/204c7242-05a0-494d-a001-964c16267d90" />
 
+Lopputuloksena on toimiva oma komento.
+
+<img width="1934" height="482" alt="image" src="https://github.com/user-attachments/assets/9c6b0ba3-6e9f-41d9-b4af-db1de9f6adf7" />
 
 
 
