@@ -101,7 +101,8 @@ Päätin luoda komennon joka automaattisesti ajaa komennot `sudo apt list --upgr
 
 
 
-<img width="1660" height="952" alt="image" src="https://github.com/user-attachments/assets/d4edcf97-8899-4a36-9910-c9a52cdcf7e3" />
+<img width="1656" height="1004" alt="image" src="https://github.com/user-attachments/assets/d1fcb63b-f8f7-45e0-bffb-b4d5a69ff4d4" />
+
 
 <img width="1624" height="468" alt="image" src="https://github.com/user-attachments/assets/01c1db9c-df3a-4c4d-ad7d-56647b12c434" />
 
