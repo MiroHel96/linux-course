@@ -83,12 +83,15 @@ Asennuksen jälkeen loin kotihakemistoon uuden teksitiedoston `micro hellomiro.c
 
 <img width="1628" height="146" alt="image" src="https://github.com/user-attachments/assets/727cbeeb-ed12-4347-9c72-f73c64248227" />
 
-Sain seuraavan virhilmoituksen, kun ajoin komennon `g++ hellomiro.c -o hellomiroc`. Huomasin, että itse käskyssä ja koodissa oli virhe, joten korjasin ne ja ajoin komennon uudestaan. Kyseinen käsky ajaa ja muuntaa luomani tekstitiedoston suoritettavaksi tiedostoksi nimellä `hellomiroc`. 
+Sain seuraavan virhilmoituksen, kun ajoin komennon `g++ hellomiro.c -o hellomiroc`. Huomasin, että itse käskyssä ja koodissa oli virhe, joten korjasin ne ja ajoin komennon uudestaan. Tämän jälkeen ei tullut virheilmoitusta. Kyseinen käsky ajaa ja muuntaa luomani tekstitiedoston suoritettavaksi tiedostoksi nimellä `hellomiroc`. 
 
 <img width="1656" height="270" alt="image" src="https://github.com/user-attachments/assets/ca719424-dfc2-4e59-8932-3c428c7b1eb8" />
 
 <img width="1660" height="442" alt="image" src="https://github.com/user-attachments/assets/91d786d9-8e3e-4baa-a2cd-272fba747826" />
 
+Ajoin seuraavaksi komennon `./hellomiroc`, kuten terminaalissa näkyy tekstitiedosto on muuttunut suoritettavaksi tiedostoksi. 
+
+<img width="1632" height="292" alt="image" src="https://github.com/user-attachments/assets/00529acf-4570-4f34-b7f5-a95ad380666e" />
 
 
 
