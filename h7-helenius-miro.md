@@ -117,6 +117,18 @@ Lopputuloksena on toimiva oma komento.
 
 <img width="1934" height="482" alt="image" src="https://github.com/user-attachments/assets/9c6b0ba3-6e9f-41d9-b4af-db1de9f6adf7" />
 
+### Kaikkien käytössä oleva komento 
+
+Seuraavaksi tein komennostani suoritettavan kaikille käytäjille. Käytin seuraavaa komentoa`sudo cp autoupdate.sh /usr/local/bin/`. Tämän jälkeen testasin komennon suorittamista. 
+
+<img width="1540" height="112" alt="image" src="https://github.com/user-attachments/assets/0b0ae078-3057-4320-8a9d-dc0c7483c8c1" />
+
+Siirryin juurihakemistoon komennolla `cd ..`. Tämän jälkeen käytin komentoa `autoupdate.sh` ja lopputuloksena on toimiva komento eri hakemistoissa. 
+
+<img width="1948" height="636" alt="image" src="https://github.com/user-attachments/assets/aae246f0-8357-4b08-89c0-f18843e7c9b3" />
+
+## d) Arvioitavan laboratorioharjoituksen ratkaiseminen 
+
 
 
 ## Lähdeluettelo 
