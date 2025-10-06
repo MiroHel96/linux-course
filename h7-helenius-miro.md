@@ -143,8 +143,38 @@ Aloitin tehtävän tekemisen luomalla testiraportin libreoffice ohjlemalla `Docu
 
 <img width="1630" height="752" alt="image" src="https://github.com/user-attachments/assets/8daf55a8-1ac0-45e1-a0eb-6f7d46b3519c" />
 
+Loin vielä testikäyttäjän, jolla kokeilen tiedoston oikeuksien tomivuutta. Virkistin muistia käyttäjien luomisessa seuraavalla ohjeella: [Adding users in linux](https://linuxhandbook.com/useradd-command) Loin uuden käyttäjäm komennolla `sudo useradd labrauser`.
+
+Kokelin kirjautua sisään uudella käyttäjällä `su labrauser`, kyseinen komento tarkoittaa "substitute user" tai "switch user". En päässyt sisään kirjatumaan, joka johtuu siitä, että salasanaa ei ole asetettu. Loin käyttäjälle salasanan ja kokeilin uudestaan. 
+
+<img width="1624" height="306" alt="image" src="https://github.com/user-attachments/assets/0f512270-71f9-4d3e-bc74-0dfdbc1c8f26" />
+
+
+Tarkastin komennolla `cat /etc/passwd` oliko labrauser luotu ja se oli.
+
+<img width="1628" height="78" alt="image" src="https://github.com/user-attachments/assets/4db0e0ad-f2e2-4b92-bdb6-c30f86762e54" />
+
+Pääsin kirjatumaan sisään luomalleni käyttäjälle, mutta kuten kuvassa näkyy niin `miro` -kotihakemiston oikeudet ovat vain sallittu itse käyttäjälle, joten en pääse sieltä testaamaan tiedostoa. Siirsin sen testiksi `/home` -hakemistoon. 
+
+<img width="1624" height="430" alt="image" src="https://github.com/user-attachments/assets/3274e180-7a79-4161-aa9e-a17c1198fe8a" />
+
+Tässä vaiheessa olisi pitänyt arvata, että "/home" -hakemisto on suojattu ja sinne ei voi tiedostoja siirtää tai kopioida tavallisilla oikeuksia. Sudottamalla oikeudet muuttuvat rootille, joka toki ajaa saman asian, mutta näiden testien perusteella uskon, että tiedosto on suojattu, koska oikeudet ovat muutettu vain tiedoston omistajalle. 
+
+<img width="1630" height="890" alt="image" src="https://github.com/user-attachments/assets/a4014ab6-0bd3-421e-b7c6-acd96c1754d4" />
 
 ### d) Howdy 
+
+Tässä vaiheessa loin kaikille käyttäjille komennon "howdy", joka tulostaa erinäisiä järjtestelmän tietoja. Käytin seuraavan artikkelin komentoja: [14 Commands to Display System Information in Linux.](https://andreybyhalenko.medium.com/14-commands-to-display-system-information-in-linux-135a1d57c26e)
+
+Aloitin howdy -komennon tekemisen siirtymällä terminaalissa työpöydälle ja loin sinne tiedoston käyttämällä komentoa `micro howdy.sh`. Loin Bash -tiedoston sisään Bash-skriptiä ja tallensin sen. 
+
+<img width="1610" height="900" alt="image" src="https://github.com/user-attachments/assets/c86ec0f8-e2f2-4e26-a5c3-390932b34747" />
+
+
+<img width="1656" height="996" alt="image" src="https://github.com/user-attachments/assets/23670271-88e5-45b8-bbd4-013dfab15bee" />
+
+
+
 
 ### e) eutsivu uusiksi 
 
