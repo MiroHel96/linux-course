@@ -106,6 +106,14 @@ Päätin luoda komennon joka automaattisesti ajaa komennot `sudo apt list --upgr
 
 <img width="1624" height="468" alt="image" src="https://github.com/user-attachments/assets/01c1db9c-df3a-4c4d-ad7d-56647b12c434" />
 
+Seuraavaksi suoritin oman komentoni komennolla `./autoupdate.sh` ja huomasin, että siinä oli kirjoitusvirhe, joten korjasin sen. 
+
+<img width="1626" height="592" alt="image" src="https://github.com/user-attachments/assets/5401da7d-f9dc-4790-8df8-28143ebe3fe4" />
+
+
+
+<img width="1654" height="992" alt="image" src="https://github.com/user-attachments/assets/204c7242-05a0-494d-a001-964c16267d90" />
+
 
 
 
