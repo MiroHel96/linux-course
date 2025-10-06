@@ -39,7 +39,12 @@ Lopuksi ajoin ohjelman komennolla `python3 hellomiro.py`.
 
 
 
-### Bash 
+### Bash (Bourne-Again SHell)
+
+Seuraavaksi toteutuin vastaaman "Hello World" tekstin Bash komentosarjakielellä. Bash on debianissa valmiiksi asennettuna, joten tarkastin sen version käyttämällä komentoa `bash --version`.
+Käytössäni on versio 5.2.37.
+
+<img width="1636" height="890" alt="image" src="https://github.com/user-attachments/assets/3d76a67a-371f-45dd-8383-5fe56ef4c38e" />
 
 
 ### Java 
