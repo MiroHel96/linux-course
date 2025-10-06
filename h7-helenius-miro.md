@@ -46,6 +46,17 @@ Käytössäni on versio 5.2.37.
 
 <img width="1636" height="890" alt="image" src="https://github.com/user-attachments/assets/3d76a67a-371f-45dd-8383-5fe56ef4c38e" />
 
+Loin jälleen teksitiedoston kotihakemistooni käyttämällä komentoa `micro hellomiro.sh`. Kirjoitin Bash -scriptiä tekstitiedostoon ja tallensin sen kotihakemistoon.
+
+<img width="1636" height="186" alt="image" src="https://github.com/user-attachments/assets/8d1c6cf0-4880-4da5-82d9-d176b22c0c70" />
+
+
+<img width="1660" height="990" alt="image" src="https://github.com/user-attachments/assets/626a6956-945d-4781-8042-c834de83670c" />
+
+Lopuksi käytin komentoa `cat hellomiro.sh` ja `bash hellomiro.sh`. 
+
+<img width="1632" height="230" alt="image" src="https://github.com/user-attachments/assets/6c65f408-eece-4b20-88fd-ff286af70afa" />
+
 
 ### Java 
 
