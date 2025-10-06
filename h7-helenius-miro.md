@@ -93,6 +93,12 @@ Ajoin seuraavaksi komennon `./hellomiroc`, kuten terminaalissa näkyy tekstitied
 
 <img width="1632" height="292" alt="image" src="https://github.com/user-attachments/assets/00529acf-4570-4f34-b7f5-a95ad380666e" />
 
+## c) Shellscript oman komennon luominen 
+
+Tässä raportissa loin shellscriptin avulla oman komennon Linuxpalvelimelleni, jota kuka tahansa muu voi tarvittaessa käyttää. Hyödynsin tehtävässä seuraavaa artikkelia: [Tero Karvinen - Shell Scripting](https://terokarvinen.com/2007/12/04/shell-scripting-4)
+
+
+
 
 
 ## Lähdeluettelo 
