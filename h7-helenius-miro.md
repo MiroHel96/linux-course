@@ -58,8 +58,19 @@ Lopuksi käytin komentoa `cat hellomiro.sh` ja `bash hellomiro.sh`.
 <img width="1632" height="230" alt="image" src="https://github.com/user-attachments/assets/6c65f408-eece-4b20-88fd-ff286af70afa" />
 
 
-### Java 
+### C 
 
+Tässä vaiheessa loin C -ohjelmointikielellä vastaavasti "Hello World" -tekstin. Käytin seuraavaa ohjeistusta apuna C:n asentamisessa ja käytössä Linuxilla: [How To Compile And Run a C/C++ Code In Linux](https://www.cyberciti.biz/faq/howto-compile-and-run-c-cplusplus-code-in-linux)
+
+Avasin komentokehotteeen ja asensin C:n palvelimelle käyttämällä seuraavia komentoja: 
+- `sudo apt-get update`
+- `sudo apt-get install  build-essential manpages-dev`
+
+Hyväksyin asennuksen promptin syöttämällä "y" komentokehotteesseen.
+
+<img width="1632" height="396" alt="image" src="https://github.com/user-attachments/assets/5ab6498b-85c2-4b55-ac1c-adbefc65bc1d" />
+
+<img width="1774" height="592" alt="image" src="https://github.com/user-attachments/assets/7240065e-6486-4a83-8b33-5586042e6a2d" />
 
 
 ## Lähdeluettelo 
