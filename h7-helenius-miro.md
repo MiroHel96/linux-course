@@ -129,6 +129,25 @@ Siirryin juurihakemistoon komennolla `cd ..`. Tämän jälkeen käytin komentoa 
 
 ## d) Arvioitavan laboratorioharjoituksen ratkaiseminen 
 
+Tässä raportin vaiheessa tein aikasempien laboratoritöiden ratkaistavia tehtäviä osaamiseni perusteella: 
+
+[Tero Karvinen - Arvioitava laboratorioharjoitus 2024](https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-linux-palvelimet)
+
+Jouduin soveltamaan osassa tehtävistä, koska oma aikani loppui kesken tehtävän tekemiselle ja uuden virtuaalikoneen asentamiseen ja määrityksiin ei ollut enää aikaa.
+
+### c) Ei kolmea sekoseiskaa 
+
+Aloitin tehtävän tekemisen luomalla testiraportin libreoffice ohjlemalla `Documents` -kansioon. Seuraavaksi muutin käyttöoikeuksia `chmod 600`, kyseinen oikeus luo käyttöoikeudet vain tiedoston luojalle. Hyödynsin seuraavaa laskutyökalua oikeuksien muokkaamiseen: [Chmod calculator](https://chmod-calculator.com)
+
+<img width="1660" height="1004" alt="image" src="https://github.com/user-attachments/assets/2cb25da9-77b5-4632-bab2-88a18c34ce74" />
+
+
+
+### d) Howdy 
+
+### e) eutsivu uusiksi 
+
+### g) salattua hallintaa 
 
 
 ## Lähdeluettelo 
