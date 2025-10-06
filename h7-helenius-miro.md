@@ -185,7 +185,9 @@ Jouduin asentamaan paketit `sudo apt-get install coreutils` ja `install sysvinit
 
 
 
-### e) eutsivu uusiksi 
+### e) etusivu uusiksi 
+
+
 
 ### g) salattua hallintaa 
 
