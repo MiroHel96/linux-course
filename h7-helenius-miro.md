@@ -72,6 +72,18 @@ Hyväksyin asennuksen promptin syöttämällä "y" komentokehotteesseen.
 
 <img width="1774" height="592" alt="image" src="https://github.com/user-attachments/assets/7240065e-6486-4a83-8b33-5586042e6a2d" />
 
+Seuraavaksi varmistin, että C oli asentunut syöttämällä seuraavat komennot: 
+- `whereis gcc`
+- `which gcc`
+- `gcc --version`
+
+  <img width="1790" height="442" alt="image" src="https://github.com/user-attachments/assets/b253dfe8-b65d-432e-adcd-0231754f7dff" />
+
+Asennuksen jälkeen loin kotihakemistoon uuden teksitiedoston `micro hellomiro.c`. Syötin tekstitiedostoon C -ohjelmointikieltä ja tallensin sen. 
+
+<img width="1628" height="146" alt="image" src="https://github.com/user-attachments/assets/727cbeeb-ed12-4347-9c72-f73c64248227" />
+
+
 
 ## Lähdeluettelo 
 
