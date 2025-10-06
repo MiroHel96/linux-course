@@ -137,10 +137,11 @@ Jouduin soveltamaan osassa tehtävistä, koska oma aikani loppui kesken tehtäv�
 
 ### c) Ei kolmea sekoseiskaa 
 
-Aloitin tehtävän tekemisen luomalla testiraportin libreoffice ohjlemalla `Documents` -kansioon. Seuraavaksi muutin käyttöoikeuksia `chmod 600`, kyseinen oikeus luo käyttöoikeudet vain tiedoston luojalle. Hyödynsin seuraavaa laskutyökalua oikeuksien muokkaamiseen: [Chmod calculator](https://chmod-calculator.com)
+Aloitin tehtävän tekemisen luomalla testiraportin libreoffice ohjlemalla `Documents` -kansioon. Seuraavaksi muutin käyttöoikeuksia `chmod 700`, kyseinen oikeus luo käyttöoikeudet vain tiedoston luojalle. Hyödynsin seuraavaa laskutyökalua oikeuksien muokkaamiseen: [Chmod calculator](https://chmod-calculator.com) En tässä tapauksessa olisi varmaan tarvinnut suorittamista varten oikeuksia, mutta laitoin kuitekin kaikki oikeudet tiedostoon. 
 
 <img width="1660" height="1004" alt="image" src="https://github.com/user-attachments/assets/2cb25da9-77b5-4632-bab2-88a18c34ce74" />
 
+<img width="1630" height="752" alt="image" src="https://github.com/user-attachments/assets/8daf55a8-1ac0-45e1-a0eb-6f7d46b3519c" />
 
 
 ### d) Howdy 
