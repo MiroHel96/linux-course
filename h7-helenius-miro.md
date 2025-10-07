@@ -215,6 +215,14 @@ Siirruin kansioon `/etc/apache2/sites-available` ja copion kansiossa olevan konf
 <img width="1630" height="630" alt="Namebasedvirtualhost2" src="https://github.com/user-attachments/assets/5312823e-de48-49bc-9320-6d0fda447279" />
 
 
+<img width="1670" height="994" alt="conftiedosto" src="https://github.com/user-attachments/assets/ec84fde3-c910-4783-ba7a-c5a7297003ae" />
+
+Joudun tässä kohtaa luomaan `ai.kakonen.com` nimisen kansion luomaani `public-sites-new` kansioon. Tämän alle loin `index.html` tiedoston. Virtual Based Host hakee konffitiedoston perusteella indexitiedoston, määritetystä polusta, joten tämä piti muokata. 
+
+
+<img width="1624" height="578" alt="linux komennot kotisivulle" src="https://github.com/user-attachments/assets/5438a478-417f-42b1-81cb-acf05fa3ad79" />
+
+
 
 
 ### g) salattua hallintaa 
