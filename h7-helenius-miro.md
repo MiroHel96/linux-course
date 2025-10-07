@@ -5,7 +5,7 @@ Tässä raportissa Suoritan perus esimerkkejä automatisoinnista, ohjelmoinnista
 Tämä tehtävä pohjautuu Tero Karvisen Linux Palvelimet kurssiin: https://terokarvinen.com/linux-palvelimet/#h7-maalisuora
 
 
-## a) Hello World kolmella eri kielllä
+## a) Hello World kolmella eri kielellä
 
 Tässä raportin vaiheessa loin Linux palvelimellani scriptin kolmella eri ohjelmointikielellä ja suoritin ne terminaalissa. Aloitin tehtävän tekemisen avaamalla VirtualBoxista Linux työasemani ja otin SSH -yhteyden palvelimeeni. 
 
