@@ -222,6 +222,11 @@ Joudun tässä kohtaa luomaan `ai.kakonen.com` nimisen kansion luomaani `public-
 
 <img width="1624" height="578" alt="linux komennot kotisivulle" src="https://github.com/user-attachments/assets/5438a478-417f-42b1-81cb-acf05fa3ad79" />
 
+Seuraavaksi enabloin uuden sivun Apache palvelimelle komennolla `sudo a2ensite ai.kakonen.com`, käynnistin vielä palvelun uudestaan, jotta muutokset varmasti toimivat komennolla `sudo systemctl restart apache2`. 
+
+
+<img width="1616" height="296" alt="ensite" src="https://github.com/user-attachments/assets/60fdfc16-3c65-405d-987d-ff7364b633f4" />
+
 
 
 
