@@ -1,5 +1,6 @@
 # Haaga-Helia Ammatikorkeakoulu Linux Palvelimet 2025 H7 - Maalisuora
-Tässä raportissa hankin ilmaisen TLS-sertifikaatin luomalleni palvelimelle Let's Encryptilta sekä testaan sen luokituksen.
+
+Tässä raportissa Suoritan perus esimerkkejä automatisoinnista, ohjelmoinnista ja scriptauksesta Linux työasemalla. 
 
 Tämä tehtävä pohjautuu Tero Karvisen Linux Palvelimet kurssiin: https://terokarvinen.com/linux-palvelimet/#h7-maalisuora
 
@@ -187,7 +188,7 @@ Jouduin asentamaan paketit `sudo apt-get install coreutils` ja `install sysvinit
 
 ### e) etusivu uusiksi 
 
-Tässä vaiheessa loin Apache 2 webbipalvelimelle uuden kotisivun, Apache2 oli jo asennettu ja ajanpuutteesta johtuen loin tässä harjoituksessa vain uuden indeksitiedoston ja laitoin sen kotisivuksi. Hyödynsin seuraavia ohjetta: [Install and Configure Apache](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview). 
+Tässä vaiheessa loin Apache 2 webbipalvelimelle uuden kotisivun, Apache2 oli jo asennettu ja ajanpuutteesta johtuen loin tässä harjoituksessa vain uuden indeksitiedoston ja laitoin sen kotisivuksi. Hyödynsin seuraavia ohjetta: [Install and Configure Apache](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview), [Johanna Heinonen GitHub](https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-03092025.md) ja omaa raporttia [Miro Helenius GitHub](https://github.com/MiroHel96/linux-course/blob/main/h3-hello-web-server.md).
 
 
 Tarkastin ensiksi apache palvelimeni tilanteen komennolla `sudo systemctl status apache2`. Kuten kuvasta näkyy palvelu on aktiivinen ja käynnissä. 
@@ -227,20 +228,46 @@ Seuraavaksi enabloin uuden sivun Apache palvelimelle komennolla `sudo a2ensite a
 
 <img width="1616" height="296" alt="ensite" src="https://github.com/user-attachments/assets/60fdfc16-3c65-405d-987d-ff7364b633f4" />
 
+Lopuksi muokkasin `/etc/hots` -tiedostoon osoitekenttään oikeat domainit. Kokeilin vielä sivun toimivuutta komennolla  `curl ai.kakonen.com` ja `verkkoselaimesta www.ai.kakonen.com`.
 
 
+<img width="1658" height="998" alt="hoststiedosot" src="https://github.com/user-attachments/assets/76a331aa-7af6-4f62-813f-a2aa167d47c7" />
 
-### g) salattua hallintaa 
+
+<img width="1650" height="588" alt="aikoakonentesti" src="https://github.com/user-attachments/assets/48071f76-7e3f-44ca-81e6-97a089fdea0e" />
+
+
+<img width="2112" height="598" alt="aikakonen com" src="https://github.com/user-attachments/assets/cc77e5e7-53ec-4b83-903d-0cef909964f0" />
+
+
+Verkkoselaimen kentästä hakemalla `www.ai.kakonen.com` sivu ohjautuu aikaisemmin luoalleni sivulle, mutta minulla ei ollut enempää aikaa selvitää tätä ongelmaa enää. Lopputuloksena on kuitekin uudelleen luotu kotisivu Apache 2 palvelimella halutulla Virtual Based Hostilla. 
+
 
 
 ## Lähdeluettelo 
 
+https://terokarvinen.com/linux-palvelimet/#h7-maalisuora
+
+https://terokarvinen.com/2018/hello-python3-bash-c-c-go-lua-ruby-java-programming-languages-on-ubuntu-18-04
+
+https://terokarvinen.com/2007/12/04/shell-scripting-4
+
+https://www.cyberciti.biz/faq/howto-compile-and-run-c-cplusplus-code-in-linux
+
+https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners
+
+https://linuxhandbook.com/update-debian
+
+https://linuxize.com/post/chmod-command-in-linux
 
 https://docs.python-guide.org/starting/install3/linux
 
-https://ioflood.com/blog/install-bash-shell-linux/#:~:text=The%20Bash%20shell%20is%20typically,command%20sudo%20yum%20install%20bash%20.
+https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-linux-palvelimet
 
-https://wiki.debian.org/Java 
+https://chmod-calculator.com/
 
+https://linuxhandbook.com/useradd-command
+
+https://andreybyhalenko.medium.com/14-commands-to-display-system-information-in-linux-135a1d57c26e
 
 
