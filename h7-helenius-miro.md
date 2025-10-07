@@ -187,6 +187,34 @@ Jouduin asentamaan paketit `sudo apt-get install coreutils` ja `install sysvinit
 
 ### e) etusivu uusiksi 
 
+Tässä vaiheessa loin Apache 2 webbipalvelimelle uuden kotisivun, Apache2 oli jo asennettu ja ajanpuutteesta johtuen loin tässä harjoituksessa vain uuden indeksitiedoston ja laitoin sen kotisivuksi. Hyödynsin seuraavia ohjetta: [Install and Configure Apache](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview). 
+
+
+Tarkastin ensiksi apache palvelimeni tilanteen komennolla `sudo systemctl status apache2`. Kuten kuvasta näkyy palvelu on aktiivinen ja käynnissä. 
+
+
+<img width="1630" height="820" alt="apachectl" src="https://github.com/user-attachments/assets/f6540227-4fae-4225-a148-a61ca8bee836" />
+
+Seuraavaksi avasin verkkosivun selaimesta ja käytin myös komentoa `curl localhost`, tarkastakseeni sivun sisällön. 
+
+<img width="1620" height="898" alt="curllocalhost" src="https://github.com/user-attachments/assets/0a8c26e3-2281-4ab5-b9bb-6450e9b7fb66" />
+
+<img width="2108" height="1344" alt="localhostwebsite" src="https://github.com/user-attachments/assets/89d554ca-6a85-46c1-a670-6827e814c95f" />
+
+Seuraavaksi loin uuden kansion `public-sites-new`, käytin komentoa `mkdir public-sites-new` omassa kotihakemistossani. Seuravaksi loin uuden tekstitiedoston micro -editorilla `ai.kakonen.com` ja lisäsin sen sisälle esimerkkiä varten tekstiä.
+
+<img width="1650" height="996" alt="public sites new" src="https://github.com/user-attachments/assets/f35192cb-08c8-4958-aed4-6ff45fce7600" />
+
+
+<img width="1664" height="996" alt="aikakonentiedosto" src="https://github.com/user-attachments/assets/12313d81-d376-436d-ad70-c284d77a9228" />
+
+## Name Based Virtual Host Luominen 
+
+Siirruin kansioon `/etc/apache2/sites-available` ja copion kansiossa olevan konfiguraatiotiedoston `hattu.example.com.conf`, käytin komentoa `sudo cp hattu.example.com.conf ai.kakonen.com.conf`.
+
+<img width="1630" height="630" alt="Namebasedvirtualhost2" src="https://github.com/user-attachments/assets/5312823e-de48-49bc-9320-6d0fda447279" />
+
+
 
 
 ### g) salattua hallintaa 
