@@ -240,7 +240,7 @@ Lopuksi muokkasin `/etc/hots` -tiedostoon osoitekenttään oikeat domainit. Koke
 <img width="2112" height="598" alt="aikakonen com" src="https://github.com/user-attachments/assets/cc77e5e7-53ec-4b83-903d-0cef909964f0" />
 
 
-Verkkoselaimen kentästä hakemalla `www.ai.kakonen.com` sivu ohjautuu aikaisemmin luoalleni sivulle, mutta minulla ei ollut enempää aikaa selvitää tätä ongelmaa enää. Lopputuloksena on kuitekin uudelleen luotu kotisivu Apache 2 palvelimella halutulla Virtual Based Hostilla. 
+Verkkoselaimen kentästä hakemalla `www.ai.kakonen.com` sivu ohjautuu aikaisemmin luomalleni sivulle, mutta minulla ei ollut enempää aikaa selvitää tätä ongelmaa. Lopputuloksena on kuitekin uudelleen luotu kotisivu Apache 2 palvelimella halutulla Virtual Based Hostilla. 
 
 
 
